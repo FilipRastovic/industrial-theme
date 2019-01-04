@@ -12,7 +12,7 @@
 ?>
 <footer>
   <div class="container">
-    <img class="logo mb-3" src="assets/img/logo-white.png" alt="Logo">
+    <img class="logo mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/logo-white.png" alt="Logo">
     <ul class="list-inline mb-3">
       <li class="list-inline-item">
         <a href="#">Who We Help</a>
@@ -27,11 +27,11 @@
         <a href="#">Learning Center</a>
       </li>
     </ul>
-    <img class="mb-3" src="assets/img/linkedin.png" alt="Linkedin">
-    <img class="mb-3" src="assets/img/facebook.png" alt="Facebook">
-    <img class="mb-3" src="assets/img/twitter.png" alt="Twitter">
-    <img class="mb-3" src="assets/img/rss.png" alt="RSS">
-    <img class="mb-3" src="assets/img/youtube.png" alt="Youtube">
+    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/linkedin.png" alt="Linkedin">
+    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/facebook.png" alt="Facebook">
+    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/twitter.png" alt="Twitter">
+    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/rss.png" alt="RSS">
+    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/youtube.png" alt="Youtube">
     <p>&copy; Your Website 2018. All Rights Reserved.</p>
   </div>
 </footer>

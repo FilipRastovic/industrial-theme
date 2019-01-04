@@ -45,7 +45,8 @@ if ( ! function_exists( 'gcp_2019_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'gcp_2019' ),
+      'primary' => esc_html__( 'Primary', 'gcp_2019' ),
+      'services' => esc_html__('Services', 'gcp_2019'),
     ) );
     function atg_menu_classes($classes, $item, $args) {
       if($args->theme_location == 'primary') {
@@ -59,6 +60,7 @@ if ( ! function_exists( 'gcp_2019_setup' ) ) :
        return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
     }
     add_filter('wp_nav_menu','add_menuclass');
+
 
     
 
