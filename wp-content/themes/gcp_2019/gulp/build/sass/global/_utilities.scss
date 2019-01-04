@@ -1,0 +1,42 @@
+.grey-bordered {
+  background: $bg-light;
+  border-bottom: 1px solid $subtle-border;
+  border-top: 1px solid $subtle-border;
+}
+
+.dark-bg {
+  background: $theme-primary;
+  color: white !important;
+}
+
+.content-wrapper {
+  text-align: center;
+  @media (min-width: 990px) {
+    text-align: left;
+  }
+}
+
+.mb-50 {
+  margin-bottom: 60px;
+  @media (min-width: 990px) {
+    margin-bottom: 200px;
+  }
+}
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+  font-size: 26px;
+}
+
+.bg-grey {
+  background: #fafafa;
+  border-top: 1px solid darken(#fafafa, 10%);
+  border-bottom: 1px solid darken(#fafafa, 10%);
+
+  &--noborder-top {
+    border-top: none;
+  }
+
+  &--noborder-bot {
+    border-bottom: none;
+  }
+}

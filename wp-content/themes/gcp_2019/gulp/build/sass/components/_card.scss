@@ -1,0 +1,40 @@
+.card {
+  background: #FAFAFA;
+  color: $theme-primary;
+  border: none;
+  text-align: center;
+  margin-bottom: 50px;
+
+  &-header {
+    background: #FAFAFA;
+    color: $theme-primary;
+    border: none;
+   }
+
+  &--case-study, {
+    background: #FAFAFA;
+    color: $theme-primary;
+    border: none;
+    box-shadow: $material-shadow-1;
+  }
+
+  @media (min-width: 990px) {
+    text-align: left;
+  }
+  hr {
+    border-color: white;
+    background-color: white;
+  }
+}
+
+.no-top-border {
+  border-top-left-radius: calc(9.25rem - 1px);
+  border-top-right-radius: calc(9.25rem - 1px);
+}
+
+.card-img-top {
+  @media (max-width: 990px) {
+    width: 100px;
+    margin: 0 auto;
+  }
+}
