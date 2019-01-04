@@ -10,27 +10,33 @@
  */
 
 ?>
+<footer>
+  <div class="container">
+    <img class="logo mb-3" src="assets/img/logo-white.png" alt="Logo">
+    <ul class="list-inline mb-3">
+      <li class="list-inline-item">
+        <a href="#">Who We Help</a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#">Services</a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#">Case Studies</a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#">Learning Center</a>
+      </li>
+    </ul>
+    <img class="mb-3" src="assets/img/linkedin.png" alt="Linkedin">
+    <img class="mb-3" src="assets/img/facebook.png" alt="Facebook">
+    <img class="mb-3" src="assets/img/twitter.png" alt="Twitter">
+    <img class="mb-3" src="assets/img/rss.png" alt="RSS">
+    <img class="mb-3" src="assets/img/youtube.png" alt="Youtube">
+    <p>&copy; Your Website 2018. All Rights Reserved.</p>
+  </div>
+</footer>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gcp_2019' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'gcp_2019' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'gcp_2019' ), 'gcp_2019', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

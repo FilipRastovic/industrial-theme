@@ -42,9 +42,15 @@
                     color: $theme-primary;
                 }
             }
+          
         }
-        #request-consultation {
-          font-weight: 900;
+        .request-consultation {
+          a {
+            font-weight: 900 !important; //fix this
+          }
+        }
+        .request-consultation {
+          
         }
         .dropdown-menu {
           border: none;
@@ -87,12 +93,14 @@
                 }
             }
         }
-        #request-consultation {
-          background-color: $theme-primary;
-          color: white;
-          box-shadow: $material-shadow-2;
-          &:hover {
-            box-shadow: $material-shadow-3;
+        .request-consultation{
+          a {
+            background-color: $theme-primary !important;
+            color: white !important;
+            box-shadow: $material-shadow-2;
+            &:hover {
+              box-shadow: $material-shadow-3;
+            }
           }
         }
         /* Removes the arrow from the dropdown */

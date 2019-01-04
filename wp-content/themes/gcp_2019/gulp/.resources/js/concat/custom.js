@@ -64,15 +64,11 @@ $(document).ready(function(){(function($) {
 	if ($(window).width() > 600) {
     
 	}
-	// if ($(window).width() < 767) {
-    // $('.phaseContent').filter('index,', 'item-1').addClass('activeTab');
-		// $('#phases .phaseRight').insertAfter('.phaseNav.activeTab');
-		// $('.phaseLeft .phaseNav').click(function(){
-		// 	$('#phases .phaseRight').insertAfter('.phaseNav.activeTab');
-		// });
-  // }
   
   AOS.init();
+
+
+
 $("#cta-portfolio").click(function() {
   $([document.documentElement, document.body]).animate({
       scrollTop: $("#portfolio").offset().top

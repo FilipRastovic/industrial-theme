@@ -40,12 +40,27 @@ if ( ! function_exists( 'gcp_2019_setup' ) ) :
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'post-thumbnails' );
+    require_once(get_template_directory() . '/assets/wp-bootstrap-navwalker-master/class-wp-bootstrap-navwalker.php');
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'gcp_2019' ),
-		) );
+			'primary' => esc_html__( 'Primary', 'gcp_2019' ),
+    ) );
+    function atg_menu_classes($classes, $item, $args) {
+      if($args->theme_location == 'primary') {
+        $classes[] = 'nav-link';
+      }
+      return $classes;
+    }
+    add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
+    
+    function add_menuclass($ulclass) {
+       return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
+    }
+    add_filter('wp_nav_menu','add_menuclass');
+
+    
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
