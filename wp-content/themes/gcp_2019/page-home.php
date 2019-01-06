@@ -10,22 +10,16 @@ $home_main_heading = get_field('home_main_heading');
 $home_cta_first_paragraph = get_field('home_cta_first_paragraph');
 $home_cta_first_btn_text  = get_field('home_cta_first_btn_text'); 
 
-$home_when_heading = get_field('home_when_heading');
-$home_when_reason_1 = get_field('home_when_reason_1');
-$home_when_reason_2 = get_field('home_when_reason_2');
-$home_when_reason_3 = get_field('home_when_reason_3');
-$home_when_reason_4 = get_field('home_when_reason_4');
-$home_when_reason_5 = get_field('home_when_reason_5');
-$home_when_reason_6 = get_field('home_when_reason_6');
-$home_when_cta = get_field('home_when_cta');
-
 $home_suppliers_heading = get_field('home_suppliers_heading');
+$home_suppliers_content = get_field('home_suppliers_content');
 $home_supplier_brand_1 = get_field('home_supplier_brand_1');
 $home_supplier_brand_2 = get_field('home_supplier_brand_2'); 
 $home_supplier_brand_3 = get_field('home_supplier_brand_3'); 
 $home_supplier_brand_4 = get_field('home_supplier_brand_4'); 
 $home_supplier_brand_5 = get_field('home_supplier_brand_5'); 
 $home_supplier_brand_6 = get_field('home_supplier_brand_6');  
+$home_supplier_brand_7 = get_field('home_supplier_brand_7'); 
+$home_supplier_brand_8 = get_field('home_supplier_brand_8');  
 
 ?>
 
@@ -34,7 +28,6 @@ $home_supplier_brand_6 = get_field('home_supplier_brand_6');
     <div class="row">
       <div class="col-lg-2 mx-auto">
           <h1 class="text-uppercase">
-            Global<br>Sourcing <br>Engineers
             <?php echo $home_main_heading; ?>
           </h1>
       </div>
@@ -46,59 +39,40 @@ $home_supplier_brand_6 = get_field('home_supplier_brand_6');
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <p class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nihil sequi aut est quae totam
-          obcaecati placeat iste, et at perspiciatis quo ipsum omnis maiores sint recusandae. Sint eos voluptatem
-          est?
-          <?php echo $home_cta_first; ?>
+        <p class="text-center mb-5">
+          <?php echo $home_cta_first_paragraph; ?>
         </p>
-        <a href="who-we-help.html" class="btn btn-full btn-xl btn-white js-scroll-trigger">Learn More <?php echo $home_cta_first_btn_text; ?> </a>
+        <a href="/who-we-help" class="btn btn-full btn-xl btn-white js-scroll-trigger"><?php echo $home_cta_first_btn_text; ?></a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="when">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="mb-5">Companies hire us when they're are<?php echo $home_when_heading; ?></h2>
-      </div>
-      <div class="col-md-4 offset-md-2 mb-5">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <?php echo $home_when_reason_1; ?> </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <?php echo $home_when_reason_3; ?> </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <?php echo $home_when_reason_5; ?> </p>
-      </div>
-      <div class="col-md-4 mb-5">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <?php echo $home_when_reason_2; ?> </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <?php echo $home_when_reason_4; ?> </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <?php echo $home_when_reason_6; ?> </p>
-      </div>
-      <div class="col-12 text-center">
-        <a data-aos="fade-up" href="who-we-help.html" class="btn btn-full btn-xl js-scroll-trigger">Learn More<?php echo $home_when_cta; ?></a>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('template-parts/companies-hire-us'); ?>
 
 <section class="suppliers bg-grey bg-grey--noborder-bot">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="mb-5">Source from One of our Existing Suppliers<?php echo $home_suppliers_heading; ?></h2>
+        <h2 class="mb-5"><?php echo $home_suppliers_heading; ?></h2>
+        <?php echo $home_suppliers_content; ?>
       </div>
     </div>
     <div class="row mt-4">
-      <div class="col-6 col-md-4 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_1['url']; ?>" alt="Supplier Logo"></div>
-      <div class="col-6 col-md-4 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_2['url']; ?>" alt="Supplier Logo"></div>
-      <div class="col-6 col-md-4 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_3['url']; ?>" alt="Supplier Logo"></div>
-      <div class="col-6 col-md-4 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_4['url']; ?>" alt="Supplier Logo"></div>
-      <div class="col-6 col-md-4 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_5['url']; ?>" alt="Supplier Logo"></div>
-      <div class="col-6 col-md-4 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_6['url']; ?>" alt="Supplier Logo"></div>
+      <div class="col-6 col-md-3 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_1['url']; ?>" alt="Supplier Logo"></div>
+      <div class="col-6 col-md-3 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_2['url']; ?>" alt="Supplier Logo"></div>
+      <div class="col-6 col-md-3 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_3['url']; ?>" alt="Supplier Logo"></div>
+      <div class="col-6 col-md-3 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_4['url']; ?>" alt="Supplier Logo"></div>
+      <div class="col-6 col-md-3 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_5['url']; ?>" alt="Supplier Logo"></div>
+      <div class="col-6 col-md-3 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_6['url']; ?>" alt="Supplier Logo"></div>
+      <div class="col-6 col-md-3 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_7['url']; ?>" alt="Supplier Logo"></div>
+      <div class="col-6 col-md-3 text-center mb-5"><img class="img-fluid" src="<?php echo $home_supplier_brand_8['url']; ?>" alt="Supplier Logo"></div>
     </div>
   </div>
 </section>
 
-<?php get_template_part('template-parts/featured_case_study'); ?>
+<?php get_template_part('template-parts/featured-case-study'); ?>
+
 
 <section class="latest-posts">
   <div class="container">

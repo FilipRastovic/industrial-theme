@@ -10282,7 +10282,8 @@ form {
     letter-spacing: 2px; }
     #mainNav .navbar-nav > li > a.active {
       color: #041B31 !important;
-      background-color: transparent; }
+      background-color: transparent;
+      font-weight: 900; }
       #mainNav .navbar-nav > li > a.active:hover {
         background-color: transparent; }
   #mainNav .navbar-nav > li > a,
@@ -10348,6 +10349,8 @@ form {
     #mainNav .navbar-nav > li > a:focus {
       color: #041B31;
       font-size: 14px; } }
+  #mainNav .active a {
+    font-weight: 900; }
 
 .nav-tabs--vertical {
   border-bottom: none;

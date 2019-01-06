@@ -9,6 +9,9 @@
  * @package gcp_2019
  */
 
+  $website_icon = get_field('website_icon');
+  $navbar_brand_logo = get_field('navbar_brand_logo');
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -19,7 +22,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-  <link rel="icon" type="image/png" href="ico.png" />
+  <link rel="icon" type="image/png" href="<?php echo $website_icon['url']; ?>" />
   <?php wp_head(); ?>
 </head>
 
@@ -31,8 +34,8 @@
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
-	<a class="navbar-brand" href="#">
-    gcp<img class="" src="assets/img/logo.png" alt="Logo">
+	<a class="navbar-brand" href="/">
+    <img class="" src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="Logo">
   </a>
 		<?php
 		wp_nav_menu( array(

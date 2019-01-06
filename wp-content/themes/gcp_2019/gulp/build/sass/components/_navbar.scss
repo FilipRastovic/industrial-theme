@@ -30,6 +30,7 @@
                 &.active {
                     color: $theme-primary !important;
                     background-color: transparent;
+                    font-weight: 900;
                     &:hover {
                         background-color: transparent;
                     }
@@ -132,6 +133,12 @@
       .navbar-nav > li > a:focus {
           color: $theme-primary;
           font-size: 14px;
+      }
+    }
+
+    .active {
+      a {
+        font-weight: 900;
       }
     }
 }

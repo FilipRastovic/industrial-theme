@@ -5,6 +5,9 @@
  */
 
 get_header();
+
+$case_studies_main_heading = get_field('case_studies_main_heading');
+$case_studies_main_paragraph = get_field('case_studies_main_paragraph'); 
 ?>
 
 <header class="masthead masthead--noborder polygon">
@@ -13,8 +16,10 @@ get_header();
     <div class="row">
       <div class="col-12">
         <h1 class="mb-5">H1 Title of article goes 
-            right here</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sit, earum reiciendis neque officia incidunt quasi obcaecati exercitationem autem nam culpa velit odit? Adipisci quia qui cupiditate. Necessitatibus, voluptate quo.
+            right here
+            <?php echo $case_studies_main_heading; ?>
+            </h1>
+        <p><?php echo $case_studies_main_paragraph; ?>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sit, earum reiciendis neque officia incidunt quasi obcaecati exercitationem autem nam culpa velit odit? Adipisci quia qui cupiditate. Necessitatibus, voluptate quo.
         </p>
       </div>
     </div>

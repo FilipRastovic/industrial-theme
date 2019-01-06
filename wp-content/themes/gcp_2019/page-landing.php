@@ -5,6 +5,15 @@
  */
 
 get_header();
+
+$lp_main_heading = get_field('lp_main_heading'); 
+$lp_main_paragraph = get_field('lp_main_paragraph');
+$lp_second_heading = get_field('lp_second_heading');
+$lp_content = get_field('lp_content');
+
+$lp_form_heading = get_field('lp_form_heading');
+$lp_form_paragraph = get_field('lp_form_paragraph');
+$lp_form_btn_label = get_field('lp_form_btn_label');
 ?>
 <!-- WE NEED A DIFFERENT NAVIGATION HERE -->
 
@@ -25,8 +34,8 @@ get_header();
     <div class="row">
       <div class="col-12">
         <h1 class="mb-5">H1 Title of article goes 
-          right here</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sit, earum reiciendis neque officia incidunt quasi obcaecati exercitationem autem nam culpa velit odit? Adipisci quia qui cupiditate. Necessitatibus, voluptate quo.
+          right here<?php echo $lp_main_heading; ?></h1>
+        <p><?php echo $lp_main_paragraph; ?>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sit, earum reiciendis neque officia incidunt quasi obcaecati exercitationem autem nam culpa velit odit? Adipisci quia qui cupiditate. Necessitatibus, voluptate quo.
         </p>
       </div>
     </div>
@@ -37,7 +46,8 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-md-7 landing-page-content--left">
-        <h2>H2 Headline goes here</h2>
+        <h2><?php echo $lp_second_heading; ?>H2 Headline goes here</h2>
+        <?php  echo $lp_content; ?>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugiat reiciendis nisi nesciunt debitis fuga dolorum, sed vel aspernatur laborum suscipit commodi ipsa sequi eveniet laudantium? Natus non deleniti quaerat?
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam consequatur, quisquam pariatur voluptatibus possimus unde atque repellat aliquid eius eum quibusdam ullam cupiditate omnis reprehenderit laboriosam odit ratione exercitationem! Deleniti.
         </p>
@@ -47,9 +57,9 @@ get_header();
       </div>
       <div class="col-md-4 offset-md-1">
         <div class="new-form-wrapper">
-          <h4 class="text-center">Fill Out The form</h4>
+          <h4 class="text-center"><?php echo $lp_form_heading; ?>Fill Out The form</h4>
           <hr>
-          <p class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p class=" text-center"><?php echo $lp_form_paragraph; ?>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <form id="contactForm" name="sentMessage" novalidate="novalidate">
             <div class="row">
               <div class="col-md-12">
@@ -77,7 +87,7 @@ get_header();
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit"><?php echo $lp_form_btn_label; ?>Send Message</button>
               </div>
             </div>
           </form>
