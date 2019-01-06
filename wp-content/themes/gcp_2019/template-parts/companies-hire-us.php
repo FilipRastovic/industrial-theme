@@ -1,6 +1,8 @@
 
 <?php 
 $home_when_heading = get_field('home_when_heading');
+$home_when_reason_1 = get_field('home_when_reason_1');
+$home_when_reason_2 = get_field('home_when_reason_2');
 $home_when_reason_3 = get_field('home_when_reason_3');
 $home_when_reason_4 = get_field('home_when_reason_4');
 $home_when_reason_5 = get_field('home_when_reason_5');
