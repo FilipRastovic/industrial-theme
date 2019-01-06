@@ -10351,6 +10351,8 @@ form {
       font-size: 14px; } }
   #mainNav .active a {
     font-weight: 900; }
+  #mainNav .dropdown-menu {
+    min-width: 18rem; }
 
 .nav-tabs--vertical {
   border-bottom: none;

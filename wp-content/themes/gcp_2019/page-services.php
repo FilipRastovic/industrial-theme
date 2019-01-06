@@ -38,12 +38,8 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
   <div class="container">
     <div class="row">
       <div class="col-md-8 order-2 order-md-1">
-        <h1 class="mb-5">H1 Title of article goes 
-            here<?php echo $services_main_heading; ?></h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sit, earum reiciendis 
-          neque officia incidunt quasi obcaecati exercitationem autem nam culpa velit odit? Adipisci 
-          quia qui cupiditate. Necessitatibus, voluptate quo.
-          <?php echo $services_main_paragraph; ?>
+        <h1 class="mb-5"><?php echo $services_main_heading; ?></h1>
+        <p><?php echo $services_main_paragraph; ?>
         </p>
       </div>
       <div class="col-6 mx-auto col-md-4 order-1 order-md-2 mb-5">
@@ -82,25 +78,8 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
         ?>
       </div>
       <div class="order-1 order-md-2 col-md-6 offset-md-1">
-        <h1 class="mb-3">H1 Headline goes here<?php echo $services_second_heading; ?></h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-          fugiat, adipisci laudantium eos itaque ut, sit voluptate rerum. Pariatur sunt officia sint enim. Amet?
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil eum corporis nisi est hic totam molestiae
-          deleniti doloremque et reprehenderit amet dicta aperiam laboriosam unde eligendi doloribus quisquam, facere
-          debitis!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti
-          placeat
-          fugiat, adipisci laudantium eos itaque ut, sit voluptate rerum. Pariatur sunt officia sint enim. Amet?
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil eum corporis nisi est hic totam molestiae
-          deleniti doloremque et reprehenderit amet dicta aperiam laboriosam unde eligendi doloribus quisquam, facere
-          debitis!
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi animi ut vel. Nam facilis quasi ex qui
-          praesentium, sapiente nostrum itaque pariatur, temporibus quidem, delectus quaerat. Veniam laboriosam
-          commodi nulla!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi animi ut vel. Nam facilis quasi
-          ex qui
-          praesentium, sapiente nostrum itaque pariatur, temporibus quidem, delectus quaerat. Veniam laboriosam
-          commodi nulla!</p>
-          <?php echo $services_content; ?>
+        <h1 class="mb-3"><?php echo $services_second_heading; ?></h1>
+        <?php echo $services_content; ?>
       </div>
       <div class="col-md-3 col-lg-2 offset-lg-1 order-3">
         <div class="card no-top-border">
@@ -108,11 +87,10 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
             <img class="card-img-top img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/whitepaper.png" alt="Card image cap">
           </div>
           <div class="card-body text-center">
-            <h4>White Paper Title<?php echo $services_whitepaper_title; ?></h4>
+            <h4><?php echo $services_whitepaper_title; ?></h4>
             <hr>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.<?php echo $services_whitepaper_paragraph; ?></p>
-            <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger">Download<?php echo $services_whitepaper_btn_text; ?></a>
+            <p class="card-text"><?php echo $services_whitepaper_paragraph; ?></p>
+            <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger"><?php echo $services_whitepaper_btn_text; ?></a>
           </div>
         </div>
       </div>
@@ -126,25 +104,25 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
       <div class="d-flex flex-row mt-2">
         <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
           <li class="nav-item">
-            <a href="#lorem" class="nav-link active" data-toggle="tab" role="tab" aria-controls="lorem">Lorem<?php echo $services_flow_diagram_tab_1; ?></a>
+            <a href="#lorem" class="nav-link active" data-toggle="tab" role="tab" aria-controls="lorem"><?php echo $services_flow_diagram_tab_1; ?></a>
           </li>
           <li class="nav-item">
-            <a href="#ipsum" class="nav-link" data-toggle="tab" role="tab" aria-controls="ipsum">Ipsum<?php echo $services_flow_diagram_tab_2; ?></a>
+            <a href="#ipsum" class="nav-link" data-toggle="tab" role="tab" aria-controls="ipsum"><?php echo $services_flow_diagram_tab_2; ?></a>
           </li>
           <li class="nav-item">
-            <a href="#sit-amet" class="nav-link" data-toggle="tab" role="tab" aria-controls="sit-amet">Sit Amet<?php echo $services_flow_diagram_tab_3; ?></a>
+            <a href="#sit-amet" class="nav-link" data-toggle="tab" role="tab" aria-controls="sit-amet"><?php echo $services_flow_diagram_tab_3; ?></a>
           </li>
         </ul>
         <div class="tab-content">
           <div class="tab-pane fade show active" id="lorem" role="tabpanel">
-            <h1>Lorem<?php echo $services_flow_diagram_tab_1_heading; ?></h1>
-            <p><?php echo $services_flow_diagram_tab_1_content ?>Aliquam hendrerit nunc vitae nisi efficitur, eu porta sem aliquam. Aenean tincidunt mi sed mi sodales bibendum. Proin dolor ipsum, mollis venenatis velit eu, iaculis laoreet mi. Mauris eget egestas felis, sit amet finibus nunc. Aliquam non dui sit amet erat auctor mollis ac eget ante. Quisque at quam augue. Nulla dignissim, augue nec cursus consequat, mi nulla efficitur augue, vel fringilla turpis quam eu nunc. Quisque rutrum vehicula lacus sodales molestie. Mauris vel felis sit amet erat maximus cursus ut a velit. In hac habitasse platea dictumst. Vestibulum vel neque sit amet nisl finibus fermentum.</p>   </div>
+            <h1><?php echo $services_flow_diagram_tab_1_heading; ?></h1>
+            <p><?php echo $services_flow_diagram_tab_1_content ?></div>
           <div class="tab-pane fade" id="ipsum" role="tabpanel">
-            <h1>Ipsum<?php echo $services_flow_diagram_tab_2_heading; ?></h1>
-            <p><?php echo $services_flow_diagram_tab_2_content ?>Aliquam hendrerit nunc vitae nisi efficitur, eu porta sem aliquam. Aenean tincidunt mi sed mi sodales bibendum. Proin dolor ipsum, mollis venenatis velit eu, iaculis laoreet mi. Mauris eget egestas felis, sit amet finibus nunc. Aliquam non dui sit amet erat auctor mollis ac eget ante. Quisque at quam augue. Nulla dignissim, augue nec cursus consequat, mi nulla efficitur augue, vel fringilla turpis quam eu nunc. Quisque rutrum vehicula lacus sodales molestie. Mauris vel felis sit amet erat maximus cursus ut a velit. In hac habitasse platea dictumst. Vestibulum vel neque sit amet nisl finibus fermentum.</p></div>
+            <h1><?php echo $services_flow_diagram_tab_2_heading; ?></h1>
+            <p><?php echo $services_flow_diagram_tab_2_content ?></p></div>
           <div class="tab-pane fade" id="sit-amet" role="tabpanel">
-            <h1>Sit Amet<?php echo $services_flow_diagram_tab_3_heading; ?></h1>
-            <p><?php echo $services_flow_diagram_tab_3_content ?>Aliquam hendrerit nunc vitae nisi efficitur, eu porta sem aliquam. Aenean tincidunt mi sed mi sodales bibendum. Proin dolor ipsum, mollis venenatis velit eu, iaculis laoreet mi. Mauris eget egestas felis, sit amet finibus nunc. Aliquam non dui sit amet erat auctor mollis ac eget ante. Quisque at quam augue. Nulla dignissim, augue nec cursus consequat, mi nulla efficitur augue, vel fringilla turpis quam eu nunc. Quisque rutrum vehicula lacus sodales molestie. Mauris vel felis sit amet erat maximus cursus ut a velit. In hac habitasse platea dictumst. Vestibulum vel neque sit amet nisl finibus fermentum.</p>
+            <h1><?php echo $services_flow_diagram_tab_3_heading; ?></h1>
+            <p><?php echo $services_flow_diagram_tab_3_content ?></p>
           </div>
         </div>
       </div>
@@ -159,18 +137,14 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-10">
-        <h2>Requeset a consultation<?php echo $services_request_consultation_heading; ?></h2>
+        <h2><?php echo $services_request_consultation_heading; ?></h2>
       </div>
       <div class="col-2 d-none d-sm-none d-md-block">
         <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/consultation.png" alt="Consultation Quote">
       </div>
       <div class="col-md-12">
-        <p><?php echo $services_request_consultation_content; ?>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nulla veritatis provident! Nemo aliquid
-          voluptatem dignissimos praesentium consequatur. Quo obcaecati facilis nihil, ad iusto corrupti impedit
-          asperiores natus exercitationem. Debitis? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Provident consectetur ullam deserunt quam sed repellat quasi optio accusamus, eligendi autem maiores
-          alias eaque. Aut deleniti repellat atque, voluptatibus necessitatibus deserunt.</p>
-        <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger"><?php echo $services_request_consultation_btn_text; ?>Download</a>
+        <p><?php echo $services_request_consultation_content; ?></p>
+        <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger"><?php echo $services_request_consultation_btn_text; ?></a>
       </div>
     </div>
   </div>
