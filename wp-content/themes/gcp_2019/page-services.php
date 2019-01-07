@@ -39,8 +39,7 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
     <div class="row">
       <div class="col-md-8 order-2 order-md-1">
         <h1 class="mb-5"><?php echo $services_main_heading; ?></h1>
-        <p><?php echo $services_main_paragraph; ?>
-        </p>
+        <?php echo $services_main_paragraph; ?>
       </div>
       <div class="col-6 mx-auto col-md-4 order-1 order-md-2 mb-5">
         <img class="img-fluid" src="<?php echo $services_main_image['url']; ?>" alt="Service Img">
@@ -131,7 +130,7 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
 </section>
 
 
-<?php get_template_part('template-parts/featured_case_study'); ?>
+<?php get_template_part('template-parts/featured-case-study'); ?>
 
 <section class="whitepaper dark-bg mb-50">
   <div class="container">

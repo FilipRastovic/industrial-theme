@@ -10349,8 +10349,6 @@ form {
     #mainNav .navbar-nav > li > a:focus {
       color: #041B31;
       font-size: 14px; } }
-  #mainNav .active a {
-    font-weight: 900; }
   #mainNav .dropdown-menu {
     min-width: 18rem; }
 
@@ -10427,10 +10425,26 @@ form {
 .service-copy p {
   margin-bottom: 50px; }
 
+.service-copy ul {
+  list-style: none;
+  padding-left: 0; }
+
+.service-copy ul > li {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center; }
+  @media (min-width: 992px) {
+    .service-copy ul > li {
+      font-size: 22px;
+      text-align: left; } }
+
 header.polygon {
   position: relative; }
   header.polygon h1,
-  header.polygon p {
+  header.polygon p,
+  header.polygon ul > li {
     color: white; }
   @media (min-width: 990px) {
     header.polygon p {
