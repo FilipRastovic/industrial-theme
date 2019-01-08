@@ -13,6 +13,8 @@ $services_main_image = get_field('services_main_image');
 $services_second_heading = get_field('services_second_heading');
 $services_content = get_field('services_content');
 
+$flow_diagram_header = get_field('flow_diagram_header');
+$flow_diagram_paragraph = get_field('flow_diagram_paragraph'); 
 $services_flow_diagram_tab_1 = get_field('services_flow_diagram_tab_1');
 $services_flow_diagram_tab_1_heading = get_field('services_flow_diagram_tab_1_heading');
 $services_flow_diagram_tab_1_content = get_field('services_flow_diagram_tab_1_content');  
@@ -57,20 +59,11 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
 <section class="service-copy">
   <div class="container-fluid">
     <div class="row">
-      <div class="order-2 order-md-1 col-md-2">
-        <h4 class="mb-3">Services</h4>
-        <!-- <ul class="list-group">
-          <li class="list-group-item active">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-          <li class="list-group-item">Dapibus ac facilisis</li>
-          <li class="list-group-item">Morbi leo risus</li>
-        </ul> -->
+      <div class="order-2 order-md-1 col-md-2 sidebar-services">
+        <h4 class="mb-3 sidebar-heading">Services</h4>
         <?php
           wp_nav_menu( array(
-            'theme_location'    => 'Services',
+            'theme_location'    => 'services',
             'container'         => false,
             'menu_class' => 'list-group'
           ) );
@@ -81,8 +74,8 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
         <?php echo $services_content; ?>
       </div>
       <div class="col-md-3 col-lg-2 offset-lg-1 order-3">
-        <div class="card no-top-border">
-          <div class="col-md-6 offset-md-3 text-center">
+        <div class="card card--whitepaper no-top-border">
+          <div class="col-2 mx-auto col-md-6 offset-md-3 text-center">
             <img class="card-img-top img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/whitepaper.png" alt="Card image cap">
           </div>
           <div class="card-body text-center">
@@ -99,6 +92,13 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
 
 <section class="flow-diagram bg-grey">
   <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-30">
+        <h2><?php echo $flow_diagram_header; ?></h2>
+        <p class="text-center"><?php echo $flow_diagram_paragraph; ?></p>
+
+      </div>
+    </div>
     <div class="row">
       <div class="d-flex flex-row mt-2">
         <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">

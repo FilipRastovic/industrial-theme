@@ -36,3 +36,52 @@
     }
   }
 }
+
+#menu-services {
+  box-shadow: $material-shadow-1;
+  background: #fafafa;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  a {
+    text-decoration: none;
+    @include transition-all;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .current-menu-item {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sidebar-heading {
+  box-shadow: $material-shadow-1;
+  // border-top-left-radius: 50px;
+  // border-top-right-radius: 50px;
+  color: white;
+  background: $theme-primary;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  @media (min-width: 990px) {
+    text-align: left;
+  }
+}
+
+.sidebar-services {
+  ul {
+    list-style: none;
+    li {
+      @media (min-width: 990px) {
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+.card--whitepaper {
+  box-shadow: $material-shadow-1;
+}

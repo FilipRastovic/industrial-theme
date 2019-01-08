@@ -10058,6 +10058,12 @@ section {
     .mb-50 {
       margin-bottom: 200px; } }
 
+.mb-30 {
+  margin-bottom: 30px; }
+  @media (min-width: 990px) {
+    .mb-30 {
+      margin-bottom: 130px; } }
+
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
@@ -10378,6 +10384,11 @@ form {
       background-color: #fff;
       border-color: #0275d8 #fff #0275d8 #0275d8; }
 
+.tab-content {
+  background: #041B31;
+  color: white;
+  padding: 20px 30px 20px 20px; }
+
 #scroll-top {
   display: none;
   /* Hidden by default */
@@ -10439,6 +10450,42 @@ form {
     .service-copy ul > li {
       font-size: 22px;
       text-align: left; } }
+
+#menu-services {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #fafafa;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; }
+  #menu-services a {
+    text-decoration: none;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s; }
+    #menu-services a:hover {
+      text-decoration: underline; }
+  #menu-services .current-menu-item a {
+    text-decoration: underline; }
+
+.sidebar-heading {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: white;
+  background: #041B31;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  text-align: center; }
+  @media (min-width: 990px) {
+    .sidebar-heading {
+      text-align: left; } }
+
+.sidebar-services ul {
+  list-style: none; }
+  @media (min-width: 990px) {
+    .sidebar-services ul li {
+      font-size: 19px; } }
+
+.card--whitepaper {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 header.polygon {
   position: relative; }
@@ -10583,13 +10630,15 @@ header.masthead--home {
 header.masthead {
   padding-top: 120px;
   padding-bottom: 70px;
-  background: #fafafa;
+  background: white;
   border-bottom: 1px solid #C8C7C7; }
   header.masthead--noborder {
     border-bottom: none; }
   @media (min-width: 990px) {
     header.masthead {
       padding-top: 200px; } }
+  header.masthead--grey {
+    background: #fafafa; }
 
 .no-padding-bot {
   padding-bottom: 0px; }

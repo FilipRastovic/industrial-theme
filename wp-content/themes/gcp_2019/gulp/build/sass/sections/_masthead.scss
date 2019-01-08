@@ -55,7 +55,7 @@ header.masthead--home {
 header.masthead {
   padding-top: 120px;
   padding-bottom: 70px;
-  background: #fafafa;
+  background: white;
   border-bottom: 1px solid #C8C7C7;
 
   &--noborder {
@@ -64,6 +64,10 @@ header.masthead {
 
   @media (min-width: 990px) {
     padding-top: 200px;
+  }
+
+  &--grey {
+    background: #fafafa;
   }
 }
 

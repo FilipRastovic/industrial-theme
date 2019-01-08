@@ -23,6 +23,13 @@
   }
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+  @media (min-width: 990px) {
+    margin-bottom: 130px;
+  }
+}
+
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
   font-size: 26px;
 }
