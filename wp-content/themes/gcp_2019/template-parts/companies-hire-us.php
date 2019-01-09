@@ -17,14 +17,18 @@ $btn_hide = get_field('btn_hide');
         <h2 class="mb-5"><?php echo $home_when_heading; ?></h2>
       </div>
       <div class="col-md-4 offset-md-2 mb-5">
-        <p class="text-center"><?php echo $home_when_reason_1; ?> </p>
-        <p class="text-center"><?php echo $home_when_reason_3; ?> </p>
-        <p class="text-center"><?php echo $home_when_reason_5; ?> </p>
+        <p class="mb-4"><?php echo $home_when_reason_1; ?> </p>
+        <hr>
+        <p class="mb-4"><?php echo $home_when_reason_3; ?> </p>
+        <hr>
+        <p class="mb-4"><?php echo $home_when_reason_5; ?> </p>
       </div>
       <div class="col-md-4 mb-5">
-        <p class="text-center"><?php echo $home_when_reason_2; ?> </p>
-        <p class="text-center"><?php echo $home_when_reason_4; ?> </p>
-        <p class="text-center"><?php echo $home_when_reason_6; ?> </p>
+        <p class="mb-4"><?php echo $home_when_reason_2; ?> </p>
+        <hr>
+        <p class="mb-4"><?php echo $home_when_reason_4; ?> </p>
+        <hr>
+        <p class="mb-4"><?php echo $home_when_reason_6; ?> </p>
       </div>
       <div class="col-12 text-center <?php echo $btn_hide; ?>">
         <a data-aos="fade-up" href="/who-we-help" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $home_when_cta; ?></a>

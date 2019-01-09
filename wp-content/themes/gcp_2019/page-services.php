@@ -29,6 +29,7 @@ $services_flow_diagram_tab_3_content = get_field('services_flow_diagram_tab_3_co
 $services_whitepaper_title = get_field('services_whitepaper_title');
 $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 $services_whitepaper_btn_text = get_field('services_whitepaper_btn_text');
+$services_whitepaper_file_url = get_field('services_whitepaper_file_url');
 
 $services_request_consultation_heading = get_field('services_request_consultation_heading');
 $services_request_consultation_content = get_field('services_request_consultation_content');
@@ -77,7 +78,7 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
             <h4><?php echo $services_whitepaper_title; ?></h4>
             <hr>
             <p class="card-text"><?php echo $services_whitepaper_paragraph; ?></p>
-            <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger"><?php echo $services_whitepaper_btn_text; ?></a>
+            <a download href="<?php echo $services_whitepaper_file_url; ?>" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $services_whitepaper_btn_text; ?></a>
           </div>
         </div>
       </div>

@@ -140,3 +140,13 @@
       min-width: 18rem;
     }
 }
+
+#mainNav {
+  .navbar-brand {
+    order: -1;
+  }
+
+  #bs-example-navbar-collapse-1 {
+    order: 2;
+  }
+}

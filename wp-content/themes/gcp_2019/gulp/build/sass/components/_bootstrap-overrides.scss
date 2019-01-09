@@ -85,3 +85,24 @@ a:not([href]):not([tabindex]) {
     color: $theme-primary;
   }
 }
+
+.whitepaper.dark-bg {
+  .btn-full:hover, .btn-primary:hover {
+    background: darken(white, 10%);
+    color: $theme-primary;
+  }
+  .btn-full:focus, .btn-full:active, .btn-full.active, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background: white;
+    color: $theme-primary;
+  }
+}
+
+.card--whitepaper {
+  .btn-full:hover, .btn-primary:hover {
+    background: ligthen($theme-primary, 10%);
+    color: white;
+  }
+   .btn-full:focus, .btn-full:active, .btn-full.active, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    
+  }
+}

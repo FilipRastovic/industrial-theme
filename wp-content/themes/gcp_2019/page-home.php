@@ -32,7 +32,7 @@ $home_featured_case_study_btn_text = get_field('home_featured_case_study_btn_tex
 <header class="masthead--home d-flex">
   <div class="container my-auto">
     <div class="row">
-      <div class="col-lg-2 mx-auto">
+      <div class="col-7 offset-4 col-md-4 offset-md-5">
           <h1 class="text-uppercase">
             <?php echo $home_main_heading; ?>
           </h1>

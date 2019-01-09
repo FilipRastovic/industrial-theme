@@ -57,19 +57,19 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 <section class="how dark-bg">
   <div class="container">
     <div class="row text-center">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center mb-5">
         <h2 class="mb-5"><?php echo $who_how_we_support_heading; ?></h2>
         <p class="text-center"><?php echo $who_how_we_support_paragraph; ?></p>
       </div>
       <div class="col-md-5 offset-md-1">
-        <p><?php echo $who_how_we_support_1 ?></p>
-        <p><?php echo $who_how_we_support_3 ?></p>
-        <p><?php echo $who_how_we_support_5 ?></p>
+        <p><strong><?php echo $who_how_we_support_1 ?></strong></p>
+        <p><strong><?php echo $who_how_we_support_3 ?></strong></p>
+        <p><strong><?php echo $who_how_we_support_5 ?></strong></p>
       </div>
       <div class="col-md-5 offset-md-1">
-        <p><?php echo $who_how_we_support_2 ?></p>
-        <p><?php echo $who_how_we_support_4 ?></p>
-        <p><?php echo $who_how_we_support_6 ?></p>
+        <p><strong><?php echo $who_how_we_support_2 ?></strong></p>
+        <p><strong><?php echo $who_how_we_support_4 ?></strong></p>
+        <p><strong><?php echo $who_how_we_support_6 ?></strong></p>
       </div>
     </div>
   </div>
