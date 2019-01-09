@@ -10028,7 +10028,7 @@ p {
   line-height: 1.7;
   margin-bottom: 20px;
   font-weight: 300;
-  text-align: center; }
+  text-align: justify; }
   @media (min-width: 992px) {
     p {
       font-size: 22px;
@@ -10358,6 +10358,10 @@ form {
   #mainNav .dropdown-menu {
     min-width: 18rem; }
 
+.flow-diagram {
+  background: #041B31;
+  color: white; }
+
 .nav-tabs--vertical {
   border-bottom: none;
   border-right: 1px solid #ddd;
@@ -10370,10 +10374,12 @@ form {
     margin-top: .25rem; }
   .nav-tabs--left .nav-link {
     transition: border-color .125s ease-in;
-    white-space: nowrap; }
+    white-space: nowrap;
+    color: white; }
     .nav-tabs--left .nav-link:hover {
       background-color: #f7f7f7;
-      border-color: transparent; }
+      border-color: transparent;
+      color: #041B31; }
   .nav-tabs--left .nav-link.active {
     border-bottom-color: #ddd;
     border-right-color: #fff;
@@ -10519,6 +10525,9 @@ header.polygon {
   text-align: center; }
   .whitepaper h2 {
     margin-bottom: 30px; }
+    @media (min-width: 990px) {
+      .whitepaper h2 {
+        margin-top: 60px; } }
   .whitepaper p {
     margin-bottom: 30px; }
   @media (min-width: 990px) {

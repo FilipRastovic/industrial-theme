@@ -1,3 +1,7 @@
+.flow-diagram {
+  background: $theme-primary;//a
+  color: white;
+}
 $padding-base: 15px;
 $color-body: #fff;
 $color-border: #ddd;
@@ -21,11 +25,13 @@ $border-radius: .25rem;
 		
 		.nav-link {
 			transition: border-color .125s ease-in;
-			white-space: nowrap;
+      white-space: nowrap;
+      color: white;
 			
 			&:hover {
 				background-color: lighten($color-border, 10%);
-				border-color: transparent;
+        border-color: transparent;
+        color: $theme-primary;
 			}
 		}
 		

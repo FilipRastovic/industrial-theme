@@ -9,6 +9,7 @@ get_header();
 $services_main_heading = get_field('services_main_heading');
 $services_main_paragraph = get_field('services_main_paragraph');
 $services_main_image = get_field('services_main_image');
+$services_main_image_style = get_field('services_main_image_style');
 
 $services_second_heading = get_field('services_second_heading');
 $services_content = get_field('services_content');
@@ -43,15 +44,9 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
         <h1 class="mb-5"><?php echo $services_main_heading; ?></h1>
         <?php echo $services_main_paragraph; ?>
       </div>
-      <div class="col-6 mx-auto col-md-4 order-1 order-md-2 mb-5">
+      <div class="<?php echo $services_main_image_style; ?>">
         <img class="img-fluid" src="<?php echo $services_main_image['url']; ?>" alt="Service Img">
       </div>
-      <!-- <div class="col-6 mx-auto col-md-3 order-1 order-md-2 mb-5">
-        <img class="img-fluid" src="assets/img/services/supplier-sourcing.png" alt="">
-      </div> -->
-      <!-- <div class="col-2 offset-1">
-        <img class="img-fluid" src="assets/img/services/supplier-audit.png" alt="">
-      </div> -->
     </div>
   </div>
 </header> 

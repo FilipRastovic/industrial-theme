@@ -9,6 +9,9 @@
   text-align: center;
   h2 {
     margin-bottom: 30px;
+    @media (min-width: 990px) {
+      margin-top: 60px;
+    }
   }
 
   p {

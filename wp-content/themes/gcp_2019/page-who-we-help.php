@@ -54,7 +54,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 <?php get_template_part('template-parts/companies-hire-us'); ?>
 
-<section class="how bg-grey">
+<section class="how dark-bg">
   <div class="container">
     <div class="row text-center">
       <div class="col-12 text-center">
