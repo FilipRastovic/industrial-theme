@@ -10,7 +10,7 @@
  */
 
 ?>
-<footer>
+<footer class="main-footer">
   <div class="container">
     <img class="logo mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/logo-white.png" alt="Logo">
     <ul class="list-inline mb-3">

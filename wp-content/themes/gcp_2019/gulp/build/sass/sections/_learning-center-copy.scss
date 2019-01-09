@@ -1,17 +1,21 @@
 .learning-center-copy {
  article {
-  background: white;
+  background: #fafafa;
   margin-bottom: 80px;
   @include transition-all;
   box-shadow: $material-shadow-1;
   padding: 10px 20px 30px;
 
-  &:hover {
-    box-shadow: $material-shadow-1-hovered;
+
+  h2 {
+    a {
+      text-decoration: none;
+    }
   }
 
+  h2 {
   a:hover {
-    background: lighten($theme-primary, 10%) !important;
+    text-decoration: underline;
   }
  }
 
@@ -20,5 +24,53 @@
   &:hover {
     box-shadow: none;
     }
+  }
+}
+.whitepaper {
+  padding: 80px 0px;
+  border-radius: 6px;
+}
+}
+
+.post-details {
+  margin-bottom: 15px;
+  .fa-clock-o:before,
+  .fa-folder:before,
+  .fa-tags:before {
+    margin-right: 6px;
+  }
+}
+
+.categories {
+  list-style: none;
+  font-size: 22px;
+  margin-top: 60px;
+  font-weight: 300;
+  ul {
+    li {
+      font-size: 18px;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 990px) {
+    margin-top: 0px;
+  }
+}
+
+.btn-pagination {
+  color: white;
+  background: $theme-primary;
+  padding: 4px 6px;
+  &:hover,
+  &:active,
+  &:visited {
+    box-shadow: $material-shadow-1-hovered;
+    color: white;
   }
 }

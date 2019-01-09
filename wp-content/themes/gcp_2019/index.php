@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<header class="masthead">
+<header class="masthead masthead--grey">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -22,54 +22,58 @@ get_header();
 <section class="learning-center-copy">
   <div class="container-fluid">
     <div class="row">
-      <div class="order-2 order-md-1 col-md-2">
-        <h4 class="mb-3">Filter by category</h4>
-        <ul class="list-group">
-          <li class="list-group-item active">Vivamus pharetra</li>
-          <li class="list-group-item">In urna non</li>
-          <li class="list-group-item">Duis id lorem</li>
-          <li class="list-group-item">Ut lacus</li>
-          <li class="list-group-item">Hendrerit sodales</li>
-          <li class="list-group-item">Eu id urna</li>
-          <li class="list-group-item">Pellentesque pulvinar</li>
-          <li class="list-group-item">Elit et feugiat</li>
-        </ul>
-        <h4 class="mb-3">Filter by type</h4>
-        <ul class="list-group">
-          <li class="list-group-item">Article</li>
-          <li class="list-group-item">White paper</li>
-          <li class="list-group-item">Video</li>
-          <li class="list-group-item">Calculator</li>
-          <li class="list-group-item">Webinar</li>
-        </ul>
+      <div class="order-2 order-md-1 col-md-4 col-lg-2">
+        
+          <?php wp_list_categories( array(
+              'orderby' => 'name',
+              'show_count' => true
+          ) ); ?>
+        
       </div>
-      <div class="order-1 order-md-2 col-md-7">
-        <article>
-          <h2>Title of article</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-            fugiat, adipisci laudantium eos itaque ut, sit voluptate rerum. Pariatur sunt officia sint enim. Amet?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil eum corporis nisi est hic totam molestiae
-            deleniti doloremque et reprehenderit amet dicta aperiam laboriosam unde eligendi doloribus quisquam,
-            facere
-            debitis!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti
-            placeat
-          </p>
-          <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>
-        </article>
-        <article>
-          <h2>Title of article</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-            fugiat, adipisci laudantium eos itaque ut, sit voluptate rerum. Pariatur sunt officia sint enim. Amet?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil eum corporis nisi est hic totam molestiae
-            deleniti doloremque et reprehenderit amet dicta aperiam laboriosam unde eligendi doloribus quisquam,
-            facere
-            debitis!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti
-            placeat
-          </p>
-          <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>
-        </article>
-      </div>
-      <!-- <div class="col-md-3 order-3">
+      <div class="order-1 order-md-2 col-md-7 col-lg-7">
+        <?php
+      if ( have_posts() ) :
+
+        /* Start the Loop */
+        while ( have_posts() ) :
+          the_post();
+
+          get_template_part( 'template-parts/content', get_post_type() );
+
+          if( 1 == $wp_query->current_post ):
+            echo '
+            <section class="whitepaper dark-bg mb-50">
+              <div class="container">
+                <div class="row">
+                  <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
+                    <img class="img-fluid" src="'; echo bloginfo('template_directory'); echo '/assets/img/whitepaper.png" alt="Whitepaper">
+                  </div>
+                  <div class="col-md-8 content-wrapper">
+                    <h2>Whitepaper</h2>
+                    <p>Etiam eu dui sit amet diam posuere finibus ac ut ipsum.
+                      Vivamus pharetra in urna non molestie.
+                      Duis id lorem ut lacus hendrerit sodales eu id urna.
+                      Pellentesque pulvinar elit et feugiat posuere.
+                    </p>
+                    <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger">Download</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+              ';
+          endif;
+
+        endwhile;
+
+        //the_posts_navigation();
+        posts_nav_link();
+      else :
+
+        get_template_part( 'template-parts/content', 'none' );
+
+      endif;
+      ?>
+        <!-- <div class="col-md-3 order-3">
         <div class="form-wrapper">
           <h4>SUBSCRIBE to our newsletter</h4>
           <hr>
@@ -94,65 +98,8 @@ get_header();
           </form>
         </div>
       </div> -->
-    </div>
-  </div>
-</section>
-
-<section class="whitepaper dark-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
-        <img class="img-fluid" src="assets/img/whitepaper.png" alt="Whitepaper">
-      </div>
-      <div class="col-md-8 content-wrapper">
-        <h2>White paper: Title Here</h2>
-        <p>Etiam eu dui sit amet diam posuere finibus ac ut ipsum.
-          Vivamus pharetra in urna non molestie.
-          Duis id lorem ut lacus hendrerit sodales eu id urna.
-          Pellentesque pulvinar elit et feugiat posuere.
-        </p>
-        <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger">Download</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="learning-center-copy">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-7 offset-md-2">
-        <article>
-          <h2>Title of article</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-            fugiat, adipisci laudantium eos itaque ut, sit voluptate rerum. Pariatur sunt officia sint enim. Amet?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil eum corporis nisi est hic totam molestiae
-            deleniti doloremque et reprehenderit amet dicta aperiam laboriosam unde eligendi doloribus quisquam,
-            facere
-            debitis!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti
-            placeat
-          </p>
-          <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>
-        </article>
-        <article>
-          <h2>Title of article</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-            fugiat, adipisci laudantium eos itaque ut, sit voluptate rerum. Pariatur sunt officia sint enim. Amet?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil eum corporis nisi est hic totam molestiae
-            deleniti doloremque et reprehenderit amet dicta aperiam laboriosam unde eligendi doloribus quisquam,
-            facere
-            debitis!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti
-            placeat
-          </p>
-          <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>
-        </article>
-
         <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
       </div>
-    </div>
-  </div>
 </section>
 
 <?php get_footer(); ?>

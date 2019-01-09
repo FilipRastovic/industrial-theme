@@ -55,7 +55,7 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
 <section class="service-copy">
   <div class="container-fluid">
     <div class="row">
-      <div class="order-2 order-md-1 col-md-2 sidebar-services">
+      <div class="order-2 order-md-1 col-md-3 col-lg-2 sidebar-services">
         <h4 class="mb-3 sidebar-heading">Services</h4>
         <?php
           wp_nav_menu( array(
@@ -65,7 +65,7 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
           ) );
         ?>
       </div>
-      <div class="order-1 order-md-2 col-md-6 offset-md-1">
+      <div class="order-1 order-md-2 col-md-6 offset-lg-1">
         <h1 class="mb-3"><?php echo $services_second_heading; ?></h1>
         <?php echo $services_content; ?>
       </div>

@@ -182,3 +182,24 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function new_excerpt_more($more) {
+  global $post;
+  return '... <a class="moretag" href="'. get_permalink($post->ID) .  '"> continue reading &raquo;</a> 
+  
+  <a href="'. get_permalink($post->ID) .  '" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="btn-pagination ml-2"';
+}
+
+add_filter('list_categories_styling', 'wp_list_categories ');
+
+function list_categories_styling() {
+  return 'class="list-group"';
+}

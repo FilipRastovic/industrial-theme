@@ -10021,7 +10021,7 @@ h3 {
 
 @media (min-width: 990px) {
   h4 {
-    font-size: 30px; } }
+    font-size: 24px; } }
 
 p {
   font-size: 16px;
@@ -10131,7 +10131,10 @@ article {
 
 .btn-xl {
   font-size: 11px;
-  padding: 15px 45px; }
+  padding: 15px 23px; }
+  @media (min-width: 990px) {
+    .btn-xl {
+      padding: 15px 45px; } }
 
 a {
   color: #041B31;
@@ -10188,8 +10191,8 @@ a:not([href]):not([tabindex]) {
     .card {
       text-align: left; } }
   .card hr {
-    border-color: white;
-    background-color: white; }
+    border-color: #041B31;
+    background-color: #041B31; }
 
 .no-top-border {
   border-top-left-radius: calc(9.25rem - 1px);
@@ -10548,23 +10551,23 @@ header.polygon {
     .whitepaper {
       text-align: left; } }
 
-footer {
+footer.main-footer {
   padding: 25px 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
   background-color: #041B31; }
-  footer .logo {
+  footer.main-footer .logo {
     width: 200px; }
-  footer p {
+  footer.main-footer p {
     font-size: 12px;
     margin: 0;
     text-align: center; }
-  footer ul {
+  footer.main-footer ul {
     margin-bottom: 0; }
-    footer ul li a {
+    footer.main-footer ul li a {
       font-size: 12px;
       color: rgba(255, 255, 255, 0.3); }
-      footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
+      footer.main-footer ul li a:hover, footer.main-footer ul li a:focus, footer.main-footer ul li a:active, footer.main-footer ul li a.active {
         text-decoration: none; }
 
 .landing-page-content h2 {
@@ -10594,22 +10597,55 @@ footer {
   margin-bottom: 30px; }
 
 .learning-center-copy article {
-  background: white;
+  background: #fafafa;
   margin-bottom: 80px;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 10px 20px 30px; }
-  .learning-center-copy article:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-  .learning-center-copy article a:hover {
-    background: #083560 !important; }
-
-.learning-center-copy .noshadow {
-  box-shadow: none; }
-  .learning-center-copy .noshadow:hover {
+  .learning-center-copy article h2 a {
+    text-decoration: none; }
+  .learning-center-copy article h2 a:hover {
+    text-decoration: underline; }
+  .learning-center-copy article .noshadow {
     box-shadow: none; }
+    .learning-center-copy article .noshadow:hover {
+      box-shadow: none; }
+
+.learning-center-copy .whitepaper {
+  padding: 80px 0px;
+  border-radius: 6px; }
+
+.post-details {
+  margin-bottom: 15px; }
+  .post-details .fa-clock-o:before,
+  .post-details .fa-folder:before,
+  .post-details .fa-tags:before {
+    margin-right: 6px; }
+
+.categories {
+  list-style: none;
+  font-size: 22px;
+  margin-top: 60px;
+  font-weight: 300; }
+  .categories ul li {
+    font-size: 18px; }
+    .categories ul li a {
+      text-decoration: none; }
+      .categories ul li a:hover {
+        text-decoration: underline; }
+  @media (min-width: 990px) {
+    .categories {
+      margin-top: 0px; } }
+
+.btn-pagination {
+  color: white;
+  background: #041B31;
+  padding: 4px 6px; }
+  .btn-pagination:hover, .btn-pagination:active, .btn-pagination:visited {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: white; }
 
 header.masthead--home {
   padding-top: 10rem;

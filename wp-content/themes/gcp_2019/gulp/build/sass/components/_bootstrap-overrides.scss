@@ -51,7 +51,11 @@
 
 .btn-xl {
   font-size: 11px;
-  padding: 15px 45px;
+  padding: 15px 23px;
+
+  @media (min-width: 990px) {
+    padding: 15px 45px;
+  }
 }
 
 a {

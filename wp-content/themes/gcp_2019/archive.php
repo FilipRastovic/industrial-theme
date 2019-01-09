@@ -1,26 +1,57 @@
 <?php
 /**
- * The template for displaying archive pages
+ * Template Name: Learning Center
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package gcp_2019
  */
 
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
+<header class="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+      <?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="learning-center-copy">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="order-2 order-md-1 col-md-2">
+        <h4 class="mb-3">Filter by category</h4>
+        <ul class="list-group">
+          <li class="list-group-item active">Vivamus pharetra</li>
+          <li class="list-group-item">In urna non</li>
+          <li class="list-group-item">Duis id lorem</li>
+          <li class="list-group-item">Ut lacus</li>
+          <li class="list-group-item">Hendrerit sodales</li>
+          <li class="list-group-item">Eu id urna</li>
+          <li class="list-group-item">Pellentesque pulvinar</li>
+          <li class="list-group-item">Elit et feugiat</li>
+        </ul>
+        <h4 class="mb-3">Filter by type</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Article</li>
+          <li class="list-group-item">White paper</li>
+          <li class="list-group-item">Video</li>
+          <li class="list-group-item">Calculator</li>
+          <li class="list-group-item">Webinar</li>
+        </ul>
+      </div>
+      <div class="order-1 order-md-2 col-md-7">
+
+
+
+		<?php if ( have_posts() ) : ?>
+
+
+		
 
 			<?php
 			/* Start the Loop */
@@ -45,9 +76,8 @@ get_header();
 		endif;
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+</div>
+  </div>
+</section>
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>
