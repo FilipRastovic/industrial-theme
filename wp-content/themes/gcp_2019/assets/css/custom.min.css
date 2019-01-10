@@ -10078,6 +10078,9 @@ section {
   .bg-grey--noborder-bot {
     border-bottom: none; }
 
+.error-page {
+  height: 100vh; }
+
 article {
   margin-bottom: 60px;
   text-align: center; }
@@ -10596,7 +10599,8 @@ footer.main-footer {
   margin-top: 0;
   margin-bottom: 30px; }
 
-.learning-center-copy article {
+.learning-center-copy article,
+.case-studies article {
   background: #fafafa;
   margin-bottom: 80px;
   -webkit-transition: all .35s;
@@ -10604,16 +10608,21 @@ footer.main-footer {
   transition: all .35s;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 10px 20px 30px; }
-  .learning-center-copy article h2 a {
+  .learning-center-copy article h2 a,
+  .case-studies article h2 a {
     text-decoration: none; }
-  .learning-center-copy article h2 a:hover {
+  .learning-center-copy article h2 a:hover,
+  .case-studies article h2 a:hover {
     text-decoration: underline; }
-  .learning-center-copy article .noshadow {
+  .learning-center-copy article .noshadow,
+  .case-studies article .noshadow {
     box-shadow: none; }
-    .learning-center-copy article .noshadow:hover {
+    .learning-center-copy article .noshadow:hover,
+    .case-studies article .noshadow:hover {
       box-shadow: none; }
 
-.learning-center-copy .whitepaper {
+.learning-center-copy .whitepaper,
+.case-studies .whitepaper {
   padding: 80px 0px;
   border-radius: 6px; }
 

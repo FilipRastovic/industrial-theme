@@ -11,7 +11,7 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-      <?php
+        <?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
@@ -23,37 +23,24 @@ get_header();
 <section class="learning-center-copy">
   <div class="container-fluid">
     <div class="row">
-      <div class="order-2 order-md-1 col-md-2">
-        <h4 class="mb-3">Filter by category</h4>
-        <ul class="list-group">
-          <li class="list-group-item active">Vivamus pharetra</li>
-          <li class="list-group-item">In urna non</li>
-          <li class="list-group-item">Duis id lorem</li>
-          <li class="list-group-item">Ut lacus</li>
-          <li class="list-group-item">Hendrerit sodales</li>
-          <li class="list-group-item">Eu id urna</li>
-          <li class="list-group-item">Pellentesque pulvinar</li>
-          <li class="list-group-item">Elit et feugiat</li>
-        </ul>
-        <h4 class="mb-3">Filter by type</h4>
-        <ul class="list-group">
-          <li class="list-group-item">Article</li>
-          <li class="list-group-item">White paper</li>
-          <li class="list-group-item">Video</li>
-          <li class="list-group-item">Calculator</li>
-          <li class="list-group-item">Webinar</li>
-        </ul>
+      <div class="order-2 order-md-1 col-md-4 col-lg-2">
+
+        <?php wp_list_categories( array(
+            'orderby' => 'name',
+            'show_count' => true
+        ) ); ?>
+
       </div>
       <div class="order-1 order-md-2 col-md-7">
 
 
 
-		<?php if ( have_posts() ) : ?>
+        <?php if ( have_posts() ) : ?>
 
 
-		
 
-			<?php
+
+        <?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -67,7 +54,7 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
+			//the_posts_navigation();
 
 		else :
 
@@ -76,7 +63,23 @@ get_header();
 		endif;
 		?>
 
-</div>
+      </div>
+      <div class="col-md-3 col-lg-2 offset-lg-1 order-3">
+        <div class="card no-top-border">
+          <div class="col-md-6 offset-md-3 text-center">
+            <img class="card-img-top img-fluid" src="<?php bloginfo('template_directory'); ?>/assets/img/whitepaper.png"
+              alt="Card image cap">
+          </div>
+          <div class="card-body text-center">
+            <h4>White Paper Title</h4>
+            <hr>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

@@ -43,16 +43,6 @@ if ( ! function_exists( 'gcp_2019_setup' ) ) :
     add_theme_support( 'post-thumbnails' );
     require_once(get_template_directory() . '/assets/wp-bootstrap-navwalker-master/class-wp-bootstrap-navwalker.php');
 
-    add_action( 'init', function() {
-      $label = 'Case Studies';
-      $type = 'case-study';
-      $arguments = [
-        'public' => true, // Allow access to post type
-        'description' => 'Case studies of our previous.', // Add a description
-        'label'  => $label // Set the primary label
-    ];
-        register_post_type( $type, $arguments);
-    });
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -203,3 +193,16 @@ add_filter('list_categories_styling', 'wp_list_categories ');
 function list_categories_styling() {
   return 'class="list-group"';
 }
+
+function isacustom_excerpt_length($length) {
+  global $post;
+  if ($post->post_type == 'post')
+  return 85;
+  else if ($post->post_type == 'case_study')
+  return 22;
+  else if ($post->post_type == 'testimonial')
+  return 75;
+  else
+  return 80;
+  }
+  add_filter('excerpt_length', 'isacustom_excerpt_length');

@@ -4,8 +4,8 @@
  *
  */
 
-get_header();
-
+$website_icon = get_field('website_icon');
+$navbar_brand_logo = get_field('navbar_brand_logo');
 $lp_main_heading = get_field('lp_main_heading'); 
 $lp_main_paragraph = get_field('lp_main_paragraph');
 $lp_second_heading = get_field('lp_second_heading');
@@ -14,19 +14,35 @@ $lp_content = get_field('lp_content');
 $lp_form_heading = get_field('lp_form_heading');
 $lp_form_paragraph = get_field('lp_form_paragraph');
 $lp_form_btn_label = get_field('lp_form_btn_label');
-?>
-<!-- WE NEED A DIFFERENT NAVIGATION HERE -->
 
-<!-- <header class="masthead no-padding-bot">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="mb-5">Name of white paper or offer 
-            goes right here</h2>
-      </div>
-    </div>
-  </div>
-</header> -->
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+<link rel="icon" type="image/png" href="<?php echo $website_icon['url']; ?>" />
+<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="/">
+  <img class="" src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="Logo">
+</a>
+
+</div>
+</nav>
 
 <header class="masthead masthead--noborder polygon">
   <div class="header__bg"></div>

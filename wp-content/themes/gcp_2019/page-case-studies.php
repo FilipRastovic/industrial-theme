@@ -15,68 +15,40 @@ $case_studies_main_paragraph = get_field('case_studies_main_paragraph');
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="mb-5">H1 Title of article goes 
-            right here
-            <?php echo $case_studies_main_heading; ?>
-            </h1>
-        <p><?php echo $case_studies_main_paragraph; ?>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sit, earum reiciendis neque officia incidunt quasi obcaecati exercitationem autem nam culpa velit odit? Adipisci quia qui cupiditate. Necessitatibus, voluptate quo.
+        <h1 class="mb-5">H1 Title of article goes
+          right here
+          <?php echo $case_studies_main_heading; ?>
+        </h1>
+        <p>
+          <?php echo $case_studies_main_paragraph; ?>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+          sit, earum reiciendis neque officia incidunt quasi obcaecati exercitationem autem nam culpa velit odit?
+          Adipisci quia qui cupiditate. Necessitatibus, voluptate quo.
         </p>
       </div>
     </div>
   </div>
 </header>
 
-<section class="cards">
+<section class="cards case-studies">
   <div class="container">
     <div class="row">
+      <?php
+      $loop = new WP_Query( array(
+          'post_type' => 'case_study',
+          'posts_per_page' => 4,
+          'paged'=>$paged
+        )
+      );
+      ?>
+
+      <?php while ( $loop->have_posts() ) : $loop->the_post();  ?>
       <div class="col-md-6">
-        <div class="card card--case-study">
-          <div class="card-header">
-            <h4>Card Title</h4>
-            <hr>
-          </div>  
-          <div class="card-body">
-            <p>lorem ipsum dolor sit asd qwenv eodfownf  </p>
-            <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">Read More</a>
-          </div>
-        </div>
+        <?php get_template_part( 'template-parts/content', get_post_type() );?>
       </div>
-      <div class="col-md-6">
-        <div class="card card--case-study">
-          <div class="card-header">
-            <h4>Card Title</h4>
-            <hr>
-          </div>  
-          <div class="card-body">
-            <p>lorem ipsum dolor sit asd qwenv eodfownf  </p>
-            <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card card--case-study">
-          <div class="card-header">
-            <h4>Card Title</h4>
-            <hr>
-          </div>  
-          <div class="card-body">
-            <p>lorem ipsum dolor sit asd qwenv eodfownf  </p>
-            <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card card--case-study">
-          <div class="card-header">
-            <h4>Card Title</h4>
-            <hr>
-          </div>  
-          <div class="card-body">
-            <p>lorem ipsum dolor sit asd qwenv eodfownf  </p>
-            <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">Read More</a>
-          </div>
-        </div>
-      </div>
+
+
+
+      <?php endwhile;  ?>
     </div>
   </div>
 </section>
@@ -85,41 +57,22 @@ $case_studies_main_paragraph = get_field('case_studies_main_paragraph');
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-7 offset-md-2">
-        <article>
-          <h2>Title of article</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-            fugiat, 
-          </p>
-          <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>
-        </article>
-        <article>
-          <h2>Title of article</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-            fugiat, 
-          </p>
-          <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>
-        </article>
-        <article>
-          <h2>Title of article</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-            fugiat, 
-          </p>
-          <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>
-        </article>
-        <article>
-          <h2>Title of article</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-            fugiat, 
-          </p>
-          <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>
-        </article>
-        <article>
-          <h2>Title of article</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti vel ducimus quis, et corrupti placeat
-            fugiat, 
-          </p>
-          <a href="blog-post.html" class="btn btn-full btn-xl js-scroll-trigger">View Article</a>
-        </article>
+
+        <?php
+      $loop_bottom = new WP_Query( array(
+          'post_type' => 'case_study',
+          'posts_per_page' => 10,
+          'paged'=>$paged
+        )
+      );
+      ?>
+
+        <?php while ( $loop_bottom->have_posts() ) : $loop_bottom->the_post();  ?>
+        <?php if( 3 < $loop_bottom->current_post ):
+         get_template_part( 'template-parts/content', get_post_type() );?>
+
+        <?php endif; ?>
+        <?php endwhile;?>
 
       </div>
     </div>
@@ -138,23 +91,28 @@ $case_studies_main_paragraph = get_field('case_studies_main_paragraph');
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
+                    data-validation-required-message="Please enter your name.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
+                    data-validation-required-message="Please enter your email address.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required"
+                    data-validation-required-message="Please enter your phone number.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
+                    data-validation-required-message="Please enter your name.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
+                    data-validation-required-message="Please enter your email address.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
