@@ -38,3 +38,12 @@
     margin: 0 auto;
   }
 }
+
+.cards {
+  .card {
+    box-shadow: $material-shadow-1;
+    &:hover {
+      box-shadow: $material-shadow-1-hovered;
+    }
+  }
+}
