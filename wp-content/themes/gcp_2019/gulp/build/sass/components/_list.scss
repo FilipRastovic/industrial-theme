@@ -10,3 +10,12 @@
   background-color: $theme-primary;
   border-color: $theme-primary;
 }
+
+#services,
+.how {
+  ul {
+    li {
+      @include paragraph-font;
+    }
+  }
+}

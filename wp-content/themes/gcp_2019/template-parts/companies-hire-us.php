@@ -10,29 +10,25 @@ $home_when_reason_6 = get_field('home_when_reason_6');
 $home_when_cta = get_field('home_when_cta');
 $btn_hide = get_field('btn_hide');
 ?>
-<section class="when">
-  <div class="container">
+
+<section data-aos="fade-up" id="services" class="">
+  <div class="container padded shadow bg-grey-only">
     <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="mb-5"><?php echo $home_when_heading; ?></h2>
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading mb-2"><?php echo $home_when_heading; ?></h2>
+        <hr class="my-4">
       </div>
-      <div class="col-md-4 offset-md-2 mb-5">
-        <p class="mb-4"><?php echo $home_when_reason_1; ?> </p>
-        <hr>
-        <p class="mb-4"><?php echo $home_when_reason_3; ?> </p>
-        <hr>
-        <p class="mb-4"><?php echo $home_when_reason_5; ?> </p>
-      </div>
-      <div class="col-md-4 mb-5">
-        <p class="mb-4"><?php echo $home_when_reason_2; ?> </p>
-        <hr>
-        <p class="mb-4"><?php echo $home_when_reason_4; ?> </p>
-        <hr>
-        <p class="mb-4"><?php echo $home_when_reason_6; ?> </p>
-      </div>
-      <div class="col-12 text-center <?php echo $btn_hide; ?>">
-        <a data-aos="fade-up" href="/who-we-help" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $home_when_cta; ?></a>
-      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+      <ul class="row">
+          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_1; ?></li>
+          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_2; ?></li>
+          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_3; ?></li>
+          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_4; ?></li>
+          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_5; ?></li>
+          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_6; ?></li>
+      </ul>
     </div>
   </div>
 </section>

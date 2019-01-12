@@ -1,66 +1,86 @@
 // Styling for the navbar
 #mainNav {
-    border-color: fade-out($gray-darker, .95);
-    background-color: white;
-    @include transition-all;
-    .navbar-brand {
-        color: $theme-primary;
-        img {
-          width: 70%;
+  border-color: fade-out($gray-darker, .95);
+  background-color: white;
+  @include transition-all;
+  .navbar-brand {
+      color: $theme-primary;
+      img {
+        width: 70%;
+      }
+      &:hover,
+      &:focus {
+          color: darken($theme-primary, 10%);
+      }
+  }
+  .navbar-toggler {
+      font-size: 12px;
+      padding: 12px 14px;
+      color: white;
+      border-color: none;
+      background-color: $theme-primary;
+  }
+  .navbar-nav {
+    > li {
+        > a {
+            font-size: 15px;
+            text-decoration: none;
+            
+            @include alt-font;
+            &.active {
+                color: $theme-primary !important;
+                background-color: transparent;
+                font-weight: 900;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
         }
+        > a,
+        > a:focus {
+            color: $gray-darker;
+            &:hover {
+                color: $theme-primary;
+            }
+        }
+      
+    }
+    .request-consultation {
+      a {
+        font-weight: 900 !important; //fix this
+      }
+    }
+    .request-consultation {
+      
+    }
+    .dropdown-menu {
+      border: none;
+      .dropdown-item {
+        text-decoration: none;
+      }
+    }
+}
+@media (min-width: 992px) {
+    
+    .navbar-brand {
+      color: $theme-primary;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+          color: fade($theme-primary, 20%);
         }
     }
-    .navbar-toggler {
-        font-size: 12px;
-        padding: 12px 14px;
-        color: white;
-        border-color: none;
-        background-color: $theme-primary;
-    }
-    .navbar-nav {
-        > li {
-            > a {
-                font-size: 15px;
-                text-decoration: none;
-                
-                @include alt-font;
-                &.active {
-                    color: $theme-primary !important;
-                    background-color: transparent;
-                    font-weight: 900;
-                    &:hover {
-                        background-color: transparent;
-                    }
-                }
-            }
-            > a,
-            > a:focus {
-                color: $gray-darker;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
-          
-        }
-        .request-consultation {
-          a {
-            font-weight: 900 !important; //fix this
-          }
-        }
-        .request-consultation {
-          
-        }
-        .dropdown-menu {
-          border: none;
-          .dropdown-item {
-            text-decoration: none;
-          }
+    .navbar-nav > li > a,
+    .navbar-nav > li > a:focus {
+        color: $theme-primary;
+        font-size: 13px;
+        &:hover {
+            color: fade($theme-primary, 20%);
         }
     }
-    @media (min-width: 992px) {
+    &.navbar-shrink {
+        border-color: fade-out($gray-darker, .9);
+        background-color: $bg-light;
+        box-shadow: $material-shadow-1;
         .navbar-brand {
           color: $theme-primary;
             &:hover,
@@ -71,74 +91,56 @@
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
             color: $theme-primary;
-            font-size: 13px;
             &:hover {
                 color: fade($theme-primary, 20%);
             }
         }
-        &.navbar-shrink {
-            border-color: fade-out($gray-darker, .9);
-            background-color: $bg-light;
-            .navbar-brand {
-              color: $theme-primary;
-                &:hover,
-                &:focus {
-                  color: fade($theme-primary, 20%);
-                }
-            }
-            .navbar-nav > li > a,
-            .navbar-nav > li > a:focus {
-                color: $theme-primary;
-                &:hover {
-                    color: fade($theme-primary, 20%);
-                }
-            }
-        }
-        .request-consultation{
-          a {
-            background-color: $theme-primary !important;
-            color: white !important;
-            box-shadow: $material-shadow-2;
-            &:hover {
-              box-shadow: $material-shadow-3;
-            }
-          }
-        }
-        /* Removes the arrow from the dropdown */
-        .dropdown-toggle::after {
-          display:none;
-        }
-        .dropdown {
-          .dropdown-item {
-            padding: 0.75rem 1.5rem;
-          }
-          .dropdown-menu {
-              border: 1px solid rgba(0, 0, 0, 0.15);
-              transition: all 0.5s;
-              overflow: hidden;
-              transform-origin: top center;
-              transform: scale(1,0);
-              display: block;
-          }
-          &:hover {
-              .dropdown-menu {
-                  transform: scale(1);
-              }
-          }
-        }
     }
-
-    @media (min-width: 1200px) {
-      .navbar-nav > li > a,
-      .navbar-nav > li > a:focus {
-          color: $theme-primary;
-          font-size: 14px;
+    .request-consultation{
+      a {
+        background-color: $theme-primary !important;
+        color: white !important;
+        box-shadow: $material-shadow-2;
+        &:hover {
+          box-shadow: $material-shadow-3;
+        }
       }
     }
-
-    .dropdown-menu {
-      min-width: 18rem;
+    /* Removes the arrow from the dropdown */
+    .dropdown-toggle::after {
+      display:none;
     }
+    .dropdown {
+      .dropdown-item {
+        padding: 0.75rem 1.5rem;
+      }
+      .dropdown-menu {
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          transition: all 0.5s;
+          overflow: hidden;
+          transform-origin: top center;
+          transform: scale(1,0);
+          display: block;
+      }
+      &:hover {
+          .dropdown-menu {
+              transform: scale(1);
+          }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .navbar-nav > li > a,
+    .navbar-nav > li > a:focus {
+        color: $theme-primary;
+        font-size: 14px;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 18rem;
+  }
 }
 
 #mainNav {
@@ -150,3 +152,4 @@
     order: 2;
   }
 }
+

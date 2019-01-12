@@ -206,3 +206,4 @@ function isacustom_excerpt_length($length) {
   return 80;
   }
   add_filter('excerpt_length', 'isacustom_excerpt_length');
+

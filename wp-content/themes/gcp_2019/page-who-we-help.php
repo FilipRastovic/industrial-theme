@@ -32,11 +32,22 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 ?>
 
-<header class="masthead">
+<!-- <header class="masthead">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <h1><?php echo $who_main_heading; ?></h1>
+      </div>
+    </div>
+  </div>
+</header> -->
+
+<header class="masthead masthead--noborder polygon">
+  <div class="header__bg"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-5"><?php echo $who_main_heading; ?></h1>
       </div>
     </div>
   </div>
@@ -56,21 +67,21 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 <section class="how dark-bg">
   <div class="container">
-    <div class="row text-center">
+    <div class="row">
       <div class="col-12 text-center mb-5">
         <h2 class="mb-5"><?php echo $who_how_we_support_heading; ?></h2>
         <p class="text-center"><?php echo $who_how_we_support_paragraph; ?></p>
       </div>
-      <div class="col-md-5 offset-md-1">
-        <p><strong><?php echo $who_how_we_support_1 ?></strong></p>
-        <p><strong><?php echo $who_how_we_support_3 ?></strong></p>
-        <p><strong><?php echo $who_how_we_support_5 ?></strong></p>
-      </div>
-      <div class="col-md-5 offset-md-1">
-        <p><strong><?php echo $who_how_we_support_2 ?></strong></p>
-        <p><strong><?php echo $who_how_we_support_4 ?></strong></p>
-        <p><strong><?php echo $who_how_we_support_6 ?></strong></p>
-      </div>
+      <div class="col-md-12">
+      <ul class="row mx-auto">
+        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_1; ?></li>
+        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_2; ?></li>
+        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_3; ?></li>
+        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_4; ?></li>
+        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_5; ?></li>
+        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_6; ?></li>
+      </ul>
+    </div>
     </div>
   </div>
 </section>

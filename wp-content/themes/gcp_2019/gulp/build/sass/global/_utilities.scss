@@ -5,8 +5,7 @@
 }
 
 .dark-bg {
-  background: $theme-primary;
-  color: white !important;
+  background: #fafafa;
 }
 
 .content-wrapper {
@@ -34,6 +33,15 @@
   font-size: 26px;
 }
 
+.bg-grey-only {
+  border-top: 1px solid darken(#fafafa, 10%);
+  border-bottom: 1px solid darken(#fafafa, 10%);
+  @media (min-width: 550px) {
+    border: none;
+    background: #fafafa;
+  }
+}
+
 .bg-grey {
   background: #fafafa;
   border-top: 1px solid darken(#fafafa, 10%);
@@ -48,6 +56,32 @@
   }
 }
 
+.padded {
+  padding: 2rem 3rem;
+}
+
 .error-page {
   height: 100vh;
+}
+
+.shadow {
+
+  @media (min-width: 550px) {
+    box-shadow: $material-shadow-1 !important;
+  }
+}
+
+hr {
+  max-width: 150px;
+  border-width: 2px;
+  border-color: $theme-primary;
+}
+
+hr.light {
+  border-color: $white;
+}
+
+.patterned-section {
+  background-image: url("../img/stripes-light.png");
+  background-repeat: repeat;
 }

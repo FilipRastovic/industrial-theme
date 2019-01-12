@@ -1,11 +1,12 @@
 .latest-posts {
   li {
     margin-bottom: 30px;
+    @include paragraph-font;
   }
   
   hr {
     width: 70px;
-    height: 4px;
+    height: 1px;
     background-color: $theme-primary;
     border-color: $theme-primary;
     margin-left: 0;

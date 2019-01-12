@@ -15,16 +15,16 @@
     <img class="logo mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/logo-white.png" alt="Logo">
     <ul class="list-inline mb-3">
       <li class="list-inline-item">
-        <a href="#">Who We Help</a>
+        <a href="/who-we-help">Who We Help</a>
       </li>
       <li class="list-inline-item">
-        <a href="#">Services</a>
+        <a href="/services">Services</a>
       </li>
       <li class="list-inline-item">
-        <a href="#">Case Studies</a>
+        <a href="/case-studies">Case Studies</a>
       </li>
       <li class="list-inline-item">
-        <a href="#">Learning Center</a>
+        <a href="/learning-centar">Learning Center</a>
       </li>
     </ul>
     <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/linkedin.png" alt="Linkedin">
