@@ -90,4 +90,5 @@ function scrollFunction() {
     } else {
         document.getElementById("scroll-top").style.display = "none";
     }
-}});
+}
+});
