@@ -1,4 +1,5 @@
 .service-copy {
+  @include paragraph-font;
   img {
     width: 300px;
     height: auto;
@@ -19,16 +20,11 @@
   }
 
   ul > li {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-    font-weight: 300;
-    text-align: center;
-  
-    @media (min-width: 992px) {
-      font-size: 22px;
-      text-align: left;
-    }
+    @include paragraph-font;
+  }
+
+  ul {
+    margin-bottom: 30px;
   }
 }
 
@@ -70,11 +66,10 @@
   ul {
     list-style: none;
     li {
-      @media (min-width: 990px) {
-        font-size: 19px;
+        @include paragraph-font;
       }
     }
-  }
+  
 }
 
 .card--whitepaper {

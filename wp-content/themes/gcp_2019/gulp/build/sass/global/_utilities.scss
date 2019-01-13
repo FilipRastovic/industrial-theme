@@ -57,7 +57,10 @@
 }
 
 .padded {
-  padding: 2rem 3rem;
+  padding: 1.5rem 1rem;
+  @media (min-width: 550px) {
+    padding: 2rem 3rem;
+  }
 }
 
 .error-page {
@@ -85,3 +88,4 @@ hr.light {
   background-image: url("../img/stripes-light.png");
   background-repeat: repeat;
 }
+

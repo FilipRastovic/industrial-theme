@@ -13,4 +13,26 @@
     margin-top: 0;
     margin-bottom: 30px;
   }
+
+  .col-md-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.custom-card {
+  width: 100%;
+  &--left {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 768px) {
+    width: 95%;
+    &--left {
+      margin-bottom: 0px;
+    }
+    &--right {
+      float:right;
+    }
+  }
 }

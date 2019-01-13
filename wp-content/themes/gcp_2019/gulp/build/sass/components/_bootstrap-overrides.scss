@@ -1,12 +1,12 @@
 // Bootstrap overrides for this template
 .bg-primary {
-  background: $theme-primary;
-  background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
-  background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+  background: $btn-light-blue;
+  background: -webkit-linear-gradient($btn-light-blue, darken($btn-light-blue, 5%));
+  background: linear-gradient($btn-light-blue, darken($btn-light-blue, 5%));
 }
 
 .text-primary {
-  color: $theme-primary;
+  color: $btn-light-blue;
 }
 
 .no-gutter > [class*='col-'] {
@@ -19,15 +19,15 @@
   color: white;
   border: 1px solid;
   border-color: white;
-  background: $theme-primary;
+  background: $btn-light-blue;
   box-shadow: $material-shadow-1;
   &:hover,
   &:focus,
   &:active,
   &.active {
       color: white;
-      border-color: lighten($theme-primary, 5%);
-      background-color: lighten($theme-primary, 5%);
+      border-color: lighten($btn-light-blue, 5%);
+      background-color: lighten($btn-light-blue, 5%);
       box-shadow: $material-shadow-1-hovered;
   }
 }
@@ -41,7 +41,7 @@
   letter-spacing: 1px;
   border-radius: 0px;
   box-shadow: $material-shadow-1;
-  border-color: $theme-primary;
+  border-color: $btn-light-blue;
   text-decoration: none;
 
   &:visited {
@@ -59,13 +59,12 @@
 }
 
 a {
-  color: $theme-primary;
+  color: $link-color;
   text-decoration: underline;
-  $color: $theme-primary;
   @include transition-all;
     &:hover,
     &:focus {
-        color: lighten($theme-primary, 5%);
+        color: lighten($link-color, 5%);
     }
 }
 
@@ -80,30 +79,30 @@ a:not([href]):not([tabindex]) {
 .btn-white {
   background-color: white;
   border-color: white;
-  color: $theme-primary;
+  color: $btn-light-blue;
   &:hover {
     background-color: darken(white, 10%);
     border-color: darken(white, 10%);
   }
   &:visited {
-    color: $theme-primary;
+    color: $btn-light-blue;
   }
 }
 
 .whitepaper.dark-bg {
   .btn-full:hover, .btn-primary:hover {
     background: darken(white, 10%);
-    color: $theme-primary;
+    color: $btn-light-blue;
   }
   .btn-full:focus, .btn-full:active, .btn-full.active, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
     background: white;
-    color: $theme-primary;
+    color: $btn-light-blue;
   }
 }
 
 .card--whitepaper {
   .btn-full:hover, .btn-primary:hover {
-    background: ligthen($theme-primary, 10%);
+    background: ligthen($btn-light-blue, 10%);
     color: white;
   }
    .btn-full:focus, .btn-full:active, .btn-full.active, .btn-primary:focus, .btn-primary:active, .btn-primary.active {

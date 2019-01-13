@@ -102,39 +102,43 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
 <section data-aos="fade-up" class="latest-posts">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 padded shadow bg-grey-only patterned-section">
-        <h2 class="mb-2">Case Studies</h3>
-        <hr class="goto-left">
-        <ul>
-          <?php
-            $args = array( 'post_type'=>'case_study', 'numberposts' => '3' );
-            $recent_posts = wp_get_recent_posts( $args );
+      <div class="col-md-6">
+        <div class="custom-card shadow padded bg-grey-only patterned-section custom-card--left">
+          <h2 class="mb-2">Case Studies</h3>
+          <hr class="goto-left">
+          <ul>
+            <?php
+              $args = array( 'post_type'=>'case_study', 'numberposts' => '3' );
+              $recent_posts = wp_get_recent_posts( $args );
 
-            foreach( $recent_posts as $recent ){
-            echo 
-            '<li> ' . '
-              <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
-            </li> ';
-            }
-          ?>
-        </ul>
+              foreach( $recent_posts as $recent ){
+              echo 
+              '<li> ' . '
+                <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
+              </li> ';
+              }
+            ?>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-6 padded shadow bg-grey-only patterned-section">
-        <h2 class="mb-2">Latest posts</h3>
-        <hr class="goto-left">
-        <ul>
-          <?php
-            $args = array( 'numberposts' => '3' );
-            $recent_posts = wp_get_recent_posts( $args );
+      <div class="col-md-6">
+        <div class="custom-card shadow padded bg-grey-only patterned-section custom-card--right">
+          <h2 class="mb-2">Latest posts</h3>
+          <hr class="goto-left">
+          <ul>
+            <?php
+              $args = array( 'numberposts' => '3' );
+              $recent_posts = wp_get_recent_posts( $args );
 
-            foreach( $recent_posts as $recent ){
-            echo 
-            '<li> ' . '
-              <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
-            </li> ';
-            }
-          ?>
-        </ul>
+              foreach( $recent_posts as $recent ){
+              echo 
+              '<li> ' . '
+                <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
+              </li> ';
+              }
+            ?>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

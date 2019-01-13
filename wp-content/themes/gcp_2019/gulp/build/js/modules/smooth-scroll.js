@@ -4,6 +4,7 @@ $("#cta-portfolio").click(function() {
   }, 400);
 });
 
+
 $("#scroll-top").click(function() {
   $([document.documentElement, document.body]).animate({
       scrollTop: $("#page-top").offset().top
@@ -14,10 +15,8 @@ window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-       // document.getElementById("scroll-top").style.display = "block";
+        document.getElementById("scroll-top").style.display = "block";
     } else {
-       // document.getElementById("scroll-top").style.display = "none";
+        document.getElementById("scroll-top").style.display = "none";
     }
 }
-
-

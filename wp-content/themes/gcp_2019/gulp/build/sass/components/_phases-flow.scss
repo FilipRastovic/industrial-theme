@@ -1,8 +1,8 @@
 .flow-diagram {
-  background: $theme-primary;//a
-  color: white;
+ 
+  color: $theme-primary;
 }
-$padding-base: 15px;
+$padding-base: 0px;
 $color-body: #fff;
 $color-border: #ddd;
 $color-link: #0275d8;
@@ -26,7 +26,7 @@ $border-radius: .25rem;
 		.nav-link {
 			transition: border-color .125s ease-in;
       white-space: nowrap;
-      color: white;
+      color: $theme-primary;
 			
 			&:hover {
 				background-color: lighten($color-border, 10%);
@@ -52,7 +52,7 @@ $border-radius: .25rem;
 }
 
 .tab-content {
-  background: $theme-primary;
-  color: white;
+  background: white;
+  color: $theme-primary;
   padding: 20px 30px 20px 20px;
 }

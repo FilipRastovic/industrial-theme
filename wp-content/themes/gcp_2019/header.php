@@ -27,8 +27,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" role="navigation">
+<div class="d-none" id="page-top"></div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top thetop" id="mainNav" role="navigation">
   <div class="container">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">

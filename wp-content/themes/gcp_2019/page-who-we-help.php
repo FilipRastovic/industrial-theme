@@ -32,41 +32,26 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 ?>
 
-<!-- <header class="masthead">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1><?php echo $who_main_heading; ?></h1>
-      </div>
-    </div>
-  </div>
-</header> -->
-
 <header class="masthead masthead--noborder polygon">
   <div class="header__bg"></div>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="mb-5"><?php echo $who_main_heading; ?></h1>
+        <h1 class="mb-5">
+          <?php echo $who_main_heading; ?>
+        </h1>
+        <p>
+          <?php  echo $who_main_paragraph; ?> 
+        </p>
       </div>
     </div>
   </div>
 </header>
 
-<section class="cta dark-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <p class="text-center mb-5"><?php echo $who_main_paragraph; ?></p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <?php get_template_part('template-parts/companies-hire-us'); ?>
 
-<section class="how dark-bg">
-  <div class="container">
+<section data-aos="fade-up" class="how dark-bg">
+  <div class="container shadow padded patterned-section">
     <div class="row">
       <div class="col-12 text-center mb-5">
         <h2 class="mb-5"><?php echo $who_how_we_support_heading; ?></h2>
@@ -74,19 +59,19 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
       </div>
       <div class="col-md-12">
       <ul class="row mx-auto">
-        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_1; ?></li>
-        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_2; ?></li>
-        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_3; ?></li>
-        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_4; ?></li>
-        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_5; ?></li>
-        <li class="list-item col-12 col-md-6 mx-auto "><?php echo $who_how_we_support_6; ?></li>
+        <li class="list-item col-12 col-md-4 mx-auto "><a href="/supplier-sourcing"><?php echo $who_how_we_support_1; ?></a></li>
+        <li class="list-item col-12 col-md-4 mx-auto "><a href="/supplier-audits"><?php echo $who_how_we_support_2; ?></a></li>
+        <li class="list-item col-12 col-md-4 mx-auto "><a href="/order-management"><?php echo $who_how_we_support_3; ?></a></li>
+        <li class="list-item col-12 col-md-4 mx-auto "><a href="/quality-control"><?php echo $who_how_we_support_4; ?></a></li>
+        <li class="list-item col-12 col-md-4 mx-auto "><a href="/material-and-product-development/"><?php echo $who_how_we_support_5; ?></a></li>
+        <li class="list-item col-12 col-md-4 mx-auto "><a href="/brokerage-and-logistics"><?php echo $who_how_we_support_6; ?></a></li>
       </ul>
     </div>
     </div>
   </div>
 </section>
 
-<section class="cards">
+<section data-aos="fade-up" class="cards">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -123,8 +108,8 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
   </div>
 </section>
 
-<section class="whitepaper self-assessment dark-bg mb-50">
-  <div class="container">
+<section data-aos="fade-up" class="whitepaper self-assessment mb-50">
+  <div class="container shadow padded patterned-section">
     <div class="row">
       <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
         <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/self-assessment.png" alt="Whitepaper">
@@ -132,7 +117,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
       <div class="col-md-8 content-wrapper">
         <h2><?php echo $self_assessment_title; ?></h2>
         <p><?php echo $self_assessment_paragraph; ?></p>
-        <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger"><?php echo $self_assessment_btn_label; ?></a>
+        <a href="" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $self_assessment_btn_label; ?></a>
       </div>
     </div>
   </div>

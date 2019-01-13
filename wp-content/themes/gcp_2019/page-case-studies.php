@@ -8,26 +8,24 @@ get_header();
 
 $case_studies_main_heading = get_field('case_studies_main_heading');
 $case_studies_main_paragraph = get_field('case_studies_main_paragraph'); 
+$case_studies_main_image_style = get_field('case_studies_main_image_style');
+$case_studies_main_image = get_field('case_studies_main_image');
 ?>
 
 <header class="masthead masthead--noborder polygon">
   <div class="header__bg"></div>
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h1 class="mb-5">H1 Title of article goes
-          right here
-          <?php echo $case_studies_main_heading; ?>
-        </h1>
-        <p>
-          <?php echo $case_studies_main_paragraph; ?>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
-          sit, earum reiciendis neque officia incidunt quasi obcaecati exercitationem autem nam culpa velit odit?
-          Adipisci quia qui cupiditate. Necessitatibus, voluptate quo.
-        </p>
+      <div class="col-md-7 order-2 order-md-1">
+        <h1 class="mb-5"><?php echo $case_studies_main_heading; ?></h1>
+        <?php echo $case_studies_main_paragraph; ?>
+      </div>
+      <div class="<?php echo $case_studies_main_image_style; ?>">
+        <img class="img-fluid" src="<?php echo $case_studies_main_image['url']; ?>" alt="Case Study Img">
       </div>
     </div>
   </div>
-</header>
+</header> 
 
 <section class="cards case-studies">
   <div class="container">
@@ -56,7 +54,7 @@ $case_studies_main_paragraph = get_field('case_studies_main_paragraph');
 <section class="learning-center-copy bg-grey">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-7 offset-md-2">
+      <div class="col-md-7 offset-md-2 pt-5">
 
         <?php
       $loop_bottom = new WP_Query( array(

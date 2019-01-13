@@ -21,3 +21,14 @@
     text-align: left;
   }
 }
+
+.how {
+  a {
+    color: $theme-primary;
+    &:hover,
+    &:visited,
+    &:active {
+      color: lighten($theme-primary, 10%);
+    }
+  }
+}

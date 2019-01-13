@@ -41,9 +41,16 @@
 
 .cards {
   .card {
+    background: #fafafa;
     box-shadow: $material-shadow-1;
+    @include transition-all;
     &:hover {
       box-shadow: $material-shadow-1-hovered;
     }
+  }
+
+  h5 {
+    @include subheading-font;
+    text-align: center;
   }
 }

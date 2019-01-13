@@ -21,9 +21,9 @@ get_header();
   </header>
 
 <section class="learning-center-copy">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-md-7 offset-md-2">
+      <div class="col-md-7">
 
 		<?php
 		while ( have_posts() ) :the_post();
@@ -38,18 +38,18 @@ get_header();
 		?>
 
     </div>
-    <div class="col-md-3 col-lg-2 offset-lg-1 order-3">
-        <div class="card no-top-border">
-          <div class="col-md-6 offset-md-3 text-center">
-            <img class="card-img-top img-fluid" src="<?php bloginfo('template_directory'); ?>/assets/img/whitepaper.png" alt="Card image cap">
-          </div>
-          <div class="card-body text-center">
-            <h4>White Paper Title</h4>
-            <hr>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+
+    <div class="col-md-4 offset-md-1">
+      <div class="card card--whitepaper no-top-border">
+        <div class="col-2 mx-auto col-md-6 offset-md-3 text-center">
+          <img class="card-img-top img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/whitepaper.png" alt="Card image cap">
+        </div>
+        <div class="card-body text-center">
+          <h4>White Paper Title</h4>
+          <hr>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
-            <a href="" class="btn btn-full btn-xl btn-white js-scroll-trigger">Download</a>
-          </div>
+          <a download href="<?php echo $services_whitepaper_file_url; ?>" class="btn btn-full btn-xl js-scroll-trigger">Download</a>
         </div>
       </div>
     </div>

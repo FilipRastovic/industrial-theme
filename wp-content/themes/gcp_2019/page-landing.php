@@ -61,7 +61,7 @@ $lp_form_btn_label = get_field('lp_form_btn_label');
 <section class="landing-page-content">
   <div class="container">
     <div class="row">
-      <div class="col-md-7 landing-page-content--left">
+      <div data-aos="fade-up" class="col-md-7 landing-page-content--left">
         <h2><?php echo $lp_second_heading; ?>H2 Headline goes here</h2>
         <?php  echo $lp_content; ?>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugiat reiciendis nisi nesciunt debitis fuga dolorum, sed vel aspernatur laborum suscipit commodi ipsa sequi eveniet laudantium? Natus non deleniti quaerat?
@@ -71,7 +71,7 @@ $lp_form_btn_label = get_field('lp_form_btn_label');
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex tempora repudiandae assumenda id dolore, perferendis porro neque sint laborum voluptates unde repellendus optio praesentium molestiae ducimus commodi aperiam, tempore autem!
         </p>
       </div>
-      <div class="col-md-4 offset-md-1">
+      <div data-aos="fade-up" class="col-md-4 offset-md-1">
         <div class="new-form-wrapper">
           <h4 class="text-center"><?php echo $lp_form_heading; ?>Fill Out The form</h4>
           <hr>
