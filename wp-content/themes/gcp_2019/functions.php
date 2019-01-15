@@ -194,16 +194,15 @@ function list_categories_styling() {
   return 'class="list-group"';
 }
 
-function isacustom_excerpt_length($length) {
+function isacustom_excerpt_length( $length ) {
   global $post;
-  if ($post->post_type == 'post')
-  return 85;
-  else if ($post->post_type == 'case_study')
-  return 22;
-  else if ($post->post_type == 'testimonial')
-  return 75;
+  if ( $post -> post_type == 'post' )
+    return 85;
+  elseif ( $post -> post_type == 'case_study' )
+    return 22;
+  elseif ( $post -> post_type == 'testimonial' )
+    return 75;
   else
-  return 80;
-  }
-  add_filter('excerpt_length', 'isacustom_excerpt_length');
-
+    return 80;
+}
+add_filter('excerpt_length', 'isacustom_excerpt_length');
