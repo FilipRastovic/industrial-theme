@@ -40,7 +40,9 @@
 }
 
 .cards {
+  display: flex;
   .card {
+    display: flex;
     background: #fafafa;
     box-shadow: $material-shadow-1;
     @include transition-all;

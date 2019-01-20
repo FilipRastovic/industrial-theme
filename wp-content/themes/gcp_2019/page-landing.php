@@ -49,10 +49,8 @@ $lp_form_btn_label = get_field('lp_form_btn_label');
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="mb-5">H1 Title of article goes 
-          right here<?php echo $lp_main_heading; ?></h1>
-        <p><?php echo $lp_main_paragraph; ?>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sit, earum reiciendis neque officia incidunt quasi obcaecati exercitationem autem nam culpa velit odit? Adipisci quia qui cupiditate. Necessitatibus, voluptate quo.
-        </p>
+        <h1 class="mb-5"><?php echo $lp_main_heading; ?></h1>
+        <p><?php echo $lp_main_paragraph; ?></p>
       </div>
     </div>
   </div>
@@ -62,20 +60,15 @@ $lp_form_btn_label = get_field('lp_form_btn_label');
   <div class="container">
     <div class="row">
       <div data-aos="fade-up" class="col-md-7 landing-page-content--left">
-        <h2><?php echo $lp_second_heading; ?>H2 Headline goes here</h2>
+        <h2><?php echo $lp_second_heading; ?></h2>
         <?php  echo $lp_content; ?>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugiat reiciendis nisi nesciunt debitis fuga dolorum, sed vel aspernatur laborum suscipit commodi ipsa sequi eveniet laudantium? Natus non deleniti quaerat?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam consequatur, quisquam pariatur voluptatibus possimus unde atque repellat aliquid eius eum quibusdam ullam cupiditate omnis reprehenderit laboriosam odit ratione exercitationem! Deleniti.
-        </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, nemo neque? Eius, ad ea. Non dolorum sapiente quidem temporibus numquam alias eum inventore porro et ex. Laborum mollitia ea eaque.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex tempora repudiandae assumenda id dolore, perferendis porro neque sint laborum voluptates unde repellendus optio praesentium molestiae ducimus commodi aperiam, tempore autem!
-        </p>
+
       </div>
       <div data-aos="fade-up" class="col-md-4 offset-md-1">
         <div class="new-form-wrapper">
-          <h4 class="text-center"><?php echo $lp_form_heading; ?>Fill Out The form</h4>
+          <h4 class="text-center"><?php echo $lp_form_heading; ?></h4>
           <hr>
-          <p class=" text-center"><?php echo $lp_form_paragraph; ?>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p class=" text-center"><?php echo $lp_form_paragraph; ?></p>
           <form id="contactForm" name="sentMessage" novalidate="novalidate">
             <div class="row">
               <div class="col-md-12">
@@ -103,7 +96,7 @@ $lp_form_btn_label = get_field('lp_form_btn_label');
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit"><?php echo $lp_form_btn_label; ?>Send Message</button>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit"><?php echo $lp_form_btn_label; ?></button>
               </div>
             </div>
           </form>

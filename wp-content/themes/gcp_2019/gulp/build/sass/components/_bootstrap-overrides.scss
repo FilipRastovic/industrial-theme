@@ -37,25 +37,25 @@
   font-family: 'Lato';
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 26px;
+  
+
   letter-spacing: 1px;
   border-radius: 0px;
   box-shadow: $material-shadow-1;
   border-color: $btn-light-blue;
   text-decoration: none;
-
+ @include body-font;
   &:visited {
     color: white;
   }
 }
 
 .btn-xl {
-  font-size: 11px;
+  
   padding: 15px 23px;
+  @include body-font;
 
-  @media (min-width: 990px) {
-    padding: 15px 45px;
-  }
+  
 }
 
 a {

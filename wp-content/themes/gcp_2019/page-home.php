@@ -36,7 +36,7 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
 
 ?>
 
-<header class="masthead--home d-flex">
+<!-- <header class="masthead--home d-flex">
   <div class="container container-img">
     <div class="row">
       <div class="col-7 offset-4 col-md-4 offset-md-5">
@@ -46,11 +46,24 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
       </div>
     </div>
   </div>
-</header>
+</header> -->
+
+<header class="masthead masthead--home masthead--noborder bg-grey polygon">
+  <div class="header__bg hero-img"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class=""><?php echo $home_main_heading; ?></h1>
+        <p class=""><?php echo $home_cta_first_paragraph; ?></p>
+        <a class="btn btn-full btn-xl js-scroll-trigger" href="/who-we-help"><?php echo $home_cta_first_btn_text; ?></a>
+      </div>
+    </div>
+  </div>
+</header> 
 
 
-<section  data-aos="fade-up" class="cta">
-  <div class="container padded shadow bg-grey-only patterned-section">
+<!-- <section  class="cta">
+  <div class="container padded shadow bg-grey patterned-section">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
         <p class="text-center"><?php echo $home_cta_first_paragraph; ?></p>
@@ -58,12 +71,12 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <?php get_template_part('template-parts/companies-hire-us'); ?>
 
-<section data-aos="fade-up" class="suppliers">
-  <div class="container padded shadow bg-grey-only patterned-section">
+<section class="suppliers bg-grey">
+  <div class="container">
     <div class="row">
       <div class="col-lg-12 mx-auto text-center">
         <h2 class="mb-2"><?php echo $home_suppliers_heading; ?></h2>
@@ -83,8 +96,8 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
   </div>
 </section>
 
-<section  data-aos="fade-up" class="featured-case-study">
-  <div class="container padded shadow bg-grey-only">
+<section class="featured-case-study">
+  <div class="container padded shadow bg-grey patterned-section">
     <div class="row">
       <div class="col-6 col-md-4 mx-auto mb-3">
         <img class="img-fluid" src="<?php echo $home_featured_case_study_img['url']; ?>" alt="Testimonial Img"> 
@@ -99,11 +112,11 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
 </section>
 
 
-<section data-aos="fade-up" class="latest-posts">
+<section class="latest-posts bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="custom-card shadow padded bg-grey-only patterned-section custom-card--left">
+        <div class="custom-card padded custom-card--left">
           <h2 class="mb-2">Case Studies</h3>
           <hr class="goto-left">
           <ul>
@@ -122,7 +135,7 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
         </div>
       </div>
       <div class="col-md-6">
-        <div class="custom-card shadow padded bg-grey-only patterned-section custom-card--right">
+        <div class="custom-card padded custom-card--right">
           <h2 class="mb-2">Latest posts</h3>
           <hr class="goto-left">
           <ul>

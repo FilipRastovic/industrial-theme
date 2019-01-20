@@ -50,8 +50,8 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 <?php get_template_part('template-parts/companies-hire-us'); ?>
 
-<section data-aos="fade-up" class="how dark-bg">
-  <div class="container shadow padded patterned-section">
+<section class="how dark-bg">
+  <div class="container ">
     <div class="row">
       <div class="col-12 text-center mb-5">
         <h2 class="mb-5"><?php echo $who_how_we_support_heading; ?></h2>
@@ -71,14 +71,14 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
   </div>
 </section>
 
-<section data-aos="fade-up" class="cards">
+<section class="cards">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h2 class="mb-5 text-center"><?php echo $who_what_makes_us; ?></h2>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-5">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100 ">
           <div class="card-body">
             <h5 class="card-title"><?php echo $who_what_makes_us_title_1; ?></h5>
             <hr>
@@ -86,8 +86,8 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-5">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100 ">
         <div class="card-body">
             <h5 class="card-title"><?php echo $who_what_makes_us_title_2; ?></h5>
             <hr>
@@ -95,8 +95,8 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-5">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100 ">
         <div class="card-body">
             <h5 class="card-title"><?php echo $who_what_makes_us_title_3; ?></h5>
             <hr>
@@ -108,8 +108,8 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
   </div>
 </section>
 
-<section data-aos="fade-up" class="whitepaper self-assessment mb-50">
-  <div class="container shadow padded patterned-section">
+<section class="whitepaper self-assessment mb-50">
+  <div class="container ">
     <div class="row">
       <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
         <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/self-assessment.png" alt="Whitepaper">

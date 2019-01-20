@@ -1,72 +1,95 @@
-// Styling for the masthead
-header.masthead--home {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/hero-mobile.jpg');
-  @include background-cover;
-  background-size: cover;
-  /* <------ */
-  background-repeat: no-repeat;
-  background-position: center center;
+header.polygon {
+  position: relative;
+  min-height: 300px;
+  p:first-child:before {
+    display: none;
+  }
+  p:before {
+      content: " ";
+      border: 1px solid rgb(255, 255, 255);
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: block;
+      max-width: 100%;
 
-  /* optional, center the image */
+      @media (min-width: 990px) {
+        max-width: 100px;
+      }
+  }
+
+  @media (min-width: 990px) {
+    height: 700px;
+  }
+
+  
+  h1,
+  p,
+  ul > li {
+    color: white;
+  }
+
+  p {
+    text-align: center;
+    @media (min-width: 990px) {
+      width: 550px;
+      max-width: 550px;
+    }
+  }
+
+  h1 {
+    @include heading-font;
+    color: white;
+    font-size: 40px;
+    @media (min-width: 990px) {
+      font-size: 60px;
+    }
+  }
+
+  text-align: center;
+  @media (min-width: 990px) {
+    text-align: left;
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.header__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient($theme-primary, $theme-primary);
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+.hero-img {
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
-  p {
-    text-align: right;
-  }
-
-  h1 {
-    font-size: 2rem;
-    color: #2d3436;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 6px;
-  }
-
-  p {
-    font-weight: 300;
-  }
-
+  @include background-cover;
+  background-image: url('../img/hero-mobile.jpg');
+  
   @media (min-width: 550px) {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-image: none;
-
-    h1 {
-      margin-top: 13rem;
-      padding: 0px;
-      background: transparent;
-    }
+    background-image: url('../img/Shipping_Container9.jpg');
   }
-
-  @media (min-width: 768px) {
-    p {
-      font-size: 1.15rem;
-    }
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#041B31,#075DAF);
+    opacity: .6; 
   }
-
-  @media (min-width: 992px) {
-    //height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
-
-    h1 {
-      font-size: 3rem;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    h1 {
-      font-size: 3rem;
-      margin-top: 20rem;
-      text-align: right;
-    }
-  }
-
 }
 
 .container-img {

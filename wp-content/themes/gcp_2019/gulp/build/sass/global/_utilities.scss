@@ -77,7 +77,7 @@
 hr {
   max-width: 150px;
   border-width: 2px;
-  border-color: $theme-primary;
+  border-color: $btn-light-blue;
 }
 
 hr.light {
@@ -92,4 +92,23 @@ hr.light {
 ul.row {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.u-relative {
+  position: relative;
+}
+
+.img-abstract {
+  width: 100%;
+
+  @media (min-width: 990px) {
+    position: absolute;
+    width: 150%;
+  }
+
+  &--mt {
+    @media (min-width: 990px) {
+      top: 100px;
+    }
+  }
 }

@@ -38,8 +38,8 @@ $next_service_label = get_field('next_service_label');
         <h1 class="mb-5"><?php echo $services_main_heading; ?></h1>
         <?php echo $services_main_paragraph; ?>
       </div>
-      <div class="<?php echo $services_main_image_style; ?>">
-        <img class="img-fluid" src="<?php echo $services_main_image['url']; ?>" alt="Service Img">
+      <div class="<?php echo $services_main_image_style; ?> u-relative">
+        <img class="img-abstract" src="<?php echo $services_main_image['url']; ?>" alt="Service Img">
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@ $next_service_label = get_field('next_service_label');
 
 <?php get_template_part('template-parts/featured-case-study'); ?>
 
-<section class="whitepaper mb-50">
+<section class="whitepaper">
   <div class="container shadow padded">
     <div class="row">
       <div class="col-12 col-md-10">
@@ -84,6 +84,56 @@ $next_service_label = get_field('next_service_label');
       <div class="col-md-12">
         <p><?php echo $services_request_consultation_content; ?></p>
         <a href="" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $services_request_consultation_btn_text; ?></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="form-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="new-form-wrapper">
+          <h4 class="text-center">Fill Out The form</h4>
+          <hr>
+          <p class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
+                    data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
+                    data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required"
+                    data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
+                    data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
+                    data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
