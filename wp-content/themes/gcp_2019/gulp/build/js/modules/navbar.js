@@ -20,11 +20,6 @@
     $('.navbar-collapse').collapse('hide');
   });
 
-  // Activate scrollspy to add active class to navbar items on scrolla
-  // $('body').scrollspy({
-  //   target: '#mainNav',
-  //   offset: 54
-  // });
 
   // Collapse Navbar
   var navbarCollapse = function() {
@@ -38,5 +33,11 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+  $('.services-dropdown').on('click', function() {
+    if( window.screen.width > 768 ) {
+      window.location = '/services-overview';
+    }
+  });
 
 })(jQuery); // End of use strict

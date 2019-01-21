@@ -69,7 +69,7 @@ $lp_form_btn_label = get_field('lp_form_btn_label');
           <h4 class="text-center"><?php echo $lp_form_heading; ?></h4>
           <hr>
           <p class=" text-center"><?php echo $lp_form_paragraph; ?></p>
-          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+          <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate">
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
@@ -99,7 +99,8 @@ $lp_form_btn_label = get_field('lp_form_btn_label');
                 <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit"><?php echo $lp_form_btn_label; ?></button>
               </div>
             </div>
-          </form>
+          </form> -->
+          <?php echo do_shortcode("[hubspot type=form portal=4643163 id=b1bf8f5d-7c79-4434-ac4d-510135075ae5]"); ?>
         </div>
       </div>
     </div>

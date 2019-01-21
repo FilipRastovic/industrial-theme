@@ -9989,7 +9989,17 @@ body {
   width: 100%; }
 
 body {
-  font-family: 'Roboto Slab', 'Helvetica', 'Arial', 'sans-serif'; }
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: 'Roboto Slab', 'Helvetica', 'Arial', 'sans-serif';
+  text-align: justify;
+  margin-bottom: 0px; }
+  @media (min-width: 992px) {
+    body {
+      font-size: 18px;
+      text-align: left; } }
 
 hr {
   border-width: 1px;
@@ -10029,6 +10039,7 @@ p {
   line-height: 1.7;
   margin-bottom: 20px;
   font-weight: 400;
+  font-family: 'Roboto Slab', 'Helvetica', 'Arial', 'sans-serif';
   text-align: justify; }
   @media (min-width: 992px) {
     p {
@@ -10057,6 +10068,12 @@ section {
   @media (min-width: 990px) {
     .mb-50 {
       margin-bottom: 200px; } }
+
+.pb-30 {
+  padding-bottom: 30px; }
+  @media (min-width: 990px) {
+    .pb-30 {
+      padding-bottom: 130px; } }
 
 .mb-30 {
   margin-bottom: 30px; }
@@ -10126,7 +10143,11 @@ ul.row {
       width: 150%; } }
   @media (min-width: 990px) {
     .img-abstract--mt {
-      top: 100px; } }
+      top: 50px; } }
+
+@media (min-width: 990px) {
+  .helmet .img-abstract {
+    width: 100%; } }
 
 article {
   margin-bottom: 60px;
@@ -10267,14 +10288,14 @@ a:not([href]):not([tabindex]) {
     letter-spacing: 1px;
     font-size: 20px;
     color: #2d3436;
-    text-align: center; }
+    text-align: center;
+    font-weight: 800; }
     @media (min-width: 990px) {
       .cards h5 {
         font-size: 26px; } }
 
 .featured-case-study {
-  padding: 80px 0px;
-  background: #041B31; }
+  padding: 80px 0px; }
   .featured-case-study h2,
   .featured-case-study p,
   .featured-case-study .col-12 {
@@ -10287,8 +10308,9 @@ a:not([href]):not([tabindex]) {
   .featured-case-study img {
     border-radius: 200px; }
 
-.featured-case-study.bg-grey .card-body {
-  background: #ebebeb; }
+.featured-case-study .dark-bg {
+  background: #041B31;
+  color: white !important; }
 
 .form-wrapper,
 .new-form-wrapper {
@@ -10365,6 +10387,7 @@ form {
   line-height: 1.7;
   margin-bottom: 20px;
   font-weight: 400;
+  font-family: 'Roboto Slab', 'Helvetica', 'Arial', 'sans-serif';
   text-align: justify; }
   @media (min-width: 992px) {
     #services ul li,
@@ -10492,8 +10515,6 @@ form {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
         #mainNav .request-consultation a:hover {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-      #mainNav .dropdown-toggle::after {
-        display: none; }
       #mainNav .dropdown .dropdown-item {
         padding: 0.75rem 1.5rem; }
       #mainNav .dropdown .dropdown-menu {
@@ -10600,11 +10621,153 @@ form {
   background-color: #555;
   /* Add a dark-grey background on hover */ }
 
+#self-assessment {
+  /*Hide all except first fieldset*/
+  /*inputs*/
+  /*buttons*/
+  /*headings*/
+  /*progressbar*/
+  /*progressbar connectors*/
+  /*marking active/completed steps green*/
+  /*The number of the step and the connector before it = green*/
+  /* Not relevant to this form */ }
+  #self-assessment #msform {
+    text-align: center;
+    position: relative;
+    margin-top: 30px; }
+  #self-assessment #msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    /*stacking fieldsets above each other*/
+    position: relative; }
+  #self-assessment #msform fieldset:not(:first-of-type) {
+    display: none; }
+  #self-assessment #msform input, #self-assessment #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px; }
+  #self-assessment #msform input:focus, #self-assessment #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ee0979;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in; }
+  #self-assessment #msform .action-button {
+    width: 100px;
+    background: #ee0979;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px; }
+  #self-assessment #msform .action-button:hover, #self-assessment #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979; }
+  #self-assessment #msform .action-button-previous {
+    width: 100px;
+    background: #C5C5F1;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px; }
+  #self-assessment #msform .action-button-previous:hover, #self-assessment #msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1; }
+  #self-assessment .fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold; }
+  #self-assessment .fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px; }
+  #self-assessment #progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step; }
+  #self-assessment #progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px; }
+  #self-assessment #progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    background: white;
+    border-radius: 25px;
+    margin: 0 auto 10px auto; }
+  #self-assessment #progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+    /*put it behind the numbers*/ }
+  #self-assessment #progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; }
+  #self-assessment #progressbar li.active:before, #self-assessment #progressbar li.active:after {
+    background: #ee0979;
+    color: white; }
+  #self-assessment .dme_link {
+    margin-top: 30px;
+    text-align: center; }
+  #self-assessment .dme_link a {
+    background: #FFF;
+    font-weight: bold;
+    color: #ee0979;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px 25px;
+    font-size: 12px; }
+  #self-assessment .dme_link a:hover, #self-assessment .dme_link a:focus {
+    background: #C5C5F1;
+    text-decoration: none; }
+
 .service-copy {
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 20px;
   font-weight: 400;
+  font-family: 'Roboto Slab', 'Helvetica', 'Arial', 'sans-serif';
   text-align: justify; }
   @media (min-width: 992px) {
     .service-copy {
@@ -10627,6 +10790,7 @@ form {
     line-height: 1.7;
     margin-bottom: 20px;
     font-weight: 400;
+    font-family: 'Roboto Slab', 'Helvetica', 'Arial', 'sans-serif';
     text-align: justify; }
     @media (min-width: 992px) {
       .service-copy ul > li {
@@ -10669,6 +10833,7 @@ form {
     line-height: 1.7;
     margin-bottom: 20px;
     font-weight: 400;
+    font-family: 'Roboto Slab', 'Helvetica', 'Arial', 'sans-serif';
     text-align: justify; }
     @media (min-width: 992px) {
       .sidebar-services ul li {
@@ -10767,6 +10932,7 @@ footer.main-footer {
   line-height: 1.7;
   margin-bottom: 20px;
   font-weight: 400;
+  font-family: 'Roboto Slab', 'Helvetica', 'Arial', 'sans-serif';
   text-align: justify; }
   @media (min-width: 992px) {
     .latest-posts li {

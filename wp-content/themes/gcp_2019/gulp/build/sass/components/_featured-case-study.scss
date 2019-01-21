@@ -1,6 +1,5 @@
 .featured-case-study {
   padding: 80px 0px;
-  background: $theme-primary;
   h2,
   p,
   .col-12 {
@@ -14,8 +13,9 @@
   }
 }
 
-.featured-case-study.bg-grey {
-  .card-body {
-    background: #ebebeb;
+.featured-case-study {
+  .dark-bg {
+    background: $theme-primary;
+    color: white !important;
   }
 }

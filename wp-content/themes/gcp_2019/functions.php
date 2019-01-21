@@ -42,6 +42,7 @@ if ( ! function_exists( 'gcp_2019_setup' ) ) :
 		 */
     add_theme_support( 'post-thumbnails' );
     require_once(get_template_directory() . '/assets/wp-bootstrap-navwalker-master/class-wp-bootstrap-navwalker.php');
+    //require_once(get_template_directory() . '/assets/wp-bootstrap-navwalker-dropdown-master/wp_bootstrap_navwalker.php');
 
 
 		// This theme uses wp_nav_menu() in one location.

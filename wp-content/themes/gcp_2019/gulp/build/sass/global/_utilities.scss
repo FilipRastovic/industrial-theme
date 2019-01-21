@@ -22,6 +22,13 @@
   }
 }
 
+.pb-30 {
+  padding-bottom: 30px;
+  @media (min-width: 990px) {
+    padding-bottom: 130px;
+  }
+}
+
 .mb-30 {
   margin-bottom: 30px;
   @media (min-width: 990px) {
@@ -106,9 +113,19 @@ ul.row {
     width: 150%;
   }
 
+
+
   &--mt {
     @media (min-width: 990px) {
-      top: 100px;
+      top: 50px;
+    }
+  }
+}
+
+.helmet {
+  .img-abstract {
+    @media (min-width: 990px) {
+      width: 100%;
     }
   }
 }

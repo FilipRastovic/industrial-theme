@@ -49,7 +49,8 @@ get_header();
           <hr>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
-          <a download href="<?php echo $services_whitepaper_file_url; ?>" class="btn btn-full btn-xl js-scroll-trigger">Download</a>
+          <!-- <a download href="<?php echo $services_whitepaper_file_url; ?>" class="btn btn-full btn-xl js-scroll-trigger">Download</a> -->
+          <?php echo do_shortcode("[hubspot type=form portal=4643163 id=6d527de3-5434-4d32-809b-36c39bcd6976]"); ?>
         </div>
       </div>
     </div>

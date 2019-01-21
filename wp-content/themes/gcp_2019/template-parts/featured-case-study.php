@@ -5,7 +5,7 @@ $home_featured_case_study_text = get_field('home_featured_case_study_text');
 $home_featured_case_study_btn_text = get_field('home_featured_case_study_btn_text');
 ?>
 
-<section  data-aos="fade-up" class="featured-case-study">
+<section class="featured-case-study">
   <div class="container padded shadow bg-grey-only patterned-section">
     <div class="row">
       <div class="col-6 col-md-4 mx-auto mb-3">

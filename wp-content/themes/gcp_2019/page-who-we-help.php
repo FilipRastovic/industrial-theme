@@ -50,7 +50,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 <?php get_template_part('template-parts/companies-hire-us'); ?>
 
-<section class="how dark-bg">
+<section class="how bg-grey">
   <div class="container ">
     <div class="row">
       <div class="col-12 text-center mb-5">
@@ -108,7 +108,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
   </div>
 </section>
 
-<section class="whitepaper self-assessment mb-50">
+<section class="whitepaper self-assessment bg-grey pb-30">
   <div class="container ">
     <div class="row">
       <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
@@ -117,10 +117,79 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
       <div class="col-md-8 content-wrapper">
         <h2><?php echo $self_assessment_title; ?></h2>
         <p><?php echo $self_assessment_paragraph; ?></p>
-        <a href="" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $self_assessment_btn_label; ?></a>
+        <a href="" class="btn btn-full btn-xl js-scroll-trigger" data-toggle="modal" data-target="#self-assessment"><?php echo $self_assessment_btn_label; ?></a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="self-assessment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+      <div class="container">
+        <!-- MultiStep Form -->
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Personal Details</li>
+                <li>Social Profiles</li>
+                <li>Account Setup</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Personal Details</h2>
+                <h3 class="fs-subtitle">Tell us something more about you</h3>
+                <input type="text" name="fname" placeholder="First Name"/>
+                <input type="text" name="lname" placeholder="Last Name"/>
+                <input type="text" name="phone" placeholder="Phone"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Social Profiles</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="text" name="twitter" placeholder="Twitter"/>
+                <input type="text" name="facebook" placeholder="Facebook"/>
+                <input type="text" name="gplus" placeholder="Google Plus"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Create your account</h2>
+                <h3 class="fs-subtitle">Fill in your credentials</h3>
+                <input type="text" name="email" placeholder="Email"/>
+                <input type="password" name="pass" placeholder="Password"/>
+                <input type="password" name="cpass" placeholder="Confirm Password"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+            </fieldset>
+        </form>
+        <!-- link to designify.me code snippets -->
+        <div class="dme_link">
+            <p><a href="http://designify.me/code-snippets-js/" target="_blank">More Code Snippets</a></p>
+        </div>
+        <!-- /.link to designify.me code snippets -->
+    </div>
+</div>
+<!-- /.MultiStep Form -->
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php get_footer(); ?>

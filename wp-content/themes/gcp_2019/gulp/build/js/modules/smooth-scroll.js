@@ -11,12 +11,12 @@ $("#scroll-top").click(function() {
   }, 700);
 });
 
-window.onscroll = function() {scrollFunction();};
+// window.onscroll = function() {scrollFunction();};a
 
-function scrollFunction() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        document.getElementById("scroll-top").style.display = "block";
-    } else {
-        document.getElementById("scroll-top").style.display = "none";
-    }
-}
+// function scrollFunction() {
+//     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+//         document.getElementById("scroll-top").style.display = "block";
+//     } else {
+//         document.getElementById("scroll-top").style.display = "none";
+//     }
+// }

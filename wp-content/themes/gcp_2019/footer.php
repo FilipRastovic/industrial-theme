@@ -35,7 +35,7 @@
     <p>&copy; Your Website 2018. All Rights Reserved.</p>
   </div>
 </footer>
-<button id="scroll-top" title="Go to top">Top</button>
+<!-- <button id="scroll-top" title="Go to top">Top</button> -->
 
 
 <?php wp_footer(); ?>

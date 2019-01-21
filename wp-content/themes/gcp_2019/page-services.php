@@ -62,7 +62,8 @@ $next_service_label = get_field('next_service_label');
             <h4><?php echo $services_whitepaper_title; ?></h4>
             <hr>
             <p class="card-text"><?php echo $services_whitepaper_paragraph; ?></p>
-            <a download href="<?php echo $services_whitepaper_file_url; ?>" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $services_whitepaper_btn_text; ?></a>
+            <!-- <a download href="<?php echo $services_whitepaper_file_url; ?>" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $services_whitepaper_btn_text; ?></a> -->
+            <?php echo do_shortcode("[hubspot type=form portal=4643163 id=6d527de3-5434-4d32-809b-36c39bcd6976]"); ?>
           </div>
         </div>
       </div>
@@ -97,7 +98,7 @@ $next_service_label = get_field('next_service_label');
           <h4 class="text-center">Fill Out The form</h4>
           <hr>
           <p class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+          <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate">
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
@@ -132,7 +133,8 @@ $next_service_label = get_field('next_service_label');
                 <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
               </div>
             </div>
-          </form>
+          </form> -->
+          <?php echo do_shortcode("[hubspot type=form portal=4643163 id=b1bf8f5d-7c79-4434-ac4d-510135075ae5]"); ?>
         </div>
       </div>
     </div>

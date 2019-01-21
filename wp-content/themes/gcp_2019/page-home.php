@@ -97,7 +97,7 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
 </section>
 
 <section class="featured-case-study">
-  <div class="container padded shadow bg-grey patterned-section">
+  <div class="container padded shadow bg-grey-only patterned-section">
     <div class="row">
       <div class="col-6 col-md-4 mx-auto mb-3">
         <img class="img-fluid" src="<?php echo $home_featured_case_study_img['url']; ?>" alt="Testimonial Img"> 
