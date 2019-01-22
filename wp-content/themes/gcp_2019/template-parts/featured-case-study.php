@@ -5,8 +5,8 @@ $home_featured_case_study_text = get_field('home_featured_case_study_text');
 $home_featured_case_study_btn_text = get_field('home_featured_case_study_btn_text');
 ?>
 
-<section class="featured-case-study">
-  <div class="container padded shadow bg-grey-only patterned-section">
+<section class="featured-case-study bg-grey">
+  <div class="container">
     <div class="row">
       <div class="col-6 col-md-4 mx-auto mb-3">
         <img class="img-fluid" src="<?php echo $home_featured_case_study_img['url']; ?>" alt="Testimonial Img"> 

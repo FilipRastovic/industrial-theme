@@ -27,6 +27,11 @@ $lp_form_btn_label = get_field('lp_form_btn_label');
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 <link rel="icon" type="image/png" href="<?php echo $website_icon['url']; ?>" />
 <?php wp_head(); ?>
+<style>
+  iframe {
+    width:100%;
+  }
+</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -106,5 +111,11 @@ $lp_form_btn_label = get_field('lp_form_btn_label');
     </div>
   </div>
 </section>
+
+<script>
+hbspt.forms.create({
+        cssClass: ''
+      });
+</script>
 
 <?php get_footer(); ?>

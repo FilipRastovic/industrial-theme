@@ -74,7 +74,7 @@ $next_service_label = get_field('next_service_label');
 <?php get_template_part('template-parts/featured-case-study'); ?>
 
 <section class="whitepaper">
-  <div class="container shadow padded">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-md-10">
         <h2><?php echo $services_request_consultation_heading; ?></h2>
@@ -84,13 +84,13 @@ $next_service_label = get_field('next_service_label');
       </div>
       <div class="col-md-12">
         <p><?php echo $services_request_consultation_content; ?></p>
-        <a href="" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $services_request_consultation_btn_text; ?></a>
+        <a href="#services-bot-form" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $services_request_consultation_btn_text; ?></a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="form-section">
+<section id="services-bot-form" class="form-section bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3">

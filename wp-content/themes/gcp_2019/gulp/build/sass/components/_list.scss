@@ -18,6 +18,11 @@
       @include paragraph-font;
     }
   }
+
+  a {
+    color: $black;
+    font-weight: 900;
+  }
 }
 
 #services {
@@ -38,7 +43,10 @@
     content: counter(li);
     counter-increment: li;
     color: white;
-    background: $btn-light-blue;
+    background: white;
+    border: 1px solid $theme-primary;
+    color: $theme-primary;
+    font-family: "Lato";
     border-radius: 50%;
     font-size: 18px;
     width: 48px;
@@ -52,26 +60,3 @@
   }
 }
 
-#services-one::before {
-  background-image: url(http://localhost/wp-content/uploads/2019/01/number-one-in-a-circle.svg);
-}
-
-#services-two::before {
-  background-image: url(http://localhost/wp-content/uploads/2019/01/number-two-in-a-circle.svg);
-}
-
-#services-three::before {
-  background-image: url(http://localhost/wp-content/uploads/2019/01/number-three-in-a-circle.svg);
-}
-
-#services-four::before {
-  background-image: url(http://localhost/wp-content/uploads/2019/01/number-four-in-a-circle.svg);
-}
-
-#services-five::before {
-  background-image: url(http://localhost/wp-content/uploads/2019/01/number-five-in-a-circle.svg);
-}
-
-#services-six::before {
-  background-image: url(http://localhost/wp-content/uploads/2019/01/number-six-in-a-circle.svg);
-}

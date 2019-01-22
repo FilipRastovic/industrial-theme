@@ -7,6 +7,9 @@ body {
 body {
   @include paragraph-font;
   margin-bottom: 0px;
+  @media (min-width: 768px) {
+    overflow-x: hidden;
+  }
 }
 
 hr {

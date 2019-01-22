@@ -5,14 +5,16 @@
  */
 
 get_header();
+$learning_center_heading = get_field('learning_center_heading');
+$services_whitepaper_title = get_field('services_whitepaper_title');
+$services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 ?>
 
 <header class="masthead masthead--grey">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="mb-5">10-word mission statement for
-          your learning center goes here
+        <h2 class="mb-5"><? echo get_the_title(); ?>
         </h2>
       </div>
     </div>
@@ -40,14 +42,12 @@ get_header();
                   <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
                     <img class="img-fluid" src="'; echo bloginfo('template_directory'); echo '/assets/img/whitepaper.png" alt="Whitepaper">
                   </div>
-                  <div class="col-md-8 content-wrapper">
+                  <div class="col-md-6 content-wrapper">
                     <h2>Whitepaper</h2>
-                    <p>Etiam eu dui sit amet diam posuere finibus ac ut ipsum.
-                      Vivamus pharetra in urna non molestie.
-                      Duis id lorem ut lacus hendrerit sodales eu id urna.
-                      Pellentesque pulvinar elit et feugiat posuere.
+                    <p>Download our latest whitepaper by filling out the form bellow.
                     </p>
-                    <a href="" class="btn btn-full btn-xl js-scroll-trigger">Download</a>
+                   '; echo do_shortcode("[hubspot type=form portal=4643163 id=6d527de3-5434-4d32-809b-36c39bcd6976]");
+                   echo '
                   </div>
                 </div>
               </div>

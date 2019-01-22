@@ -52,8 +52,8 @@ $services_flow_diagram_tab_3_content = get_field('services_flow_diagram_tab_3_co
   </div>
 </header> 
 
-<section data-aos="fade-up" class="how dark-bg">
-  <div class="container shadow padded patterned-section">
+<section data-aos="fade-up" class="how">
+  <div class="container">
     <div class="row">
       <div class="col-12 text-center mb-5">
         <h2 class="mb-5"><?php echo $who_how_we_support_heading; ?></h2>
@@ -73,8 +73,8 @@ $services_flow_diagram_tab_3_content = get_field('services_flow_diagram_tab_3_co
   </div>
 </section>
 
-<section data-aos="fade-up" class="flow-diagram">
-  <div class="container padded shadow">
+<section data-aos="fade-up" class="flow-diagram bg-grey">
+  <div class="container">
     <div class="row">
       <div class="col-12 text-center mb-5">
         <h2><?php echo $flow_diagram_header; ?></h2>
@@ -120,7 +120,7 @@ $services_flow_diagram_tab_3_content = get_field('services_flow_diagram_tab_3_co
           <h4 class="text-center">Fill Out The form</h4>
           <hr>
           <p class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+          <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate">
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
@@ -155,7 +155,8 @@ $services_flow_diagram_tab_3_content = get_field('services_flow_diagram_tab_3_co
                 <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
               </div>
             </div>
-          </form>
+          </form> -->
+          <?php echo do_shortcode("[hubspot type=form portal=4643163 id=b1bf8f5d-7c79-4434-ac4d-510135075ae5]"); ?>
         </div>
       </div>
     </div>

@@ -24,6 +24,7 @@ $home_featured_case_study_heading = get_field('home_featured_case_study_heading'
 $home_featured_case_study_img = get_field('home_featured_case_study_img');
 $home_featured_case_study_text = get_field('home_featured_case_study_text'); 
 $home_featured_case_study_btn_text = get_field('home_featured_case_study_btn_text');
+$featured_case_study_url = get_field('featured_case_study_url');
 
 $home_supplier_url_1 = get_field('home_supplier_url_1');
 $home_supplier_url_2 = get_field('home_supplier_url_2');
@@ -36,23 +37,11 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
 
 ?>
 
-<!-- <header class="masthead--home d-flex">
-  <div class="container container-img">
-    <div class="row">
-      <div class="col-7 offset-4 col-md-4 offset-md-5">
-          <h1 class="text-uppercase">
-            <?php echo $home_main_heading; ?>
-          </h1>
-      </div>
-    </div>
-  </div>
-</header> -->
-
 <header class="masthead masthead--home masthead--noborder bg-grey polygon">
   <div class="header__bg hero-img"></div>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-9">
         <h1 class=""><?php echo $home_main_heading; ?></h1>
         <p class=""><?php echo $home_cta_first_paragraph; ?></p>
         <a class="btn btn-full btn-xl js-scroll-trigger" href="/who-we-help"><?php echo $home_cta_first_btn_text; ?></a>
@@ -60,18 +49,6 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
     </div>
   </div>
 </header> 
-
-
-<!-- <section  class="cta">
-  <div class="container padded shadow bg-grey patterned-section">
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <p class="text-center"><?php echo $home_cta_first_paragraph; ?></p>
-        <a class="btn btn-full btn-xl js-scroll-trigger" href="/who-we-help"><?php echo $home_cta_first_btn_text; ?></a>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <?php get_template_part('template-parts/companies-hire-us'); ?>
 
@@ -97,7 +74,7 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
 </section>
 
 <section class="featured-case-study">
-  <div class="container padded shadow bg-grey-only patterned-section">
+  <div class="container">
     <div class="row">
       <div class="col-6 col-md-4 mx-auto mb-3">
         <img class="img-fluid" src="<?php echo $home_featured_case_study_img['url']; ?>" alt="Testimonial Img"> 
@@ -105,7 +82,7 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
       <div class="col-12 col-md-8">
         <h2 class="mb-4"><?php echo $home_featured_case_study_heading; ?></h2>
         <p class="card-text"><?php echo $home_featured_case_study_text; ?></p>
-        <a href="" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $home_featured_case_study_btn_text; ?></a>
+        <a href="<?php echo $featured_case_study_url; ?>" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $home_featured_case_study_btn_text; ?></a>
       </div>
     </div>
   </div>
