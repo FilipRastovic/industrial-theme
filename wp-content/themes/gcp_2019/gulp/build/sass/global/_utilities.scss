@@ -84,7 +84,9 @@
 hr {
   max-width: 150px;
   border-width: 2px;
-  border-color: $btn-light-blue;
+  border-color: $red;
+  margin-top: 0.2rem !important;
+  margin-bottom: 1.2rem !important;
 }
 
 hr.light {

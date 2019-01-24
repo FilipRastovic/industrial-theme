@@ -26,6 +26,10 @@
   ul {
     margin-bottom: 30px;
   }
+
+  a {
+    color: $red;
+  }
 }
 
 #menu-services {
@@ -34,9 +38,11 @@
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   a {
+    color: $red !important;
     text-decoration: none;
     @include transition-all;
     &:hover {
+      color: ligthen($red, 10%);
       text-decoration: underline;
     }
   }

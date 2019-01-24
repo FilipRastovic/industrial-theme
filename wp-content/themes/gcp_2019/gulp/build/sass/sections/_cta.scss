@@ -5,30 +5,15 @@
   }
 }
 
-.whitepaper {
-  text-align: center;
-  h2 {
-    margin-bottom: 30px;
-    @media (min-width: 990px) {
-      margin-top: 60px;
-    }
-  }
 
-  p {
-    margin-bottom: 30px;
-  }
-  @media (min-width: 990px) {
-    text-align: left;
-  }
-}
 
 .how {
   a {
-    color: $theme-primary;
+    color: $red;
     &:hover,
     &:visited,
     &:active {
-      color: lighten($theme-primary, 10%);
+      color: lighten($red, 10%);
     }
   }
 }

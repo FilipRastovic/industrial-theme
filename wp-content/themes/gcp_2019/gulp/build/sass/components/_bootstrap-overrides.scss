@@ -59,12 +59,12 @@
 }
 
 a {
-  color: $link-color;
+  color: $theme-primary;
   text-decoration: underline;
   @include transition-all;
     &:hover,
     &:focus {
-        color: lighten($link-color, 5%);
+        color: lighten($theme-primary, 5%);
     }
 }
 

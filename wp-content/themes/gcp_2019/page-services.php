@@ -73,16 +73,16 @@ $next_service_label = get_field('next_service_label');
 
 <?php get_template_part('template-parts/featured-case-study'); ?>
 
-<section class="whitepaper">
+<section class="whitepaper whitepaper--bottom">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-10">
+      <div class="col-12 col-md-8">
         <h2><?php echo $services_request_consultation_heading; ?></h2>
       </div>
-      <div class="col-2 d-none d-sm-none d-md-block">
+      <div class="col-6 col-md-2 d-none d-sm-none d-md-block">
         <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/consultation.png" alt="Consultation Quote">
       </div>
-      <div class="col-md-12">
+      <div class="col-md-10">
         <p><?php echo $services_request_consultation_content; ?></p>
         <a href="#services-bot-form" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $services_request_consultation_btn_text; ?></a>
       </div>

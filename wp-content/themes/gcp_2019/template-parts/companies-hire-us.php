@@ -16,7 +16,7 @@ $btn_hide = get_field('btn_hide');
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading mb-2"><?php echo $home_when_heading; ?></h2>
-        <hr class="my-4 mb-3">
+        <hr class="">
       </div>
     </div>
     <div class="row mt-3">

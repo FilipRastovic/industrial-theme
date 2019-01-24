@@ -20,7 +20,7 @@
   }
 
   a {
-    color: $black;
+    color: $link-color;
     font-weight: 900;
   }
 }
@@ -44,8 +44,8 @@
     counter-increment: li;
     color: white;
     background: white;
-    border: 1px solid $theme-primary;
-    color: $theme-primary;
+    border: 1px solid $red;
+    color: $red;
     font-family: "Lato";
     border-radius: 50%;
     font-size: 18px;

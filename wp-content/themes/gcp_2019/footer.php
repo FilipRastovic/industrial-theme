@@ -37,7 +37,9 @@
 </footer>
 <!-- <button id="scroll-top" title="Go to top">Top</button> -->
 
-
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4643163.js"></script>
+<!-- End of HubSpot Embed Code -->
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -57,7 +57,7 @@ $home_supplier_url_7 = get_field('home_supplier_url_7');
     <div class="row">
       <div class="col-lg-12 mx-auto text-center">
         <h2 class="mb-2"><?php echo $home_suppliers_heading; ?></h2>
-        <hr class="my-4">
+        <hr class="">
         <?php echo $home_suppliers_content; ?>
       </div>
     </div>

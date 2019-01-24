@@ -1,6 +1,9 @@
 .learning-center-copy,
 .case-studies {
  article {
+   .moretag {
+     color: $theme-primary;
+   }
   background: #fafafa;
   margin-bottom: 80px;
   @include transition-all;
@@ -30,7 +33,7 @@
 .whitepaper {
   padding: 80px 0px;
   border-radius: 6px;
-}
+  }
 }
 
 .post-details {
@@ -39,6 +42,12 @@
   .fa-folder:before,
   .fa-tags:before {
     margin-right: 6px;
+  }
+}
+
+i.fa {
+  a {
+    color: $theme-primary;
   }
 }
 
