@@ -27,15 +27,14 @@
         <a href="/learning-centar">Learning Center</a>
       </li>
     </ul>
-    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/linkedin.png" alt="Linkedin">
-    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/facebook.png" alt="Facebook">
-    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/twitter.png" alt="Twitter">
-    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/rss.png" alt="RSS">
-    <img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/youtube.png" alt="Youtube">
-    <p>&copy; Your Website 2018. All Rights Reserved.</p>
+    <a href="https://www.linkedin.com/company/global-industrial-products" target="_BLANK"><img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/linkedin.png" alt="Linkedin"></a>
+    <a href="https://www.facebook.com/gcpindustrial" target="_BLANK"><img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/facebook.png" alt="Facebook"></a>
+    <a href="https://twitter.com/GCPIndustrial" target="_BLANK"><img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/twitter.png" alt="Twitter"></a>
+    <a href="http://www.gcpindustrial.com/blog/rss" target="_BLANK"><img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/rss.png" alt="RSS"></a>
+    <a href="https://www.youtube.com/user/gcpindustrial/videos" target="_BLANK"><img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/youtube.png" alt="Youtube"></a>
+    <p>&copy; GCP <?php echo date("Y"); ?>. All Rights Reserved.</p>
   </div>
 </footer>
-<!-- <button id="scroll-top" title="Go to top">Top</button> test-->
 
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4643163.js"></script>

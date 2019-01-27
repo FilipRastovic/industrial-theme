@@ -35,6 +35,9 @@ $services_flow_diagram_tab_2_content = get_field('services_flow_diagram_tab_2_co
 $services_flow_diagram_tab_3 = get_field('services_flow_diagram_tab_3');
 $services_flow_diagram_tab_3_heading = get_field('services_flow_diagram_tab_3_heading');
 $services_flow_diagram_tab_3_content = get_field('services_flow_diagram_tab_3_content'); 
+
+$lp_form_heading = get_field('lp_form_heading');
+$lp_form_paragraph = get_field('lp_form_paragraph');
 ?>
 
 <header class="masthead masthead--noborder polygon">
@@ -117,45 +120,9 @@ $services_flow_diagram_tab_3_content = get_field('services_flow_diagram_tab_3_co
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <div class="new-form-wrapper">
-          <h4 class="text-center">Fill Out The form</h4>
+          <h4 class="text-center"><?php echo $lp_form_heading; ?></h4>
           <hr>
-          <p class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
-                    data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
-                    data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required"
-                    data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
-                    data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
-                    data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-              </div>
-            </div>
-          </form> -->
+          <p class=" text-center"><?php echo $lp_form_paragraph;?></p>
           <?php echo do_shortcode("[hubspot type=form portal=4643163 id=b1bf8f5d-7c79-4434-ac4d-510135075ae5]"); ?>
         </div>
       </div>

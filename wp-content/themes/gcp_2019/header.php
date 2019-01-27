@@ -9,9 +9,6 @@
  * @package gcp_2019
  */
 
-  $website_icon = get_field('website_icon');
-  $navbar_brand_logo = get_field('navbar_brand_logo');
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -22,7 +19,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-  <link rel="icon" type="image/png" href="<?php echo $website_icon['url']; ?>" />
+  <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/assets/img/ico.png?>" />
   <?php wp_head(); ?>
 </head>
 

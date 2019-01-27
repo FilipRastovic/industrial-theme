@@ -9,11 +9,11 @@
 
 .how {
   a {
-    color: $red;
+    color: $btn-light-blue;
     &:hover,
     &:visited,
     &:active {
-      color: lighten($red, 10%);
+      color: lighten($btn-light-blue, 10%);
     }
   }
 }

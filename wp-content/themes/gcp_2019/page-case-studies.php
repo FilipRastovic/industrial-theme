@@ -17,7 +17,9 @@ $case_studies_main_image = get_field('case_studies_main_image');
   <div class="container">
     <div class="row">
       <div class="col-md-7 order-2 order-md-1">
-        <h1 class="mb-5"><?php echo $case_studies_main_heading; ?></h1>
+        <h1 class="mb-5">
+          <?php echo $case_studies_main_heading; ?>
+        </h1>
         <?php echo $case_studies_main_paragraph; ?>
       </div>
       <div class="<?php echo $case_studies_main_image_style; ?> u-relative">
@@ -25,7 +27,7 @@ $case_studies_main_image = get_field('case_studies_main_image');
       </div>
     </div>
   </div>
-</header> 
+</header>
 
 <section class="cards case-studies">
   <div class="container">

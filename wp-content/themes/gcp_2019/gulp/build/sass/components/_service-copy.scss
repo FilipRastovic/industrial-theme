@@ -28,7 +28,7 @@
   }
 
   a {
-    color: $red;
+    color: $btn-light-blue;
   }
 }
 
@@ -38,11 +38,11 @@
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   a {
-    color: $red !important;
+    color: $btn-light-blue !important;
     text-decoration: none;
     @include transition-all;
     &:hover {
-      color: ligthen($red, 10%);
+      color: ligthen($btn-light-blue, 10%);
       text-decoration: underline;
     }
   }

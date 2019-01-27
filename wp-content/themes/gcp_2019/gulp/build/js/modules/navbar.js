@@ -40,4 +40,16 @@
     }
   });
 
+
+  /** Hide navbar button on landing page when viewing on mobile screens */
+  if ( $(".page-template-page-landing")[0] ) {
+
+      if ( $(window).width() < 768 ) {
+
+        $('button.navbar-toggler').hide();
+
+      }
+
+  } 
+ 
 })(jQuery); // End of use strict

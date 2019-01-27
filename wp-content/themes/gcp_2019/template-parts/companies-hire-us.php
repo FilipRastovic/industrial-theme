@@ -1,4 +1,3 @@
-
 <?php 
 $home_when_heading = get_field('home_when_heading');
 $home_when_reason_1 = get_field('home_when_reason_1');
@@ -15,20 +14,34 @@ $btn_hide = get_field('btn_hide');
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading mb-2"><?php echo $home_when_heading; ?></h2>
+        <h2 class="section-heading mb-2">
+          <?php echo $home_when_heading; ?>
+        </h2>
         <hr class="">
       </div>
     </div>
     <div class="row mt-3">
       <div class="col-md-12">
-      <ol class="row">
-          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_1; ?></li>
-          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_2; ?></li>
-          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_3; ?></li>
-          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_4; ?></li>
-          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_5; ?></li>
-          <li class="list-item col-12 col-md-6 "><?php echo $home_when_reason_6; ?></li>
-      </ol>
+        <ol class="row">
+          <li class="list-item col-12 col-md-6 ">
+            <?php echo $home_when_reason_1; ?>
+          </li>
+          <li class="list-item col-12 col-md-6 ">
+            <?php echo $home_when_reason_2; ?>
+          </li>
+          <li class="list-item col-12 col-md-6 ">
+            <?php echo $home_when_reason_3; ?>
+          </li>
+          <li class="list-item col-12 col-md-6 ">
+            <?php echo $home_when_reason_4; ?>
+          </li>
+          <li class="list-item col-12 col-md-6 ">
+            <?php echo $home_when_reason_5; ?>
+          </li>
+          <li class="list-item col-12 col-md-6 ">
+            <?php echo $home_when_reason_6; ?>
+          </li>
+        </ol>
+      </div>
     </div>
-  </div>
 </section>

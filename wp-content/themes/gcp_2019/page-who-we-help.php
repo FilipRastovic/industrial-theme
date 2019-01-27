@@ -145,12 +145,31 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
         <p>
           <?php echo $self_assessment_paragraph; ?>
         </p>
-        <a href="/self-assessment-step-1" class="btn btn-full btn-xl js-scroll-trigger">
+        <a data-toggle="modal" data-target="#self-assessment-modal" class="btn btn-full btn-xl js-scroll-trigger">
+          <!--href="/self-assessment-step-1"-->
           <?php echo $self_assessment_btn_label; ?></a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="self-assessment-modal" tabindex="-1" role="dialog" aria-labelledby="self-assessment-modal-label"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="self-assessment-modal-label">Self Assessment</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <?php echo do_shortcode("[qsm quiz=1]"); ?>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <?php get_footer(); ?>

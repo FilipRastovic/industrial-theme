@@ -15,8 +15,16 @@
 get_header();
 ?>
 
-
+<header class="masthead masthead--noborder polygon error-page">
+  <div class="header__bg"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+					
+      </div>
+    </div>
+  </div>
+</header>
 
 <?php
-get_sidebar();
 get_footer();

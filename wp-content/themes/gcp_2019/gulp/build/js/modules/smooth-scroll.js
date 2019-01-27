@@ -11,12 +11,12 @@ $("#scroll-top").click(function() {
   }, 700);
 });
 
-// window.onscroll = function() {scrollFunction();};a
+$("#services-bot-form-cta").click(function() {
 
-// function scrollFunction() {
-//     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-//         document.getElementById("scroll-top").style.display = "block";
-//     } else {
-//         document.getElementById("scroll-top").style.display = "none";
-//     }
-// }
+  $([document.documentElement, document.body]).animate({
+
+      scrollTop: $("#services-bot-form").offset().top
+
+  }, 300);
+
+});

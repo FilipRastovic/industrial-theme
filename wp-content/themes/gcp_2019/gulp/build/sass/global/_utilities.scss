@@ -84,7 +84,7 @@
 hr {
   max-width: 150px;
   border-width: 2px;
-  border-color: $red;
+  border-color: $btn-light-blue;
   margin-top: 0.2rem !important;
   margin-bottom: 1.2rem !important;
 }
@@ -113,6 +113,7 @@ ul.row {
   @media (min-width: 990px) {
     position: absolute;
     width: 150%;
+    top: 180px;
   }
 
 

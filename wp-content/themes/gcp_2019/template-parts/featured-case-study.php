@@ -14,7 +14,7 @@ $home_featured_case_study_btn_text = get_field('home_featured_case_study_btn_tex
       <div class="col-12 col-md-8">
         <h2 class="mb-4"><?php echo $home_featured_case_study_heading; ?></h2>
         <p class="card-text"><?php echo $home_featured_case_study_text; ?></p>
-        <a href="" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $home_featured_case_study_btn_text; ?></a>
+        <a href="/case-studies" class="btn btn-full btn-xl js-scroll-trigger"><?php echo $home_featured_case_study_btn_text; ?></a>
       </div>
     </div>
   </div>
