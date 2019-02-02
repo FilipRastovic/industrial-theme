@@ -16,6 +16,7 @@
   ul {
     li {
       @include paragraph-font;
+      list-style-type: none;
     }
   }
 

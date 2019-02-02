@@ -19,13 +19,6 @@ $services_content = get_field('services_content');
 $services_whitepaper_title = get_field('services_whitepaper_title');
 $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 
-$services_request_consultation_heading = get_field('services_request_consultation_heading');
-$services_request_consultation_content = get_field('services_request_consultation_content');
-$services_request_consultation_btn_text = get_field('services_request_consultation_btn_text'); 
-
-$next_service_url = get_field('next_service_url');
-$next_service_label = get_field('next_service_label');
-
 $lp_form_heading = get_field('lp_form_heading');
 $lp_form_paragraph = get_field('lp_form_paragraph');
 
@@ -41,8 +34,8 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
         </h1>
         <?php echo $services_main_paragraph; ?>
       </div>
-      <div class="<?php echo $services_main_image_style; ?> u-relative">
-        <img class="img-abstract" src="<?php echo $services_main_image['url']; ?>" alt="Service Img">
+      <div class="<?php echo $services_main_image_style; ?>">
+        <img class="img-fluid" src="<?php echo $services_main_image['url']; ?>" alt="Service Img">
       </div>
     </div>
   </div>
@@ -56,8 +49,6 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
           <?php echo $services_second_heading; ?>
         </h1>
         <?php echo $services_content; ?>
-        Next service: <a href="<?php echo $next_service_url; ?>">
-          <?php echo $next_service_label; ?></a>
       </div>
       <div class="col-md-4 offset-md-1">
         <div class="card card--whitepaper no-top-border">
@@ -82,29 +73,7 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
 
 <?php get_template_part('template-parts/featured-case-study'); ?>
 
-<section class="whitepaper whitepaper--bottom">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-8">
-        <h2>
-          <?php echo $services_request_consultation_heading; ?>
-        </h2>
-      </div>
-      <div class="col-6 col-md-2 d-none d-sm-none d-md-block">
-        <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/consultation.png" alt="Consultation Quote">
-      </div>
-      <div class="col-md-10">
-        <p>
-          <?php echo $services_request_consultation_content; ?>
-        </p>
-        <a id="#services-bot-form-cta" class="btn btn-full btn-xl js-scroll-trigger">
-          <?php echo $services_request_consultation_btn_text; ?></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="services-bot-form" class="form-section bg-grey">
+<section id="services-bot-form" class="form-section">
   <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3">

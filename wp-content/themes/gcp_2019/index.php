@@ -34,7 +34,7 @@ $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 
           get_template_part( 'template-parts/content', get_post_type() );
 
-          if( 1 == $wp_query->current_post ):
+          if( 1 == $wp_query->current_post || ( $wp_query->current_post > 1 && $wp_query->current_post % 2  ) ):
             echo '
             <section class="whitepaper">
               <div class="container shadow padded patterned-section">
@@ -42,9 +42,9 @@ $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
                   <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
                     <img class="img-fluid" src="'; echo bloginfo('template_directory'); echo '/assets/img/whitepaper.png" alt="Whitepaper">
                   </div>
-                  <div class="col-md-6 content-wrapper">
-                    <h2>Whitepaper</h2>
-                    <p>Download our latest whitepaper by filling out the form bellow.
+                  <div class="col-md-8 content-wrapper">
+                    <h2>Guide to Successfully Sourcing Suppliers from China</h2>
+                    <p>In this guide you will find all the steps, detailed processes and tools to take before working with a supplier from China.
                     </p>
                    '; echo do_shortcode("[hubspot type=form portal=4643163 id=6d527de3-5434-4d32-809b-36c39bcd6976]");
                    echo '

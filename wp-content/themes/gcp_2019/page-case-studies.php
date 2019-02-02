@@ -42,11 +42,9 @@ $case_studies_main_image = get_field('case_studies_main_image');
       ?>
 
       <?php while ( $loop->have_posts() ) : $loop->the_post();  ?>
-      <div class="col-md-6">
+      
         <?php get_template_part( 'template-parts/content', get_post_type() );?>
-      </div>
-
-
+  
 
       <?php endwhile;  ?>
     </div>

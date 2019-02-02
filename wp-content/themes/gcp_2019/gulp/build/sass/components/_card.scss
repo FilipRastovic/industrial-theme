@@ -28,9 +28,21 @@
 }
 
 .no-top-border {
-  border-top-left-radius: calc(9.25rem - 1px);
-  border-top-right-radius: calc(9.25rem - 1px);
+  img {
+    position: absolute;
+    top: -60px;
+    left: 0;
+  }
+
+  h4 {
+    margin-top: 60px;
+    @media (min-width: 990px) {
+      margin-top: 200px;
+    }
+  }
 }
+
+
 
 .card-img-top {
   @media (max-width: 990px) {
@@ -55,5 +67,20 @@
     @include subheading-font;
     text-align: center;
     font-weight: 800;
+  }
+}
+
+.cards.case-studies {
+  .col-md-6 {
+    height: 100%;
+  }
+  article {
+    
+    flex: 1 1 auto;
+    @media (min-width: 990px) {
+      width: 40%;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 }

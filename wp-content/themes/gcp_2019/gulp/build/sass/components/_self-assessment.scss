@@ -1,5 +1,19 @@
 #self-assessment-modal {
 
+  td {
+    font-size: 12px;
+
+    @media (min-width: 990px) {
+      font-size: 14px;
+    }
+  }
+
+  .modal-content {
+    @media (max-width:550px) {
+      height: 1050px;
+    }
+  }
+
   /* Margin on the top of the quiz */
   .mlw_qmn_message_before {
     margin-bottom: 0px;
@@ -22,6 +36,10 @@
   /* Removin the buggy breaklines on the quiz results page */
   .qmn_question_answer.qmn_question_answer_correct > br,
   .qmn_question_answer.qmn_question_answer_incorrect > br {
+    display: none !important;
+  }
+
+  #self-assessment-results > br {
     display: none !important;
   }
 
@@ -71,6 +89,16 @@
       background: lighten(#a29bfe, 10%);
     }
 
+  }
+
+  .current-score {
+    font-size: 18px;
+    color: red;
+  }
+
+  .ideal-score {
+    font-size: 18px;
+    color: blue;
   }
   
   @media (min-width: 576px) {

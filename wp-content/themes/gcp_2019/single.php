@@ -45,10 +45,9 @@ get_header();
           <img class="card-img-top img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/whitepaper.png" alt="Card image cap">
         </div>
         <div class="card-body text-center">
-          <h4>White Paper Title</h4>
+          <h4>Guide to Successfully Sourcing Suppliers from China</h4>
           <hr>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
+          <p class="card-text">In this guide you will find all the steps, detailed processes and tools to take before working with a supplier from China.</p>
           <!-- <a download href="<?php echo $services_whitepaper_file_url; ?>" class="btn btn-full btn-xl js-scroll-trigger">Download</a> -->
           <?php echo do_shortcode("[hubspot type=form portal=4643163 id=6d527de3-5434-4d32-809b-36c39bcd6976]"); ?>
         </div>

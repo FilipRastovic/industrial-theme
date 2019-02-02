@@ -87,8 +87,8 @@ header.polygon {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right,#041B31,#0f4d88);
-    opacity: .6; 
+    background-image: linear-gradient(to bottom right,$theme-primary, rgb(8, 53, 95));
+    opacity: .9; 
   }
 }
 

@@ -110,7 +110,7 @@ $featured_case_study_url = get_field('featured_case_study_url');
       </div>
       <div class="col-6 col-md-3 mx-auto text-center mb-5">
         <a href="<?php echo $home_supplier_url_7 ?>" target="_blank">
-          <img class="img-fluid" src="<?php echo $home_supplier_brand_7['url']; ?>" alt="Supplier Logo">FOAM RUBBER
+          <img class="img-fluid" src="<?php echo $home_supplier_brand_7['url']; ?>" alt="Supplier Logo"><?php echo $home_supplier_description_7 ?>
         </a>
       </div>
     </div>

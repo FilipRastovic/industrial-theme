@@ -198,7 +198,7 @@ function list_categories_styling() {
 function isacustom_excerpt_length( $length ) {
   global $post;
   if ( $post -> post_type == 'post' )
-    return 85;
+    return 22;
   elseif ( $post -> post_type == 'case_study' )
     return 22;
   elseif ( $post -> post_type == 'testimonial' )
