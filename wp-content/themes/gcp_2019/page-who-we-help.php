@@ -65,9 +65,9 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
         <ul class="row mx-auto">
           <li class="list-item col-12 col-md-4 mx-auto "><a href="/supplier-sourcing">
               <?php echo $who_how_we_support_1; ?></a></li>
-          <li class="list-item col-12 col-md-4 mx-auto "><a href="/supplier-audits">
+          <li class="list-item col-12 col-md-4 mx-auto "><a href="/supplier-auditing">
               <?php echo $who_how_we_support_2; ?></a></li>
-          <li class="list-item col-12 col-md-4 mx-auto "><a href="/order-management">
+          <li class="list-item col-12 col-md-4 mx-auto "><a href="/offshore-order-management/">
               <?php echo $who_how_we_support_3; ?></a></li>
           <li class="list-item col-12 col-md-4 mx-auto "><a href="/quality-control">
               <?php echo $who_how_we_support_4; ?></a></li>
