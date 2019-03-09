@@ -3,10 +3,12 @@
     "concat" : [
       "node_modules/bootstrap/scss/bootstrap.scss",
       "node_modules/font-awesome/css/font-awesome.css",
-      "build/sass/_variables.scss",
-      "build/sass/global/*.scss",
-      "build/sass/components/*.scss",
-      "build/sass/sections/*.scss"
+      "build/sass/variables.scss",
+      "build/sass/base/mixins.scss",
+      "build/sass/base/base.scss",
+      "build/sass/layout/*.scss",
+      "build/sass/module/**/*.scss",
+      "build/sass/utilities/**/*.scss"
     ]
   },
   "javascript" : {
@@ -19,7 +21,7 @@
         "build/third_party/js/**/*.js"
       ],
       "custom": [
-        "build/js/modules/**/*.js"
+        "build/js/module/**/*.js"
       ]
     },
     "dependencies": [

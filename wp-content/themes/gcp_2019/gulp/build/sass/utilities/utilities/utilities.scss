@@ -29,6 +29,10 @@
   }
 }
 
+.pb-60 {
+  padding-bottom: 60px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
   @media (min-width: 990px) {
@@ -50,7 +54,7 @@
 }
 
 .bg-grey {
-  background: #fafafa;
+  background: #e9e9e9;
   border-top: 1px solid darken(#fafafa, 10%);
   border-bottom: 1px solid darken(#fafafa, 10%);
 
@@ -116,8 +120,6 @@ ul.row {
     top: 180px;
   }
 
-
-
   &--mt {
     @media (min-width: 990px) {
       top: 50px;
@@ -131,4 +133,16 @@ ul.row {
       width: 100%;
     }
   }
+}
+
+hr.light {
+  border-color: white;
+}
+
+.light {
+  color: white;
+}
+
+.full-width {
+  max-width: 100%;
 }

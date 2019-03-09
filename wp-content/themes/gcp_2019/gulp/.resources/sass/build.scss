@@ -2338,48 +2338,50 @@
   clip: auto;
 }
 
-@import "../../build/sass/_variables.scss";
+@import "../../build/sass/variables.scss";
 
-@import "../../build/sass/global/0_mixins.scss";
+@import "../../build/sass/base/mixins.scss";
 
-@import "../../build/sass/global/_global.scss";
+@import "../../build/sass/base/base.scss";
 
-@import "../../build/sass/global/_utilities.scss";
+@import "../../build/sass/layout/cta.scss";
 
-@import "../../build/sass/components/_article.scss";
+@import "../../build/sass/layout/footer.scss";
 
-@import "../../build/sass/components/_bootstrap-overrides.scss";
+@import "../../build/sass/layout/landing-page-content.scss";
 
-@import "../../build/sass/components/_card.scss";
+@import "../../build/sass/layout/latest-posts.scss";
 
-@import "../../build/sass/components/_featured-case-study.scss";
+@import "../../build/sass/layout/learning-center-copy.scss";
 
-@import "../../build/sass/components/_form.scss";
+@import "../../build/sass/layout/masthead.scss";
 
-@import "../../build/sass/components/_list-services.scss";
+@import "../../build/sass/module/article/article.scss";
 
-@import "../../build/sass/components/_navbar.scss";
+@import "../../build/sass/module/card/card.scss";
 
-@import "../../build/sass/components/_phases-flow.scss";
+@import "../../build/sass/module/featured-case-study/featured-case-study.scss";
 
-@import "../../build/sass/components/_scroll-top.scss";
+@import "../../build/sass/module/form/form.scss";
 
-@import "../../build/sass/components/_self-assessment.scss";
+@import "../../build/sass/module/latest-posts/latest-posts.scss";
 
-@import "../../build/sass/components/_service-copy.scss";
+@import "../../build/sass/module/list-services/list-services.scss";
 
-@import "../../build/sass/components/_suppliers.scss";
+@import "../../build/sass/module/navbar/navbar.scss";
 
-@import "../../build/sass/components/_whitepaper.scss";
+@import "../../build/sass/module/phases-flow/phases-flow.scss";
 
-@import "../../build/sass/sections/_cta.scss";
+@import "../../build/sass/module/scroll-top-btn/scroll-top.scss";
 
-@import "../../build/sass/sections/_footer.scss";
+@import "../../build/sass/module/self-assessment-modal/self-assessment.scss";
 
-@import "../../build/sass/sections/_landing-page-content.scss";
+@import "../../build/sass/module/service-copy/service-copy.scss";
 
-@import "../../build/sass/sections/_latest-posts.scss";
+@import "../../build/sass/module/suppliers/suppliers.scss";
 
-@import "../../build/sass/sections/_learning-center-copy.scss";
+@import "../../build/sass/module/whitepaper/whitepaper.scss";
 
-@import "../../build/sass/sections/_masthead.scss";
+@import "../../build/sass/utilities/bootstrap-overrides/bootstrap-overrides.scss";
+
+@import "../../build/sass/utilities/utilities/utilities.scss";

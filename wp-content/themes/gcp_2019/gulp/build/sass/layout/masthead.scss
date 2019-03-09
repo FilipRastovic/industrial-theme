@@ -44,17 +44,16 @@ header.polygon {
   p {
     
     @media (min-width: 990px) {
-      width: 550px;
-      max-width: 550px;
+      width: 650px;
+      max-width: 650px;
     }
   }
 
   h1 {
     @include heading-font;
     color: white;
-    font-size: 40px;
     @media (min-width: 990px) {
-      font-size: 60px;
+      max-width: 750px;
     }
   }
 
@@ -76,7 +75,7 @@ header.polygon {
   width: 100%;
   height: 100%;
   background-image: linear-gradient($theme-primary, $theme-primary);
-  transform: skewY(-6deg);
+  //transform: skewY(-6deg);
   transform-origin: top left;
 }
 
@@ -101,7 +100,7 @@ header.polygon {
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to bottom right,$theme-primary, rgb(8, 53, 95));
-    opacity: .9; 
+    opacity: .8; 
   }
 }
 
