@@ -1,0 +1,66 @@
+header.header {
+  position: relative;
+  min-height: 300px;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  background: $theme-primary;
+  border-bottom: 1px solid #C8C7C7;
+
+  h1 {
+    @include heading-font;
+    color: white;
+    @media (min-width: 990px) {
+      max-width: 750px;
+    }
+  }
+
+  p {
+    @media (min-width: 990px) {
+      width: 650px;
+      max-width: 650px;
+      text-align: left;
+    }
+  }
+
+  ul > li,
+  p {
+    color: #fff;
+    @media ( max-width: 990px ) {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 990px) {
+    padding-top: 200px;
+    height: 700px;
+  }
+
+  &--grey {
+    background: #fafafa;
+  }
+  &--noborder {
+    border-bottom: none;
+  }
+}
+
+.homepage-hero-img {
+  @include background-cover;
+  background-image: url('../img/hero-mobile.jpg');
+  
+  @media (min-width: 550px) {
+    background-image: url('../img/Shipping_Container9.jpg');
+  }
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #31363f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $theme-primary, #31363f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $theme-primary, #31363f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: .8; 
+  }
+}

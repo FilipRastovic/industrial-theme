@@ -1,29 +1,23 @@
 #self-assessment-modal {
-
   td {
     font-size: 12px;
-
     @media (min-width: 990px) {
       font-size: 14px;
     }
   }
-
   .modal-content {
     @media (max-width:550px) {
       height: 1050px;
     }
   }
-
   /* Margin on the top of the quiz */
   .mlw_qmn_message_before {
     margin-bottom: 0px;
   }
-
   /* Removing the border bootstrap adds to the submit button on the bottom of the quiz */
   .border {
     border: none !important;
   }
-
   /* Making the inputs widths 100% width */
   .quiz_section select,
   .quiz_section textarea,
@@ -32,82 +26,60 @@
   .quiz_section input[type="number"] {
     width: 100%;
   }
-  
   /* Removin the buggy breaklines on the quiz results page */
   .qmn_question_answer.qmn_question_answer_correct > br,
   .qmn_question_answer.qmn_question_answer_incorrect > br {
     display: none !important;
   }
-
   #self-assessment-results > br {
     display: none !important;
   }
-
   /* A little margin bellow the question during answers */
   .qmn_question_answer.qmn_question_answer_incorrect {
     margin-bottom: 16px;
   }
-
   /* Styling the answers */
   .qmn_user_incorrect_answer {
     color: #74b9ff;
     font-size: 24px;
   }
-
   /* Color classes for the table */
   .green {
-
     background: #55efc4;
     &--lighter {
       background: lighten(#55efc4, 30%);
     }
-
   }
-
   .azure {
-
     background: #81ecec;
     &--lighter {
       background: lighten(#81ecec, 20%);
     }
-
   }
-
   .blue {
-
     background: #74b9ff;
     &--lighter {
       background: lighten(#74b9ff, 20%);
     }
-
   }
-
   .purple {
-
     background: #a29bfe;
     &--lighter {
       background: lighten(#a29bfe, 10%);
     }
-
   }
-
   .current-score {
     font-size: 18px;
     color: red;
   }
-
   .ideal-score {
     font-size: 18px;
     color: blue;
   }
-  
-  @media (min-width: 576px) {
 
-    /* Modal width on bigger devices */
+  @media (min-width: 576px) {
     .modal-dialog {
       max-width: 890px;
     }
-
   }
-
 }

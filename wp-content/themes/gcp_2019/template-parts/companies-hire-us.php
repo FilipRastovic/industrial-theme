@@ -10,13 +10,16 @@ $home_when_cta = get_field('home_when_cta');
 $btn_hide = get_field('btn_hide');
 ?>
 
-<section id="services" class="bg-grey">
+<section class="bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h3 class="mb-2"><?php echo $home_when_heading; ?></h3>
+        <h3 class="mb-2">
+          <?php echo $home_when_heading; ?>
+        </h3>
         <hr>
-        <p class="full-width mx-auto pb-60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusamus nisi aut hic enim impedit iste. In ad</p>
+        <p class="full-width mx-auto pb-60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusamus nisi
+          aut hic enim impedit iste. In ad</p>
       </div>
     </div>
     <div class="row mt-3">
@@ -25,32 +28,45 @@ $btn_hide = get_field('btn_hide');
         <img class="img-fluid mb-5" src="http://via.placeholder.com/600x400" alt="Services Img 2">
       </div>
       <div class="col-md-6">
-        <ol class="row">
+        <ol class="row ol-with-counter">
           <li class="list-item col-12 col-md-12">
             <h5>Heading</h5>
-            <p><?php echo $home_when_reason_1; ?></p>
+            <p>
+              <?php echo $home_when_reason_1; ?>
+            </p>
           </li>
           <li class="list-item col-12 col-md-12">
             <h5>Heading</h5>
-            <p><?php echo $home_when_reason_2; ?></p>
+            <p>
+              <?php echo $home_when_reason_2; ?>
+            </p>
           </li>
           <li class="list-item col-12 col-md-12">
             <h5>Heading</h5>
-            <p><?php echo $home_when_reason_3; ?></p>
+            <p>
+              <?php echo $home_when_reason_3; ?>
+            </p>
           </li>
           <li class="list-item col-12 col-md-12">
             <h5>Heading</h5>
-            <p><?php echo $home_when_reason_4; ?></p>
+            <p>
+              <?php echo $home_when_reason_4; ?>
+            </p>
           </li>
           <li class="list-item col-12 col-md-12">
             <h5>Heading</h5>
-            <p><?php echo $home_when_reason_5; ?></p>
+            <p>
+              <?php echo $home_when_reason_5; ?>
+            </p>
           </li>
           <li class="list-item col-12 col-md-12">
             <h5>Heading</h5>
-            <p><?php echo $home_when_reason_6; ?></p>
+            <p>
+              <?php echo $home_when_reason_6; ?>
+            </p>
           </li>
         </ol>
       </div>
     </div>
+  </div>
 </section>

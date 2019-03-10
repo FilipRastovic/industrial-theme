@@ -15,8 +15,8 @@
 get_header();
 ?>
 
-<header class="masthead masthead--noborder polygon error-page">
-  <div class="header__bg"></div>
+<header class="header header--noborder error-page">
+  <div class="polygon-shape"></div>
   <div class="container">
     <div class="row">
       <div class="col-12">

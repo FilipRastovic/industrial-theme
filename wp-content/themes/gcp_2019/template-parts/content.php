@@ -12,8 +12,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-		if ( ( is_singular() && 'post' === get_post_type() ) || ( is_single() && 'case_study' === get_post_type() && ! ( get_page_template_slug( get_the_ID() ) === 'case-studies') )  )  : the_title( '<h2 class="entry-title">', '</h2>' );
-		else : the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		if ( ( is_singular() && 'post' === get_post_type() ) || ( is_single() && 'case_study' === get_post_type() && ! ( get_page_template_slug( get_the_ID() ) === 'case-studies') )  )  : the_title( '<h4 class="entry-title">', '</h4>' );
+		else : the_title( '<h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
 		endif; ?>
 
 		<?php if ( 'post' && ! ( 'case_study' === get_post_type() ) ) : ?>

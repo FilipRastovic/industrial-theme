@@ -12,8 +12,8 @@ $case_studies_main_image_style = get_field('case_studies_main_image_style');
 $case_studies_main_image = get_field('case_studies_main_image');
 ?>
 
-<header class="masthead masthead--noborder polygon">
-  <div class="header__bg"></div>
+<header class="header header--noborder">
+  <div class="polygon-shape"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-7 order-2 order-md-1">
@@ -31,11 +31,11 @@ $case_studies_main_image = get_field('case_studies_main_image');
 
 <section class="cards case-studies">
   <div class="container">
-    <div class="row">
+    <div class="row row-eq-height">
       <?php
       $loop = new WP_Query( array(
           'post_type' => 'case_study',
-          'posts_per_page' => 4,
+          'posts_per_page' => 999,
           'paged'=>$paged
         )
       );
@@ -43,36 +43,12 @@ $case_studies_main_image = get_field('case_studies_main_image');
 
       <?php while ( $loop->have_posts() ) : $loop->the_post();  ?>
       
-        <?php get_template_part( 'template-parts/content', get_post_type() );?>
+        <div class="col-md-4">
+          <?php get_template_part( 'template-parts/content', get_post_type() );?>
+        </div>
   
 
       <?php endwhile;  ?>
-    </div>
-  </div>
-</section>
-
-<section class="learning-center-copy bg-grey">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-7 offset-md-2 pt-5">
-
-        <?php
-      $loop_bottom = new WP_Query( array(
-          'post_type' => 'case_study',
-          'posts_per_page' => 10,
-          'paged'=>$paged
-        )
-      );
-      ?>
-
-        <?php while ( $loop_bottom->have_posts() ) : $loop_bottom->the_post();  ?>
-        <?php if( 3 < $loop_bottom->current_post ):
-         get_template_part( 'template-parts/content', get_post_type() );?>
-
-        <?php endif; ?>
-        <?php endwhile;?>
-
-      </div>
     </div>
   </div>
 </section>

@@ -42,8 +42,6 @@
   }
 }
 
-
-
 .card-img-top {
   @media (max-width: 990px) {
     width: 100px;
@@ -78,9 +76,10 @@
     
     flex: 1 1 auto;
     @media (min-width: 990px) {
-      width: 40%;
+      //width: 30%;
       margin-left: 20px;
       margin-right: 20px;
+      height:
     }
   }
 }

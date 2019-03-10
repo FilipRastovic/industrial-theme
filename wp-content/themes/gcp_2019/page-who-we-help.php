@@ -32,8 +32,8 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 ?>
 
-<header class="masthead masthead--noborder polygon">
-  <div class="header__bg"></div>
+<header class="header header--noborder">
+  <div class="polygon-shape"></div>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -145,8 +145,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
         <p>
           <?php echo $self_assessment_paragraph; ?>
         </p>
-        <a data-toggle="modal" data-target="#self-assessment-modal" class="btn btn-full btn-xl js-scroll-trigger">
-          <!--href="/self-assessment-step-1"-->
+        <a data-toggle="modal" data-target="#self-assessment-modal" class="btn">
           <?php echo $self_assessment_btn_label; ?></a>
       </div>
     </div>

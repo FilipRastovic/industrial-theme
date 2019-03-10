@@ -10,7 +10,7 @@ $services_whitepaper_title = get_field('services_whitepaper_title');
 $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 ?>
 
-<header class="masthead masthead--grey">
+<header class="header header--grey">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -21,7 +21,7 @@ $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
   </div>
 </header>
 
-<section class="learning-center-copy">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-md-9 col-lg-10 order-2 order-md-1">

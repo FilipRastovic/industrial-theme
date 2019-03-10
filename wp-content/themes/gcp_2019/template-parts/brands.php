@@ -1,4 +1,4 @@
-<section class="suppliers bg-grey">
+<section class="supplier-logos bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 mx-auto text-center">

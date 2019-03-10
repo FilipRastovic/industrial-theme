@@ -2344,44 +2344,36 @@
 
 @import "../../build/sass/base/base.scss";
 
-@import "../../build/sass/layout/cta.scss";
-
 @import "../../build/sass/layout/footer.scss";
 
-@import "../../build/sass/layout/landing-page-content.scss";
+@import "../../build/sass/layout/header.scss";
 
-@import "../../build/sass/layout/latest-posts.scss";
+@import "../../build/sass/layout/polygon-shape.scss";
 
-@import "../../build/sass/layout/learning-center-copy.scss";
-
-@import "../../build/sass/layout/masthead.scss";
+@import "../../build/sass/layout/sidebar.scss";
 
 @import "../../build/sass/module/article/article.scss";
 
-@import "../../build/sass/module/card/card.scss";
+@import "../../build/sass/module/button/button.scss";
 
-@import "../../build/sass/module/featured-case-study/featured-case-study.scss";
+@import "../../build/sass/module/card/card.scss";
 
 @import "../../build/sass/module/form/form.scss";
 
-@import "../../build/sass/module/latest-posts/latest-posts.scss";
+@import "../../build/sass/module/icon/icon.scss";
 
-@import "../../build/sass/module/list-services/list-services.scss";
+@import "../../build/sass/module/latest-posts-links/latest-posts-links.scss";
+
+@import "../../build/sass/module/links/links.scss";
 
 @import "../../build/sass/module/navbar/navbar.scss";
 
-@import "../../build/sass/module/phases-flow/phases-flow.scss";
+@import "../../build/sass/module/ol-with-counter/ol-with-counter.scss";
 
-@import "../../build/sass/module/scroll-top-btn/scroll-top.scss";
+@import "../../build/sass/module/phases-flow-tabs/phases-flow.scss";
 
 @import "../../build/sass/module/self-assessment-modal/self-assessment.scss";
 
-@import "../../build/sass/module/service-copy/service-copy.scss";
+@import "../../build/sass/module/supplier-logos/supplier-logos.scss";
 
-@import "../../build/sass/module/suppliers/suppliers.scss";
-
-@import "../../build/sass/module/whitepaper/whitepaper.scss";
-
-@import "../../build/sass/utilities/bootstrap-overrides/bootstrap-overrides.scss";
-
-@import "../../build/sass/utilities/utilities/utilities.scss";
+@import "../../build/sass/utilities/utilities.scss";

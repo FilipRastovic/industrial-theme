@@ -46,8 +46,8 @@ $featured_case_study_url = get_field('featured_case_study_url');
 
 ?>
 
-<header class="masthead masthead--home masthead--noborder bg-grey polygon">
-  <div class="header__bg hero-img"></div>
+<header class="header header--home header--noborder bg-grey">
+  <div class="polygon-shape homepage-hero-img"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-8">
@@ -102,11 +102,11 @@ $featured_case_study_url = get_field('featured_case_study_url');
 </section>
 
 
-<section class="latest-posts bg-grey">
+<section class="latest-posts-links bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="text-center">
+        <div class="latest-posts-links-box">
           <h3 class="mb-2">Case Studies</h3>
             <hr class="mx-auto">
             <ul class="list-unstyled">
@@ -125,7 +125,7 @@ $featured_case_study_url = get_field('featured_case_study_url');
         </div>
       </div>
       <div class="col-md-6">
-        <div class="text-center">
+        <div class="latest-posts-links-box">
           <h3 class="mb-2">Latest posts</h3>
             <hr class="mx-auto">
             <ul class="list-unstyled">

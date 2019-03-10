@@ -1,0 +1,17 @@
+a {
+  color: $light-blue;
+  text-decoration: underline;
+  @include transition-all;
+    &:hover,
+    &:focus {
+      color: lighten($light-blue, 5%);
+    }
+}
+
+/* Make sure a color is white when .btn class is applied to it */
+a:not([href]):not([tabindex]) {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
