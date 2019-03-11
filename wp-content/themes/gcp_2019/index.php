@@ -10,18 +10,18 @@ $services_whitepaper_title = get_field('services_whitepaper_title');
 $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 ?>
 
-<header class="header header--grey">
+<header class="header header-half header--noborder bg-grey">
+  <div class="polygon-shape homepage-hero-img"></div>
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="mb-5"><? echo get_the_title(); ?>
-        </h2>
+      <div class="col-md-12">
+        <h1 class=""><? echo get_the_title(); ?></h1>
       </div>
     </div>
   </div>
 </header>
 
-<section>
+<section class="learning-center">
   <div class="container">
     <div class="row">
       <div class="col-md-9 col-lg-10 order-2 order-md-1">

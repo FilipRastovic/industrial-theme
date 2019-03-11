@@ -9,9 +9,6 @@ header.header {
   h1 {
     @include heading-font;
     color: white;
-    @media (min-width: 990px) {
-      max-width: 750px;
-    }
   }
 
   p {
@@ -40,6 +37,14 @@ header.header {
   }
   &--noborder {
     border-bottom: none;
+  }
+
+  &-half {
+
+    @media (min-width: 990px) {
+      padding-top: 200px;
+      height: 450px;
+    }
   }
 }
 

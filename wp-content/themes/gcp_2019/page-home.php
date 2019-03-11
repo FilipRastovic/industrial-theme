@@ -46,11 +46,11 @@ $featured_case_study_url = get_field('featured_case_study_url');
 
 ?>
 
-<header class="header header--home header--noborder bg-grey">
+<header class="header header--noborder bg-grey">
   <div class="polygon-shape homepage-hero-img"></div>
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <h1 class="">
           <?php echo $home_main_heading; ?>
         </h1>

@@ -1,13 +1,25 @@
+.case-studies article {
+  height: 100%;
+}
+
+.learning-center article {
+  height: 400px;
+  @media (min-width: 768px) {
+    height: 350px;
+  }
+  
+  @media (min-width: 990px) {
+    height: 280px;
+  }
+}
+
 article {
   background: #fafafa;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   @include transition-all;
   box-shadow: $material-shadow-1;
   padding: 10px 20px 30px;
-
-  .moretag {
-    color: $light-blue;
-  }
+  position: relative;
 
   h2 {
     a {
@@ -19,5 +31,14 @@ article {
         color: ligthen($theme-primary, 10%);
       }
     }
+  }
+
+  .moretag {
+    color: $light-blue;
+  }
+
+  p:nth-of-type( 2 ) {
+    position: absolute;
+    bottom: 0;
   }
 }
