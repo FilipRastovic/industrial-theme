@@ -50,7 +50,7 @@ $featured_case_study_url = get_field('featured_case_study_url');
   <div class="polygon-shape homepage-hero-img"></div>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-8">
         <h1 class="">
           <?php echo $home_main_heading; ?>
         </h1>
@@ -58,7 +58,8 @@ $featured_case_study_url = get_field('featured_case_study_url');
           <?php echo $home_cta_first_paragraph; ?>
         </p>
         <a class="btn" href="/who-we-help">
-          <?php echo $home_cta_first_btn_text; ?></a>
+          <?php echo $home_cta_first_btn_text; ?>
+        </a>
       </div>
     </div>
   </div>
@@ -95,7 +96,8 @@ $featured_case_study_url = get_field('featured_case_study_url');
         <h4 class="mb-4"><?php echo $home_featured_case_study_heading; ?></h4>
         <p class="card-text"><?php echo $home_featured_case_study_text; ?></p>
         <a href="<?php echo $featured_case_study_url; ?>" class="btn btn-full btn-xl js-scroll-trigger">
-          <?php echo $home_featured_case_study_btn_text; ?></a>
+          <?php echo $home_featured_case_study_btn_text; ?>
+        </a>
       </div>
     </div>
   </div>

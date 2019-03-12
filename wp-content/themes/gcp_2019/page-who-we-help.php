@@ -32,7 +32,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 ?>
 
-<header class="header header--noborder">
+<header class="header header-half header--noborder">
   <div class="polygon-shape"></div>
   <div class="container">
     <div class="row">

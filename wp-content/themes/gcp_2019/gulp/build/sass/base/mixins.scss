@@ -14,7 +14,7 @@
 /* Refactoring */
 @mixin navbar-font {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   color: $navbar-font-color;
 }
@@ -23,15 +23,15 @@
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: $grey-text;
-  font-size: 60px;
+  font-size: 2.5rem;
   @media (min-width: 990px) {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 @mixin paragraph-font {
   font-family: 'Crimson Text', serif;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: 400;
   margin-bottom: 20px;
   color: $paragraph-text-color;
@@ -40,7 +40,7 @@
 
 @mixin subheading-font {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   margin-bottom: 20px;
   color: $grey-text;
@@ -48,7 +48,7 @@
 
 @mixin subsubheading-font {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   color: $grey-text;
 }

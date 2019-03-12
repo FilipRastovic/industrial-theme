@@ -3,14 +3,6 @@
   padding: 30px 25px 30px;
   background: #EBEBEB;
   box-shadow: $material-shadow-1;
-
-  p {
-    font-size: 13px;
-
-    @media (min-width: 990px) {
-      font-size: 18px;
-    }
-  }
 }
 
 form {

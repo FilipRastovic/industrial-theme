@@ -24,7 +24,7 @@ $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 <section class="learning-center">
   <div class="container">
     <div class="row">
-      <div class="col-md-9 col-lg-10 order-2 order-md-1">
+      <div class="col-md-8 ml-auto">
         <?php
       if ( have_posts() ) :
 
@@ -34,13 +34,13 @@ $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 
           get_template_part( 'template-parts/content', get_post_type() );
 
-          if( 1 == $wp_query->current_post || ( $wp_query->current_post > 1 && $wp_query->current_post % 2  ) ):
+          if( 1 < $wp_query->current_post && ( $wp_query->current_post % 3 == 0  ) ):
             echo '
-            <section class="whitepaper">
+            <section class="blog-form-wrapper">
               <div class="container shadow padded patterned-section">
                 <div class="row">
-                  <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
-                    <img class="img-fluid" src="'; echo bloginfo('template_directory'); echo '/assets/img/whitepaper.png" alt="Whitepaper">
+                  <div class="col-4 offset-4 col-md-3 offset-md-1 mb-5">
+                    <img class="" src="'; echo bloginfo('template_directory'); echo '/assets/img/whitepaper.png" alt="Whitepaper">
                   </div>
                   <div class="col-md-8 content-wrapper">
                     <h2>Guide to Successfully Sourcing Suppliers from China</h2>
@@ -64,14 +64,16 @@ $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
       ?>
 
       </div>
-      <div class="col-md-3 col-lg-2 order-1 order-md-2">
+      <div class="col-md-3">
         
+        <div class="card">
         <?php wp_list_categories( array(
-            'orderby' => 'name',
-            'show_count' => true
-        ) ); ?>
-      
-    </div>
+              'orderby' => 'name',
+              'show_count' => true
+          ) ); ?>
+        </div>
+        
+      </div>
       </div>
 </section>
 

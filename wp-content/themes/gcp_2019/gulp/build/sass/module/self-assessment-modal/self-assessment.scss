@@ -1,8 +1,8 @@
 #self-assessment-modal {
   td {
-    font-size: 12px;
+    font-size: 0.75rem;
     @media (min-width: 990px) {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
   }
   .modal-content {
@@ -41,7 +41,7 @@
   /* Styling the answers */
   .qmn_user_incorrect_answer {
     color: #74b9ff;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   /* Color classes for the table */
   .green {
@@ -69,11 +69,11 @@
     }
   }
   .current-score {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: red;
   }
   .ideal-score {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: blue;
   }
 

@@ -9264,45 +9264,45 @@ html,
 body {
   width: 100%; }
 
+ul li {
+  font-family: 'Montserrat', sans-serif; }
+
 body {
   margin-bottom: 0px; }
   @media (min-width: 768px) {
     body {
       overflow-x: hidden; } }
 
-body {
-  font-size: 14px; }
-
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #474747;
-  font-size: 60px; }
+  font-size: 2.5rem; }
   @media (min-width: 990px) {
     h1 {
-      font-size: 60px; } }
+      font-size: 3.75rem; } }
 
 h3,
 h2,
 h4 {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   margin-bottom: 20px;
   color: #474747; }
 
 h4 {
-  font-size: 25px; }
+  font-size: 1.563rem; }
 
 h5 {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #474747; }
 
 p {
   font-family: 'Crimson Text', serif;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: 400;
   margin-bottom: 20px;
   color: #696969;
@@ -9324,13 +9324,13 @@ footer.main-footer {
   footer.main-footer .logo {
     width: 200px; }
   footer.main-footer p {
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 0;
     text-align: center; }
   footer.main-footer ul {
     margin-bottom: 0; }
     footer.main-footer ul li a {
-      font-size: 12px;
+      font-size: 0.75rem;
       color: white; }
       footer.main-footer ul li a:hover, footer.main-footer ul li a:focus, footer.main-footer ul li a:active, footer.main-footer ul li a.active {
         text-decoration: none; }
@@ -9350,11 +9350,11 @@ header.header {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #474747;
-    font-size: 60px;
+    font-size: 2.5rem;
     color: white; }
     @media (min-width: 990px) {
       header.header h1 {
-        font-size: 60px; } }
+        font-size: 3.75rem; } }
   @media (min-width: 990px) {
     header.header p {
       width: 650px;
@@ -9416,11 +9416,11 @@ header.header {
 
 .categories {
   list-style: none;
-  font-size: 22px;
+  font-size: 0.75rem;
   margin-top: 60px;
   font-weight: 300; }
   .categories ul li {
-    font-size: 18px; }
+    font-size: 1.125rem; }
     .categories ul li a {
       text-decoration: none; }
       .categories ul li a:hover {
@@ -9439,7 +9439,9 @@ header.header {
       height: 350px; } }
   @media (min-width: 990px) {
     .learning-center article {
-      height: 280px; } }
+      height: 300px;
+      width: 700px;
+      margin-bottom: 30px; } }
 
 article {
   background: #fafafa;
@@ -9461,6 +9463,21 @@ article {
     position: absolute;
     bottom: 0; }
 
+.blog-form-wrapper .container {
+  width: 100%;
+  margin-left: 0; }
+  @media (min-width: 990px) {
+    .blog-form-wrapper .container {
+      width: 700px; } }
+  .blog-form-wrapper .container img {
+    max-width: 100%;
+    width: auto; }
+    @media (min-width: 990px) {
+      .blog-form-wrapper .container img {
+        width: 104px !important;
+        height: 136px !important;
+        margin-right: 20px; } }
+
 .btn {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -9475,7 +9492,8 @@ article {
   border-color: #0984e3;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.1), 0 0 24px rgba(0, 0, 0, 0.1);
   padding: 15px 36px;
-  border-radius: 9px; }
+  border-radius: 9px;
+  font-size: 0.875rem; }
   .btn:hover, .btn:focus {
     color: white;
     border-color: #1091f6;
@@ -9538,25 +9556,21 @@ article {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .cards h5 {
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #474747;
     text-align: center;
     font-weight: 800; }
 
+i.fa a {
+  color: #041B31; }
+
 .form-wrapper,
 .new-form-wrapper {
   padding: 30px 25px 30px;
   background: #EBEBEB;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.1), 0 0 24px rgba(0, 0, 0, 0.1); }
-  .form-wrapper p,
-  .new-form-wrapper p {
-    font-size: 13px; }
-    @media (min-width: 990px) {
-      .form-wrapper p,
-      .new-form-wrapper p {
-        font-size: 18px; } }
 
 form {
   border-radius: 0px; }
@@ -9604,9 +9618,6 @@ form {
   font-weight: 700;
   color: #ced4da; }
 
-i.fa a {
-  color: #041B31; }
-
 .latest-posts-links-box {
   max-width: 400px;
   text-align: center; }
@@ -9620,7 +9631,7 @@ i.fa a {
 
 .latest-posts-links ul li a {
   font-family: 'Crimson Text', serif;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: 400;
   margin-bottom: 20px;
   color: #696969;
@@ -9655,7 +9666,7 @@ a:not([href]):not([tabindex]) {
   #mainNav #bs-example-navbar-collapse-1 {
     order: 2; }
   #mainNav .navbar-toggler {
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 12px 14px;
     color: white;
     border-color: none;
@@ -9670,7 +9681,7 @@ a:not([href]):not([tabindex]) {
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li .dropdown-menu {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     color: #041b31; }
   #mainNav .current_page_item.active a {
@@ -9714,7 +9725,7 @@ a:not([href]):not([tabindex]) {
   *list-style: decimal; }
   .ol-with-counter li {
     font-family: 'Crimson Text', serif;
-    font-size: 21px;
+    font-size: 1.313rem;
     font-weight: 400;
     margin-bottom: 20px;
     color: #696969;
@@ -9732,7 +9743,7 @@ a:not([href]):not([tabindex]) {
     color: #0984e3;
     font-family: 'Crimson Text', serif;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 1.75rem;
     width: 48px;
     height: 48px;
     text-align: center;
@@ -9741,68 +9752,6 @@ a:not([href]):not([tabindex]) {
     top: -10px;
     left: 0;
     font-weight: 400; }
-
-#self-assessment-modal {
-  /* Margin on the top of the quiz */
-  /* Removing the border bootstrap adds to the submit button on the bottom of the quiz */
-  /* Making the inputs widths 100% width */
-  /* Removin the buggy breaklines on the quiz results page */
-  /* A little margin bellow the question during answers */
-  /* Styling the answers */
-  /* Color classes for the table */ }
-  #self-assessment-modal td {
-    font-size: 12px; }
-    @media (min-width: 990px) {
-      #self-assessment-modal td {
-        font-size: 14px; } }
-  @media (max-width: 550px) {
-    #self-assessment-modal .modal-content {
-      height: 1050px; } }
-  #self-assessment-modal .mlw_qmn_message_before {
-    margin-bottom: 0px; }
-  #self-assessment-modal .border {
-    border: none !important; }
-  #self-assessment-modal .quiz_section select,
-  #self-assessment-modal .quiz_section textarea,
-  #self-assessment-modal .quiz_section input[type="text"],
-  #self-assessment-modal .quiz_section input[type="email"],
-  #self-assessment-modal .quiz_section input[type="number"] {
-    width: 100%; }
-  #self-assessment-modal .qmn_question_answer.qmn_question_answer_correct > br,
-  #self-assessment-modal .qmn_question_answer.qmn_question_answer_incorrect > br {
-    display: none !important; }
-  #self-assessment-modal #self-assessment-results > br {
-    display: none !important; }
-  #self-assessment-modal .qmn_question_answer.qmn_question_answer_incorrect {
-    margin-bottom: 16px; }
-  #self-assessment-modal .qmn_user_incorrect_answer {
-    color: #74b9ff;
-    font-size: 24px; }
-  #self-assessment-modal .green {
-    background: #55efc4; }
-    #self-assessment-modal .green--lighter {
-      background: #e1fcf5; }
-  #self-assessment-modal .azure {
-    background: #81ecec; }
-    #self-assessment-modal .azure--lighter {
-      background: #daf9f9; }
-  #self-assessment-modal .blue {
-    background: #74b9ff; }
-    #self-assessment-modal .blue--lighter {
-      background: #daecff; }
-  #self-assessment-modal .purple {
-    background: #a29bfe; }
-    #self-assessment-modal .purple--lighter {
-      background: #d1cdff; }
-  #self-assessment-modal .current-score {
-    font-size: 18px;
-    color: red; }
-  #self-assessment-modal .ideal-score {
-    font-size: 18px;
-    color: blue; }
-  @media (min-width: 576px) {
-    #self-assessment-modal .modal-dialog {
-      max-width: 890px; } }
 
 .flow-diagram {
   color: #041B31; }
@@ -9839,6 +9788,76 @@ a:not([href]):not([tabindex]) {
   background: white;
   color: #041B31;
   padding: 20px 30px 20px 20px; }
+
+#self-assessment-modal {
+  /* Margin on the top of the quiz */
+  /* Removing the border bootstrap adds to the submit button on the bottom of the quiz */
+  /* Making the inputs widths 100% width */
+  /* Removin the buggy breaklines on the quiz results page */
+  /* A little margin bellow the question during answers */
+  /* Styling the answers */
+  /* Color classes for the table */ }
+  #self-assessment-modal td {
+    font-size: 0.75rem; }
+    @media (min-width: 990px) {
+      #self-assessment-modal td {
+        font-size: 0.875rem; } }
+  @media (max-width: 550px) {
+    #self-assessment-modal .modal-content {
+      height: 1050px; } }
+  #self-assessment-modal .mlw_qmn_message_before {
+    margin-bottom: 0px; }
+  #self-assessment-modal .border {
+    border: none !important; }
+  #self-assessment-modal .quiz_section select,
+  #self-assessment-modal .quiz_section textarea,
+  #self-assessment-modal .quiz_section input[type="text"],
+  #self-assessment-modal .quiz_section input[type="email"],
+  #self-assessment-modal .quiz_section input[type="number"] {
+    width: 100%; }
+  #self-assessment-modal .qmn_question_answer.qmn_question_answer_correct > br,
+  #self-assessment-modal .qmn_question_answer.qmn_question_answer_incorrect > br {
+    display: none !important; }
+  #self-assessment-modal #self-assessment-results > br {
+    display: none !important; }
+  #self-assessment-modal .qmn_question_answer.qmn_question_answer_incorrect {
+    margin-bottom: 16px; }
+  #self-assessment-modal .qmn_user_incorrect_answer {
+    color: #74b9ff;
+    font-size: 1.5rem; }
+  #self-assessment-modal .green {
+    background: #55efc4; }
+    #self-assessment-modal .green--lighter {
+      background: #e1fcf5; }
+  #self-assessment-modal .azure {
+    background: #81ecec; }
+    #self-assessment-modal .azure--lighter {
+      background: #daf9f9; }
+  #self-assessment-modal .blue {
+    background: #74b9ff; }
+    #self-assessment-modal .blue--lighter {
+      background: #daecff; }
+  #self-assessment-modal .purple {
+    background: #a29bfe; }
+    #self-assessment-modal .purple--lighter {
+      background: #d1cdff; }
+  #self-assessment-modal .current-score {
+    font-size: 1.125rem;
+    color: red; }
+  #self-assessment-modal .ideal-score {
+    font-size: 1.125rem;
+    color: blue; }
+  @media (min-width: 576px) {
+    #self-assessment-modal .modal-dialog {
+      max-width: 890px; } }
+
+@media (min-width: 990px) {
+  .service-page-copy-wrapper p {
+    max-width: 700px;
+    width: 700px; } }
+
+.service-copy + section {
+  background: #e9e9e9 !important; }
 
 .supplier-logos {
   /* Disable grayscale on hover */ }
@@ -9893,7 +9912,7 @@ a:not([href]):not([tabindex]) {
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
-  font-size: 26px; }
+  font-size: 1.625rem; }
 
 .bg-grey-only {
   border-top: 1px solid #e1e1e1;
@@ -9969,3 +9988,6 @@ hr.light {
 
 .full-width {
   max-width: 100%; }
+
+.featured-case-study img {
+  border-radius: 150%; }

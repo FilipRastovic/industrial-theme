@@ -41,7 +41,7 @@
 }
 
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 .bg-grey-only {
@@ -145,4 +145,8 @@ hr.light {
 
 .full-width {
   max-width: 100%;
+}
+
+.featured-case-study img {
+  border-radius: 150%;
 }

@@ -24,8 +24,8 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
 
 ?>
 
-<header class="header header--noborder">
-  <div class="polygon-shape"></div>
+<header class="header header-half header--noborder">
+  <div class="polygon-shape "></div>
   <div class="container">
     <div class="row">
       <div class="col-md-7 order-2 order-md-1">
@@ -44,28 +44,26 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
 <section class="service-copy">
   <div class="container">
     <div class="row">
-      <div class="col-md-7">
-        <h1 class="mb-3">
-          <?php echo $services_second_heading; ?>
-        </h1>
-        <?php echo $services_content; ?>
-      </div>
-      <div class="col-md-4 offset-md-1">
-        <div class="card card--whitepaper no-top-border">
-          <div class="col-3 mx-auto col-md-6 offset-md-3 text-center">
-            <img class="card-img-top img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/whitepaper.png" alt="Card image cap">
-          </div>
-          <div class="card-body text-center">
-            <h4>
-              <?php echo $services_whitepaper_title; ?>
-            </h4>
-            <hr>
-            <p class="card-text">
-              <?php echo $services_whitepaper_paragraph; ?>
-            </p>
-            <?php echo do_shortcode("[hubspot type=form portal=4643163 id=6d527de3-5434-4d32-809b-36c39bcd6976]"); ?>
-          </div>
+      <div class="col-md-8">
+        <div class="service-page-copy-wrapper">
+          <h1 class="mb-3">
+              <?php echo $services_second_heading; ?>
+            </h1>
+            <?php echo $services_content; ?>
         </div>
+      </div>
+      <div class="col-md-4">
+          <div class="new-form-wrapper">
+              <h4 class="text-center">
+                <?php echo $lp_form_heading; ?>
+              </h4>
+              <hr>
+              <p class=" text-center">
+                <?php echo $lp_form_paragraph; ?>
+              </p>
+              <?php echo do_shortcode("[hubspot type=form portal=4643163 id=b1bf8f5d-7c79-4434-ac4d-510135075ae5]"); ?>
+            </div>
+          </div>
       </div>
     </div>
   </div>
@@ -73,25 +71,28 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
 
 <?php get_template_part('template-parts/featured-case-study'); ?>
 
-<section id="services-bot-form" class="form-section">
+<section>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <div class="new-form-wrapper">
-          <h4 class="text-center">
-            <?php echo $lp_form_heading; ?>
-          </h4>
-          <hr>
-          <p class=" text-center">
-            <?php echo $lp_form_paragraph; ?>
-          </p>
-          <?php echo do_shortcode("[hubspot type=form portal=4643163 id=b1bf8f5d-7c79-4434-ac4d-510135075ae5]"); ?>
+      <div class="col-md-8">
+          <div class="card card--whitepaper no-top-border">
+            <div class="col-3 mx-auto col-md-6 offset-md-3 text-center">
+              <img class="card-img-top img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/whitepaper.png" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h4>
+                <?php echo $services_whitepaper_title; ?>
+              </h4>
+              <hr>
+              <p class="card-text">
+                <?php echo $services_whitepaper_paragraph; ?>
+              </p>
+              <?php echo do_shortcode("[hubspot type=form portal=4643163 id=6d527de3-5434-4d32-809b-36c39bcd6976]"); ?>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </section>
-
-
 
 <?php get_footer(); ?>
