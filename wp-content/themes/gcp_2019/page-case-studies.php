@@ -15,7 +15,7 @@ $lp_form_heading = get_field('lp_form_heading');
 $lp_form_paragraph = get_field('lp_form_paragraph');
 ?>
 
-<header class="header header-half header--noborder bg-grey">
+<header class="header header-half bg-grey">
   <div class="polygon-shape homepage-hero-img"></div>
   <div class="container">
     <div class="row">

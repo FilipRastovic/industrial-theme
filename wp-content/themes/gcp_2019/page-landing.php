@@ -50,7 +50,7 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
     </div>
   </nav>
 
-  <header class="header header-half header--noborder">
+  <header class="header header-half">
     <div class="polygon-shape"></div>
     <div class="container">
       <div class="row">

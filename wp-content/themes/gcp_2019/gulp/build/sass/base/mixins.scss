@@ -52,3 +52,10 @@
   font-weight: 700;
   color: $grey-text;
 }
+
+@mixin list-font {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.313rem;
+  font-weight: 400;
+  max-width: 600px;
+}

@@ -1,5 +1,10 @@
 .case-studies article {
   height: 100%;
+
+  p:nth-of-type( 2 ) {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .learning-center article {
@@ -24,6 +29,11 @@ article {
   padding: 10px 20px 30px;
   position: relative;
 
+  ul li {
+    @include list-font;
+    color: $paragraph-text-color;
+  }
+
   h2 {
     a {
       text-decoration: none;
@@ -40,8 +50,16 @@ article {
     color: $light-blue;
   }
 
-  p:nth-of-type( 2 ) {
-    position: absolute;
-    bottom: 0;
+}
+
+.article-copy article { // For singkle blog post
+  box-shadow: none;
+  background: #fff;
+
+  p {
+    @media (min-width: 990px) {
+      max-width: 700px;
+      width: 700px;
+    }
   }
 }

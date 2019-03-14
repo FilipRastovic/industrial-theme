@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<header class="header header--grey">
+<header class="header header-half bg-grey">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -20,26 +20,20 @@ get_header();
     </div>
   </header>
 
-<section class="learning-center-copy">
+<section class="service-copy article-copy">
   <div class="container">
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-8">
 
 		<?php
-		while ( have_posts() ) :the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			//the_post_navigation();
-
-
-
-		endwhile; // End of the loop.
+		  while ( have_posts() ) : the_post();
+			  get_template_part( 'template-parts/content', get_post_type() );
+		  endwhile; // End of the loop.
 		?>
 
     </div>
 
-    <div class="col-md-4 offset-md-1">
+    <div class="col-md-4">
       <div class="card card--whitepaper no-top-border">
         <div class="col-2 mx-auto col-md-6 offset-md-3 text-center">
           <img class="card-img-top img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/whitepaper.png" alt="Card image cap">

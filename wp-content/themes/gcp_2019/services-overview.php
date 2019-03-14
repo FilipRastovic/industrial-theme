@@ -44,7 +44,7 @@ $services_request_consultation_content = get_field('services_request_consultatio
 $services_request_consultation_btn_text = get_field('services_request_consultation_btn_text'); 
 ?>
 
-<header class="header header--noborder">
+<header class="header">
   <div class="polygon-shape"></div>
   <div class="container">
     <div class="row">
@@ -68,14 +68,14 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
         <h2>
           <?php echo $flow_diagram_header; ?>
         </h2>
-        <p class="text-center">
+        <p class="text-center mx-auto">
           <?php echo $flow_diagram_paragraph; ?>
         </p>
 
       </div>
     </div>
     <div class="row">
-      <div class="d-flex flex-row">
+      <div class="d-flex flex-row mx-auto">
         <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
           <li class="nav-item">
             <a href="#tab-1" class="nav-link active" data-toggle="tab" role="tab" aria-controls="lorem">
@@ -158,28 +158,28 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
  
 </section>
 
-<section class="phases  bg-grey">
+<section class="phases bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-12">
-      <h2>
+      <h2 class="text-center">
         <?php echo $services_flow_diagram_tab_1_heading; ?>
       </h2>
-      <p>
+      <p class="mx-auto">
         <?php echo $services_flow_diagram_tab_1_content ?>
       </p>
     
-    <h2>
+    <h2 class="text-center">
       <?php echo $services_flow_diagram_tab_2_heading; ?>
     </h2>
-    <p>
+    <p class="mx-auto">
       <?php echo $services_flow_diagram_tab_2_content ?>
     </p>
 
-   <h2>
+   <h2 class="text-center">
   <?php echo $services_flow_diagram_tab_3_heading; ?>
   </h2>
-  <p>
+  <p class="mx-auto">
     <?php echo $services_flow_diagram_tab_3_content ?>
   </p>
       </div>
@@ -187,22 +187,19 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
 </div> 
 </section>
 
-<section class="whitepaper whitepaper--bottom">
+<section class="">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-8">
+      <div class="col-12 text-center">
         <h2>
           <?php echo $services_request_consultation_heading; ?>
         </h2>
       </div>
-      <div class="col-6 col-md-2 d-none d-sm-none d-md-block">
-        <!-- <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/consultation.png" alt="Consultation Quote"> -->
-      </div>
-      <div class="col-md-10">
-        <p>
+      <div class="col-12 text-center">
+        <p class="mx-auto">
           <?php echo $services_request_consultation_content; ?>
         </p>
-        <a id="#services-bot-form-cta" href="/landing-page" class="btn btn-full btn-xl js-scroll-trigger">
+        <a id="#services-bot-form-cta" href="/landing-page" class="btn">
           <?php echo $services_request_consultation_btn_text; ?></a>
       </div>
     </div>

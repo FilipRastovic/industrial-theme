@@ -10,7 +10,7 @@ $services_whitepaper_title = get_field('services_whitepaper_title');
 $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 ?>
 
-<header class="header header-half header--noborder bg-grey">
+<header class="header header-half bg-grey">
   <div class="polygon-shape homepage-hero-img"></div>
   <div class="container">
     <div class="row">

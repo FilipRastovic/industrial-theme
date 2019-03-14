@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<header class="header header--noborder error-page">
+<header class="header error-page">
   <div class="polygon-shape"></div>
   <div class="container">
     <div class="row">

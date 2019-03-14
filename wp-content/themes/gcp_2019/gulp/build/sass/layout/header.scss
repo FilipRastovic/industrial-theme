@@ -15,28 +15,38 @@ header.header {
     @media (min-width: 990px) {
       width: 650px;
       max-width: 650px;
-      text-align: left;
+    }
+  }
+
+  &--home {
+    h1 {
+      margin-bottom: 35px;
+    }
+  
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
     }
   }
 
   ul > li,
   p {
     color: #fff;
-    @media ( max-width: 990px ) {
-      text-align: left;
-    }
   }
 
   @media (min-width: 990px) {
     padding-top: 200px;
-    height: 700px;
+    height: 600px;
+  }
+
+  ul li {
+    @include list-font;
+    color: #fff;
   }
 
   &--grey {
     background: #fafafa;
-  }
-  &--noborder {
-    border-bottom: none;
   }
 
   &-half {
@@ -44,6 +54,14 @@ header.header {
     @media (min-width: 990px) {
       padding-top: 200px;
       height: 450px;
+    }
+  }
+
+  &-third-of-normal-height {
+
+    @media (min-width: 990px) {
+      padding-top: 200px;
+      height: 600px;
     }
   }
 }

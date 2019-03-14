@@ -9264,9 +9264,6 @@ html,
 body {
   width: 100%; }
 
-ul li {
-  font-family: 'Montserrat', sans-serif; }
-
 body {
   margin-bottom: 0px; }
   @media (min-width: 768px) {
@@ -9358,27 +9355,36 @@ header.header {
   @media (min-width: 990px) {
     header.header p {
       width: 650px;
-      max-width: 650px;
-      text-align: left; } }
+      max-width: 650px; } }
+  header.header--home h1 {
+    margin-bottom: 35px; }
+  header.header--home p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px; }
   header.header ul > li,
   header.header p {
     color: #fff; }
-    @media (max-width: 990px) {
-      header.header ul > li,
-      header.header p {
-        text-align: left; } }
   @media (min-width: 990px) {
     header.header {
       padding-top: 200px;
-      height: 700px; } }
+      height: 600px; } }
+  header.header ul li {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.313rem;
+    font-weight: 400;
+    max-width: 600px;
+    color: #fff; }
   header.header--grey {
     background: #fafafa; }
-  header.header--noborder {
-    border-bottom: none; }
   @media (min-width: 990px) {
     header.header-half {
       padding-top: 200px;
       height: 450px; } }
+  @media (min-width: 990px) {
+    header.header-third-of-normal-height {
+      padding-top: 200px;
+      height: 600px; } }
 
 .homepage-hero-img {
   -webkit-background-size: cover;
@@ -9431,6 +9437,9 @@ header.header {
 
 .case-studies article {
   height: 100%; }
+  .case-studies article p:nth-of-type(2) {
+    position: absolute;
+    bottom: 0; }
 
 .learning-center article {
   height: 400px; }
@@ -9452,6 +9461,12 @@ article {
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.1), 0 0 24px rgba(0, 0, 0, 0.1);
   padding: 10px 20px 30px;
   position: relative; }
+  article ul li {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.313rem;
+    font-weight: 400;
+    max-width: 600px;
+    color: #696969; }
   article h2 a {
     text-decoration: none;
     color: #041B31 !important; }
@@ -9459,9 +9474,14 @@ article {
       color: ligthen(#041B31, 10%); }
   article .moretag {
     color: #0984e3; }
-  article p:nth-of-type(2) {
-    position: absolute;
-    bottom: 0; }
+
+.article-copy article {
+  box-shadow: none;
+  background: #fff; }
+  @media (min-width: 990px) {
+    .article-copy article p {
+      max-width: 700px;
+      width: 700px; } }
 
 .blog-form-wrapper .container {
   width: 100%;
@@ -9563,9 +9583,6 @@ article {
     text-align: center;
     font-weight: 800; }
 
-i.fa a {
-  color: #041B31; }
-
 .form-wrapper,
 .new-form-wrapper {
   padding: 30px 25px 30px;
@@ -9618,6 +9635,9 @@ form {
   font-weight: 700;
   color: #ced4da; }
 
+i.fa a {
+  color: #041B31; }
+
 .latest-posts-links-box {
   max-width: 400px;
   text-align: center; }
@@ -9653,6 +9673,12 @@ a:not([href]):not([tabindex]) {
   color: white; }
   a:not([href]):not([tabindex]):hover {
     color: white; }
+
+ul.how-we-support-our-clients-list li.list-item a {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.313rem;
+  font-weight: 400;
+  max-width: 600px; }
 
 #mainNav {
   background-color: #fff;
@@ -9859,6 +9885,9 @@ a:not([href]):not([tabindex]) {
 .service-copy + section {
   background: #e9e9e9 !important; }
 
+.service-page-copy-wrapper ul li {
+  margin-bottom: 15px; }
+
 .supplier-logos {
   /* Disable grayscale on hover */ }
   .supplier-logos img {
@@ -9990,4 +10019,4 @@ hr.light {
   max-width: 100%; }
 
 .featured-case-study img {
-  border-radius: 150%; }
+  border-radius: 70px; }

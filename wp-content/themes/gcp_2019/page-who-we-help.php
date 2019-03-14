@@ -32,7 +32,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 ?>
 
-<header class="header header-half header--noborder">
+<header class="header header-third-of-normal-height">
   <div class="polygon-shape"></div>
   <div class="container">
     <div class="row">
@@ -50,38 +50,45 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 
 <?php get_template_part('template-parts/companies-hire-us'); ?>
 
-<section class="how bg-grey">
+<section class="">
   <div class="container ">
     <div class="row">
-      <div class="col-12 text-center mb-5">
-        <h2 class="mb-5">
+      <div class="col-12">
+        <h2 class="mb-3">
           <?php echo $who_how_we_support_heading; ?>
         </h2>
-        <p class="text-center">
+      </div>
+      <div class="col-md-6">
+        <p>
           <?php echo $who_how_we_support_paragraph; ?>
         </p>
       </div>
-      <div class="col-md-12">
-        <ul class="row mx-auto">
-          <li class="list-item col-12 col-md-4 mx-auto "><a href="/supplier-sourcing">
+      <div class="col-md-3">
+        <ul class="how-we-support-our-clients-list">
+          <li class="list-item"><a href="/supplier-sourcing">
               <?php echo $who_how_we_support_1; ?></a></li>
-          <li class="list-item col-12 col-md-4 mx-auto "><a href="/supplier-auditing">
+          <li class="list-item"><a href="/supplier-auditing">
               <?php echo $who_how_we_support_2; ?></a></li>
-          <li class="list-item col-12 col-md-4 mx-auto "><a href="/offshore-order-management/">
+          <li class="list-item"><a href="/offshore-order-management/">
               <?php echo $who_how_we_support_3; ?></a></li>
-          <li class="list-item col-12 col-md-4 mx-auto "><a href="/quality-control">
-              <?php echo $who_how_we_support_4; ?></a></li>
-          <li class="list-item col-12 col-md-4 mx-auto "><a href="/material-and-product-development/">
-              <?php echo $who_how_we_support_5; ?></a></li>
-          <li class="list-item col-12 col-md-4 mx-auto "><a href="/brokerage-and-logistics">
-              <?php echo $who_how_we_support_6; ?></a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="how-we-support-our-clients-list">
+          <li class="list-item"><a href="/quality-control">
+            <?php echo $who_how_we_support_4; ?></a></li>
+          <li class="list-item"><a href="/material-and-product-development/">
+            <?php echo $who_how_we_support_5; ?></a></li>
+          <li class="list-item"><a href="/brokerage-and-logistics">
+            <?php echo $who_how_we_support_6; ?></a>
+          </li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cards">
+<section class="cards bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -92,9 +99,9 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
       <div class="col-md-4 mb-5">
         <div class="card h-100 ">
           <div class="card-body">
-            <h5 class="card-title">
+            <h4 class="card-title text-center">
               <?php echo $who_what_makes_us_title_1; ?>
-            </h5>
+            </h4>
             <hr>
             <p class="card-text">
               <?php echo $who_what_makes_us_paragraph_1 ?>
@@ -105,9 +112,9 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
       <div class="col-md-4 mb-5">
         <div class="card h-100 ">
           <div class="card-body">
-            <h5 class="card-title">
+            <h4 class="card-title text-center">
               <?php echo $who_what_makes_us_title_2; ?>
-            </h5>
+            </h4>
             <hr>
             <p class="card-text">
               <?php echo $who_what_makes_us_paragraph_2 ?>
@@ -118,9 +125,9 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
       <div class="col-md-4 mb-5">
         <div class="card h-100 ">
           <div class="card-body">
-            <h5 class="card-title">
+            <h4 class="card-title text-center">
               <?php echo $who_what_makes_us_title_3; ?>
-            </h5>
+            </h4>
             <hr>
             <p class="card-text">
               <?php echo $who_what_makes_us_paragraph_3 ?>
@@ -132,7 +139,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
   </div>
 </section>
 
-<section class="whitepaper self-assessment bg-grey pb-30">
+<section class="whitepaper self-assessment pb-30">
   <div class="container ">
     <div class="row">
       <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
