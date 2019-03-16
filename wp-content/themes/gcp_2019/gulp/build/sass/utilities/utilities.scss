@@ -147,6 +147,9 @@ hr.light {
   max-width: 100%;
 }
 
-.featured-case-study img {
-  border-radius: 70px;
+.shadowed,
+.featured-case-study img,
+.post-thumbnail img {
+  box-shadow: $material-shadow-1;
+  border-radius: 6px;
 }

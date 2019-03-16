@@ -23,9 +23,7 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="profile" href="https://gmpg.org/xfn/11">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-  <link rel="icon" type="image/png" href="<?php echo $website_icon['url']; ?>" />
+  <link rel="icon" type="image/png" href="assets/img/ico.png" />
   <?php wp_head(); ?>
   <style>
     iframe {
@@ -50,11 +48,11 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
     </div>
   </nav>
 
-  <header class="header header-half">
+  <header class="header header--centered header-half">
     <div class="polygon-shape"></div>
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 text-center">
           <h1 class="mb-5">
             <?php echo $lp_main_heading; ?>
           </h1>
@@ -76,21 +74,73 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
           <?php  echo $lp_content; ?>
 
         </div>
-        <div class="col-md-4 offset-md-1">
-          <div class="new-form-wrapper">
-            <h4 class="text-center">
+        <div class="col-md-4 offset-md-1 mx-auto">
+        <div class="card">
+          <div class="col-4 mx-auto col-md-4 offset-md-3 text-center">
+            <img class="card-img-top img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/whitepaper.png" alt="Card image cap">
+          </div>
+          <div class="card-body text-center">
+            <h5>
               <?php echo $lp_form_heading; ?>
-            </h4>
+            </h5>
             <hr>
-            <p class=" text-center">
+            <p class="card-text">
               <?php echo $lp_form_paragraph; ?>
             </p>
             <?php echo do_shortcode("[hubspot type=form portal=4643163 id=b1bf8f5d-7c79-4434-ac4d-510135075ae5]"); ?>
           </div>
         </div>
+        </div>
       </div>
     </div>
   </section>
+
+
+
+  <section class="latest-posts-links bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="latest-posts-links-box">
+          <h3 class="mb-2">Case Studies</h3>
+            <hr class="mx-auto">
+            <ul class="list-unstyled">
+              <?php
+              $args = array( 'post_type'=>'case_study', 'numberposts' => '3' );
+              $recent_posts = wp_get_recent_posts( $args );
+
+              foreach( $recent_posts as $recent ){
+              echo 
+              '<li class="mx-auto"> ' . '
+                <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
+              </li> ';
+              }
+            ?>
+            </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="latest-posts-links-box">
+          <h3 class="mb-2">Latest posts</h3>
+            <hr class="mx-auto">
+            <ul class="list-unstyled">
+              <?php
+              $args = array( 'numberposts' => '3' );
+              $recent_posts = wp_get_recent_posts( $args );
+
+              foreach( $recent_posts as $recent ){
+              echo 
+              '<li class="mx-auto"> ' . '
+                <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
+              </li> ';
+              }
+            ?>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <script>
     hbspt.forms.create({

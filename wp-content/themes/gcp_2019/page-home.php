@@ -10,32 +10,15 @@ $home_main_heading = get_field('home_main_heading');
 $home_cta_first_paragraph = get_field('home_cta_first_paragraph');
 $home_cta_first_btn_text  = get_field('home_cta_first_btn_text'); 
 
-$home_suppliers_heading = get_field('home_suppliers_heading');
-$home_suppliers_content = get_field('home_suppliers_content');
-$home_supplier_brand_1 = get_field('home_supplier_brand_1');
-$home_supplier_brand_2 = get_field('home_supplier_brand_2'); 
-$home_supplier_brand_3 = get_field('home_supplier_brand_3'); 
-$home_supplier_brand_4 = get_field('home_supplier_brand_4'); 
-$home_supplier_brand_5 = get_field('home_supplier_brand_5');  
-$home_supplier_brand_6 = get_field('home_supplier_brand_6'); 
-$home_supplier_brand_7 = get_field('home_supplier_brand_7');  
-$home_supplier_description_1 = get_field('home_supplier_description_1');
-$home_supplier_description_2 = get_field('home_supplier_description_2');
-$home_supplier_description_3 = get_field('home_supplier_description_3');
-$home_supplier_description_4 = get_field('home_supplier_description_4');
-$home_supplier_description_5 = get_field('home_supplier_description_5');
-$home_supplier_description_6 = get_field('home_supplier_description_6');
-$home_supplier_description_7 = get_field('home_supplier_description_7');
-$home_supplier_url_1 = get_field('home_supplier_url_1');
-$home_supplier_url_2 = get_field('home_supplier_url_2');
-$home_supplier_url_3 = get_field('home_supplier_url_3');
-$home_supplier_url_4 = get_field('home_supplier_url_4');
-$home_supplier_url_5 = get_field('home_supplier_url_5');
-$home_supplier_url_6 = get_field('home_supplier_url_6');
-$home_supplier_url_7 = get_field('home_supplier_url_7');
+$backgroundImage = get_field('backgroundImage');
+
+$our_expertice_section_heading = get_field('our_expertice_section_heading');
+$our_expertise_section_image = get_field('our_expertise_section_image');
+$our_expertise_section_paragraph = get_field('our_expertise_section_paragraph');
 
 
 $home_featured_case_study_heading = get_field('home_featured_case_study_heading');
+$home_featured_case_study_subheading = get_field('home_featured_case_study_subheading');
 $home_featured_case_study_img = get_field('home_featured_case_study_img');
 $home_featured_case_study_text = get_field('home_featured_case_study_text'); 
 $home_featured_case_study_btn_text = get_field('home_featured_case_study_btn_text');
@@ -46,8 +29,8 @@ $featured_case_study_url = get_field('featured_case_study_url');
 
 ?>
 
-<header class="header header--home">
-  <div class="polygon-shape homepage-hero-img"></div>
+<header class="header header--centered">
+  <div class="polygon-shape homepage-hero-img" style="background-image: url(<?php echo $backgroundImage['url']; ?> );"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -69,11 +52,11 @@ $featured_case_study_url = get_field('featured_case_study_url');
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img class="img-fluid" src="http://via.placeholder.com/500x230" alt="Our Experice Image">
+        <img class="img-fluid shadowed" src="<?php echo $our_expertise_section_image['url']; ?>" alt="Our Experice Image">
       </div>
       <div class="col-md-8">
-        <h3>Our Expertise</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam corrupti cupiditate, ducimus sunt saepe impedit sit a eos accusantium odit, tenetur deserunt nesciunt harum temporibus ratione et. Sint, rem quae?</p>
+        <h3><?php echo $our_expertice_section_heading; ?></h3>
+        <p><?php echo $our_expertise_section_paragraph; ?></p>
       </div>
     </div>
   </div>
@@ -87,14 +70,14 @@ $featured_case_study_url = get_field('featured_case_study_url');
     <div class="col-md-12 text-center">
       <h3 class="mb-2">Featured Case Study</h3>
       <hr>
-      <p class="full-width mx-auto pb-60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusamus nisi aut hic enim impedit iste. In ad</p>
+      <p class="full-width mx-auto pb-60"><?php echo $home_featured_case_study_subheading; ?></p>
     </div>
       <div class="col-6 col-md-4 mx-auto mb-3">
         <img class="img-fluid" src="<?php echo $home_featured_case_study_img['url']; ?>" alt="Testimonial Img">
       </div>
       <div class="col-12 col-md-8">
         <h4 class="mb-4"><?php echo $home_featured_case_study_heading; ?></h4>
-        <p class="card-text"><?php echo $home_featured_case_study_text; ?></p>
+        <p class=""><?php echo $home_featured_case_study_text; ?></p>
         <a href="<?php echo $featured_case_study_url; ?>" class="btn btn-full btn-xl js-scroll-trigger">
           <?php echo $home_featured_case_study_btn_text; ?>
         </a>

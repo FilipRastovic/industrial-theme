@@ -5,14 +5,13 @@
   box-shadow: $material-shadow-1;
   border: none;
   text-decoration: none;
-  text-transform: uppercase;
   color: white;
   border: 1px solid;
   background: $btn-light-blue;
   border-color: $btn-light-blue;
   box-shadow: $material-shadow-1;
   padding: 15px 36px;
-  border-radius: 9px;
+  border-radius: 0px;
   font-size:  0.875rem;
   &:hover,
   &:focus {

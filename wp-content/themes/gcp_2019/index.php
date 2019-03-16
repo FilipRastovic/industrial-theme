@@ -5,17 +5,16 @@
  */
 
 get_header();
-$learning_center_heading = get_field('learning_center_heading');
+$learning_center_heading = get_field('learning_center_heading', get_option('page_for_posts'));
 $services_whitepaper_title = get_field('services_whitepaper_title');
 $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
 ?>
 
 <header class="header header-half bg-grey">
-  <div class="polygon-shape homepage-hero-img"></div>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h1 class=""><? echo get_the_title(); ?></h1>
+      <div class="col-12 text-center">
+      <h1 class=""><? echo $learning_center_heading; ?></h1>
       </div>
     </div>
   </div>
@@ -66,7 +65,7 @@ $services_whitepaper_paragraph = get_field('services_whitepaper_paragraph');
       </div>
       <div class="col-md-3">
         
-        <div class="card">
+        <div class="card p-2">
         <?php wp_list_categories( array(
               'orderby' => 'name',
               'show_count' => true

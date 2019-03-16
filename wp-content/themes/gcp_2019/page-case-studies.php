@@ -8,24 +8,15 @@ get_header();
 
 $case_studies_main_heading = get_field('case_studies_main_heading');
 $case_studies_main_paragraph = get_field('case_studies_main_paragraph'); 
-$case_studies_main_image_style = get_field('case_studies_main_image_style');
-$case_studies_main_image = get_field('case_studies_main_image');
-
-$lp_form_heading = get_field('lp_form_heading');
-$lp_form_paragraph = get_field('lp_form_paragraph');
 ?>
 
-<header class="header header-half bg-grey">
-  <div class="polygon-shape homepage-hero-img"></div>
+<header class="header header--centered header-third-of-normal-height">
+  <div class="polygon-shape"></div>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h1 class="">
-        <?php echo $case_studies_main_heading; ?>
-        </h1>
-        <p class="">
-        <?php echo $case_studies_main_paragraph; ?>
-        </p>
+      <div class="col-12 text-center">
+      <h1 class="mb-5"><?php echo $case_studies_main_heading; ?></h1>
+      <p class=""><?php echo $case_studies_main_paragraph; ?></p>
       </div>
     </div>
   </div>
@@ -52,19 +43,24 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
   </div>
 </section>
 
-<section id="services-bot-form" class="form-section bg-grey">
+<section class="mt-5 bg-grey">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <div class="new-form-wrapper">
-          <h4 class="text-center">
-            <?php echo $lp_form_heading; ?>
-          </h4>
-          <hr>
-          <p class=" text-center">
-            <?php echo $lp_form_paragraph; ?>
-          </p>
-          <?php echo do_shortcode("[hubspot type=form portal=4643163 id=b1bf8f5d-7c79-4434-ac4d-510135075ae5]"); ?>
+      <div class="col-md-5 mx-auto">
+        <div class="card">
+          <div class="col-3 mx-auto col-md-3 offset-md-3 text-center">
+            <img class="card-img-top img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/whitepaper.png" alt="Card image cap">
+          </div>
+          <div class="card-body text-center">
+            <h4>
+            Guide to Successfully Sourcing Suppliers from China
+            </h4>
+            <hr>
+            <p class="card-text">
+            In this guide you will find all the steps, detailed processes and tools to take before working with a supplier from China.
+            </p>
+            <?php echo do_shortcode("[hubspot type=form portal=4643163 id=6d527de3-5434-4d32-809b-36c39bcd6976]"); ?>
+          </div>
         </div>
       </div>
     </div>

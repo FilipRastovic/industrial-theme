@@ -28,15 +28,13 @@ $who_what_makes_us_paragraph_3 = get_field('who_what_makes_us_paragraph_3');
 $self_assessment_title = get_field('self_assessment_title');
 $self_assessment_paragraph = get_field('self_assessment_paragraph');
 $self_assessment_btn_label = get_field('self_assessment_btn_label'); 
-
-
 ?>
 
-<header class="header header-third-of-normal-height">
+<header class="header header--centered header-third-of-normal-height">
   <div class="polygon-shape"></div>
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 text-center">
         <h1 class="mb-5">
           <?php echo $who_main_heading; ?>
         </h1>
@@ -53,17 +51,15 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 <section class="">
   <div class="container ">
     <div class="row">
-      <div class="col-12">
-        <h2 class="mb-3">
+      <div class="col-md-8">
+      <h2 class="mb-3">
           <?php echo $who_how_we_support_heading; ?>
         </h2>
-      </div>
-      <div class="col-md-6">
         <p>
           <?php echo $who_how_we_support_paragraph; ?>
         </p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <ul class="how-we-support-our-clients-list">
           <li class="list-item"><a href="/supplier-sourcing">
               <?php echo $who_how_we_support_1; ?></a></li>
@@ -71,10 +67,6 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
               <?php echo $who_how_we_support_2; ?></a></li>
           <li class="list-item"><a href="/offshore-order-management/">
               <?php echo $who_how_we_support_3; ?></a></li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul class="how-we-support-our-clients-list">
           <li class="list-item"><a href="/quality-control">
             <?php echo $who_how_we_support_4; ?></a></li>
           <li class="list-item"><a href="/material-and-product-development/">
@@ -97,7 +89,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
         </h2>
       </div>
       <div class="col-md-4 mb-5">
-        <div class="card h-100 ">
+        <div class="card h-100">
           <div class="card-body">
             <h4 class="card-title text-center">
               <?php echo $who_what_makes_us_title_1; ?>
@@ -142,7 +134,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
 <section class="whitepaper self-assessment pb-30">
   <div class="container ">
     <div class="row">
-      <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5">
+      <div class="col-4 offset-4 col-md-2 offset-md-1 mb-5 text-center">
         <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/self-assessment.png" alt="Whitepaper">
       </div>
       <div class="col-md-8 content-wrapper">

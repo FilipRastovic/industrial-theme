@@ -1,3 +1,9 @@
+.self-assessment .col-4 img { 
+  @media (min-width: 990px) {
+    width: 104px;
+  }
+}
+
 #self-assessment-modal {
   td {
     font-size: 0.75rem;

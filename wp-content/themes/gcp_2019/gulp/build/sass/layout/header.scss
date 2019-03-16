@@ -13,12 +13,12 @@ header.header {
 
   p {
     @media (min-width: 990px) {
-      width: 650px;
-      max-width: 650px;
+      width: 700px;
+      max-width: 700px;
     }
   }
 
-  &--home {
+  &--centered {
     h1 {
       margin-bottom: 35px;
     }
@@ -67,12 +67,12 @@ header.header {
 }
 
 .homepage-hero-img {
-  @include background-cover;
-  background-image: url('../img/hero-mobile.jpg');
+  // @include background-cover;
+  // background-image: url('../img/hero-mobile.jpg');
   
-  @media (min-width: 550px) {
-    background-image: url('../img/Shipping_Container9.jpg');
-  }
+  // @media (min-width: 550px) {
+  //   background-image: url('../img/Shipping_Container9.jpg');
+  // }
   
   &:before {
     content: '';

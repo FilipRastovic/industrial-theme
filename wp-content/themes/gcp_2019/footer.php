@@ -14,18 +14,31 @@
   <div class="container">
     <img class="logo mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/logo-white.png" alt="Logo">
     <ul class="list-inline mb-3">
+
       <li class="list-inline-item">
-        <a href="/who-we-help">Who We Help</a>
+        <a href="/case-studies">Successfully Sourced</a>
       </li>
+
       <li class="list-inline-item">
         <a href="/services">Services</a>
       </li>
+
       <li class="list-inline-item">
-        <a href="/case-studies">Case Studies</a>
+        <a href="/our-story">Our Story</a>
       </li>
+
       <li class="list-inline-item">
-        <a href="/learning-centar">Learning Center</a>
+        <a href="/who-we-help">Who We Help</a>
       </li>
+
+      <li class="list-inline-item">
+        <a href="/learning-center">Learning Center</a>
+      </li>
+
+      <li class="list-inline-item">
+        <a href="/request-consultation">Request Consultation</a>
+      </li>
+
     </ul>
     <a href="https://www.linkedin.com/company/global-industrial-products" target="_BLANK"><img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/linkedin.png" alt="Linkedin"></a>
     <a href="https://www.facebook.com/gcpindustrial" target="_BLANK"><img class="mb-3" src="<?php bloginfo('template_url'); ?>/assets/img/facebook.png" alt="Facebook"></a>

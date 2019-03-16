@@ -56,6 +56,10 @@ article {
   box-shadow: none;
   background: #fff;
 
+  @media (min-width: 990px) {
+    width: 700px;
+  }
+
   p {
     @media (min-width: 990px) {
       max-width: 700px;
