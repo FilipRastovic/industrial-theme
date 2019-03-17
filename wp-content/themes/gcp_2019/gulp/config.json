@@ -21,7 +21,7 @@
         "build/third_party/js/**/*.js"
       ],
       "custom": [
-        "build/js/module/**/*.js"
+        "build/js/module/*.js"
       ]
     },
     "dependencies": [

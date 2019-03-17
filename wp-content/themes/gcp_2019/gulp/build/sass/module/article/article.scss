@@ -8,6 +8,11 @@
 }
 
 .learning-center article {
+
+  ul li {
+    @include list-font;
+    color: $paragraph-text-color;
+  }
   
   @media (min-width: 768px) {
     height: 350px;

@@ -36,7 +36,6 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
 
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation">
     <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
         aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,7 +43,6 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
       <a class="navbar-brand" href="/">
         <img class="" src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="Logo">
       </a>
-
     </div>
   </nav>
 
@@ -141,11 +139,5 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
     </div>
   </div>
 </section>
-
-  <script>
-    hbspt.forms.create({
-      cssClass: ''
-    });
-  </script>
 
   <?php get_footer(); ?>

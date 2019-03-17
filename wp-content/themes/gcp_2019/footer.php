@@ -51,6 +51,17 @@
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4643163.js"></script>
 <!-- End of HubSpot Embed Code -->
+
+
 <?php wp_footer(); ?>
+<script>
+  jQuery( '.services-dropdown > a' ).on( 'click', function() {
+
+    console.log( 'Im here' );
+
+    jQuery( '.services-dropdown' ).toggleClass( 'services-dropdown-flipped' );
+
+  } );
+</script>
 </body>
 </html>

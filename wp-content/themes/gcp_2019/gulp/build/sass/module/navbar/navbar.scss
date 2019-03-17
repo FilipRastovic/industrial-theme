@@ -98,3 +98,22 @@
     padding: 0;
   }
 }
+
+@media (max-width: 990px) {
+
+  .services-dropdown > a:after {
+    color: #444;
+    content: ' ▾';
+  }
+
+  .services-dropdown-flipped > a:after {
+    color: #444;
+    content: ' ▴';
+  }
+
+  .dropdown-menu.show {
+    background: #eee;
+    padding-left: 13px;
+  }
+}
+
