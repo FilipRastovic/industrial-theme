@@ -13,6 +13,11 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	ul li {
+		@include list-font;
+		color: $paragraph-text-color;
+	}
 }
 
 .service-copy + section {
