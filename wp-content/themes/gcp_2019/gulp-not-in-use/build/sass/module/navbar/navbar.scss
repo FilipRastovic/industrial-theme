@@ -1,0 +1,118 @@
+// Styling for the navbar
+#mainNav {
+  background-color: #fff;
+  @include transition-all;
+
+  .navbar-brand {
+    order: -1;
+    img {
+      width: 70%;
+    }
+  }
+
+  #bs-example-navbar-collapse-1 {
+    order: 2;
+  }
+
+  .navbar-toggler {
+    font-size: 0.75rem;
+    padding: 12px 14px;
+    color: white;
+    border-color: none;
+    background-color: $light-blue;
+  }
+
+  .navbar-toggler-icon {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-font-color;
+      text-decoration: none;
+      &:hover,
+      &:active {
+        color: $light-blue;
+      }
+    }
+    > li {
+        > a,
+        .dropdown-menu {
+            @include navbar-font;
+        }
+    }
+  }
+
+  .current_page_item.active a {
+    color: $light-blue;
+  }
+
+  .dropdown-menu {
+    border-color: transparent;
+  }
+
+  @media (min-width: 992px) {
+    &.navbar-shrink {
+      box-shadow: $material-shadow-1;
+      .navbar-nav > li > a,
+      .navbar-nav > li > a:focus {
+        color: $theme-primary;
+        &:hover {
+          color: fade($theme-primary, 20%);
+        }
+      }
+    }
+
+    .dropdown {
+      .dropdown-item {
+        padding: 0.75rem 1.5rem;
+      }
+      .dropdown-menu {
+        border-color: transparent !important;
+        transition: all 0.5s;
+        overflow: hidden;
+        transform-origin: top center;
+        transform: scale(1,0);
+        display: block;
+        min-width: 18rem;
+      }
+      &:hover {
+        .dropdown-menu {
+            transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 0;
+    height: 136px;
+
+    &-shrink {
+      height: 70px;
+    }
+  }
+  .navbar-expand-lg .navbar-nav .nav-item {
+    padding: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  .services-dropdown > a:after {
+    color: #444;
+    content: ' ▾';
+  }
+
+  .services-dropdown-flipped > a:after {
+    color: #444;
+    content: ' ▴';
+  }
+
+  .dropdown-menu.show {
+    background: #eee;
+    padding-left: 13px;
+  }
+}
+

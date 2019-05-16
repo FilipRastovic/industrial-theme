@@ -16,6 +16,7 @@ get_header();
 
 $default_page_heading = get_field('default_page_heading');
 $default_page_paragraph = get_field('default_page_paragraph');
+$default_page_header_img = get_field('default_page_header_img');
 
 $default_page_content_heading = get_field('default_page_content_heading'); 
 $default_page_content = get_field('default_page_content');
@@ -23,16 +24,16 @@ $default_page_content = get_field('default_page_content');
 ?>
 
 <header class="header header--centered">
-  <div class="polygon-shape"></div>
+  <div class="polygon-shape homepage-hero-img" style="background-image: url(<?php echo $default_page_header_img['url']; ?> );"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1 class="">
-          <?php echo $default_page_heading; ?>  
-        </h1>
-        <p class="">
+        <h2 class="mb-3">
+          <?php echo $default_page_heading; ?>
+        </h2>
+       <p class="mb-3">
           <?php echo $default_page_paragraph; ?>
-        </p>
+		  </p>
       </div>
     </div>
   </div>
@@ -43,7 +44,8 @@ $default_page_content = get_field('default_page_content');
     <div class="row">
       <div class="col-12">
         <div class="service-page-copy-wrapper">
-          <h2 class="mb-3"><?php echo $default_page_content_heading; ?></h2>
+          <h3 class="mb-3"><?php echo $default_page_content_heading; ?></h3>
+			<hr>
           <?php echo $default_page_content; ?>
         </div>
       </div>

@@ -1,0 +1,19 @@
+.blog-form-wrapper {
+	.container {
+		width: 100%;
+		margin-left: 0;
+		@media (min-width: 990px) {
+			width: 700px;
+		}
+
+		img {
+			max-width: 100%;
+			width: auto;
+			@media (min-width: 990px) {
+				width: 104px !important;
+				height: 136px !important;
+				margin-right: 20px;
+			}
+		}
+	}
+}

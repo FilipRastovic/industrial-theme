@@ -1,0 +1,89 @@
+header.header {
+  position: relative;
+  min-height: 300px;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  background: $theme-primary;
+  border-bottom: 1px solid #C8C7C7;
+
+  h1 {
+    @include heading-font;
+    color: white;
+  }
+
+  p {
+    @media (min-width: 990px) {
+      width: 700px;
+      max-width: 700px;
+    }
+  }
+
+  &--centered {
+    h1 {
+      margin-bottom: 35px;
+    }
+  
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  ul > li,
+  p {
+    color: #fff;
+  }
+
+  @media (min-width: 990px) {
+    padding-top: 200px;
+    height: 600px;
+  }
+
+  ul li {
+    @include list-font;
+    color: #fff;
+  }
+
+  &--grey {
+    background: #fafafa;
+  }
+
+  &-half {
+
+    @media (min-width: 990px) {
+      padding-top: 200px;
+      height: 450px;
+    }
+  }
+
+  &-third-of-normal-height {
+
+    @media (min-width: 990px) {
+      padding-top: 200px;
+      height: 600px;
+    }
+  }
+}
+
+.homepage-hero-img {
+  // @include background-cover;
+  // background-image: url('../img/hero-mobile.jpg');
+  
+  // @media (min-width: 550px) {
+  //   background-image: url('../img/Shipping_Container9.jpg');
+  // }
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #31363f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $theme-primary, #31363f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $theme-primary, #31363f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: .8; 
+  }
+}

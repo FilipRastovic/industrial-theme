@@ -17,6 +17,9 @@ $home_when_cta = get_field('home_when_cta');
 $first_image = get_field('first_image');
 $second_image = get_field('second_image');
 $home_when_paragraph = get_field('home_when_paragraph');
+
+$has_shadow_2 = get_field('has_shadow_2');
+$has_shadow_3 = get_field('has_shadow_3');
 ?>
 
 <section class="bg-grey">
@@ -32,8 +35,8 @@ $home_when_paragraph = get_field('home_when_paragraph');
     </div>
     <div class="row mt-3">
       <div class="col-md-6">
-        <img class="img-fluid mb-5 shadowed" src="<?php echo $first_image['url']; ?>" alt="Services Img 1">
-        <img class="img-fluid mb-5 shadowed" src="<?php echo $second_image['url']; ?>" alt="Services Img 2">
+        <img class="img-fluid mb-5 <?php if ( $has_shadow_2 ) { echo 'shadowed'; } ?>" src="<?php echo $first_image['url']; ?>" alt="Services Img 1">
+        <img class="img-fluid mb-5 <?php if ( $has_shadow_3 ) { echo 'shadowed'; } ?>" src="<?php echo $second_image['url']; ?>" alt="Services Img 2">
       </div>
       <div class="col-md-6">
         <ol class="row ol-with-counter">

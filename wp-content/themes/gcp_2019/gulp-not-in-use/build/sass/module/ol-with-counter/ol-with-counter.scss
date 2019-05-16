@@ -1,0 +1,33 @@
+.ol-with-counter {
+  counter-reset: li;
+  list-style: none;
+  *list-style: decimal;
+
+  & li {
+    @include paragraph-font;
+    position: relative;
+    padding-left: 60px;
+    min-height: 60px;
+    margin-bottom: 20px;  
+  }
+
+  & li:before {
+    content: counter(li);
+    counter-increment: li;
+    color: white;
+    background: white;
+    border: 2px solid $btn-light-blue;
+    color: $btn-light-blue;
+    font-family: 'Crimson Text', serif;
+    border-radius: 50%;
+    font-size: 1.75rem;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-weight: 400;
+  }
+}

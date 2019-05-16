@@ -26,9 +26,6 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
   <link rel="icon" type="image/png" href="assets/img/ico.png" />
   <?php wp_head(); ?>
   <style>
-    iframe {
-    width:100%;
-  }
 </style>
 </head>
 
@@ -46,15 +43,15 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
     </div>
   </nav>
 
-  <header class="header header--centered header-half">
-    <div class="polygon-shape"></div>
+  <header class="header header--centered">
+    <div class="polygon-shape header--dark"></div>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="mb-5">
+          <h2 class="mb-3">
             <?php echo $lp_main_heading; ?>
-          </h1>
-          <p>
+          </h2>
+          <p class="">
             <?php echo $lp_main_paragraph; ?>
           </p>
         </div>
@@ -66,9 +63,10 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
     <div class="container">
       <div class="row">
         <div class="col-md-7 landing-page-content--left">
-          <h2>
+          <h3>
             <?php echo $lp_second_heading; ?>
-          </h2>
+          </h3>
+			    <hr align="left">
           <?php  echo $lp_content; ?>
 
         </div>
@@ -92,52 +90,5 @@ $lp_form_paragraph = get_field('lp_form_paragraph');
       </div>
     </div>
   </section>
-
-
-
-  <section class="latest-posts-links bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="latest-posts-links-box">
-          <h3 class="mb-2">Case Studies</h3>
-            <hr class="mx-auto">
-            <ul class="list-unstyled">
-              <?php
-              $args = array( 'post_type'=>'case_study', 'numberposts' => '3' );
-              $recent_posts = wp_get_recent_posts( $args );
-
-              foreach( $recent_posts as $recent ){
-              echo 
-              '<li class="mx-auto"> ' . '
-                <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
-              </li> ';
-              }
-            ?>
-            </ul>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="latest-posts-links-box">
-          <h3 class="mb-2">Latest posts</h3>
-            <hr class="mx-auto">
-            <ul class="list-unstyled">
-              <?php
-              $args = array( 'numberposts' => '3' );
-              $recent_posts = wp_get_recent_posts( $args );
-
-              foreach( $recent_posts as $recent ){
-              echo 
-              '<li class="mx-auto"> ' . '
-                <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
-              </li> ';
-              }
-            ?>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
   <?php get_footer(); ?>

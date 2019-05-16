@@ -28,16 +28,21 @@ $who_what_makes_us_paragraph_3 = get_field('who_what_makes_us_paragraph_3');
 $self_assessment_title = get_field('self_assessment_title');
 $self_assessment_paragraph = get_field('self_assessment_paragraph');
 $self_assessment_btn_label = get_field('self_assessment_btn_label'); 
+
+$content_section_1_heading = get_field('content_section_1_heading');
+$content_section_1_paragraph = get_field('content_section_1_paragraph'); 
+$content_section_2_heading = get_field('content_section_2_heading');
+$content_section_2_paragraph = get_field('content_section_2_paragraph'); 
 ?>
 
-<header class="header header--centered header-third-of-normal-height">
-  <div class="polygon-shape"></div>
+<header class="header header--centered">
+  <div class="polygon-shape header--dark"></div>
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h1 class="mb-5">
+        <h2 class="mb-3">
           <?php echo $who_main_heading; ?>
-        </h1>
+        </h2>
         <p>
           <?php  echo $who_main_paragraph; ?>
         </p>
@@ -46,9 +51,23 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
   </div>
 </header>
 
-<?php get_template_part('template-parts/companies-hire-us'); ?>
-
 <section class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="service-page-copy-wrapper">
+          <h3 class="mb-3"><?php echo $content_section_1_heading; ?></h3>
+          <hr>
+		 <p>
+			<?php echo $content_section_1_paragraph; ?>  
+		 </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-grey">
   <div class="container ">
     <div class="row">
       <div class="col-md-8">
@@ -80,7 +99,7 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
   </div>
 </section>
 
-<section class="cards bg-grey">
+<section class="bg-white">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -125,6 +144,22 @@ $self_assessment_btn_label = get_field('self_assessment_btn_label');
               <?php echo $who_what_makes_us_paragraph_3 ?>
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="service-page-copy-wrapper">
+          <h3 class="mb-3"><?php echo $content_section_2_heading; ?></h3>
+          <hr>
+		 <p>
+			<?php echo $content_section_2_paragraph; ?>  
+		 </p>
         </div>
       </div>
     </div>

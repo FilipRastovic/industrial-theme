@@ -24,6 +24,8 @@ $home_featured_case_study_text = get_field('home_featured_case_study_text');
 $home_featured_case_study_btn_text = get_field('home_featured_case_study_btn_text');
 $featured_case_study_url = get_field('featured_case_study_url');
 
+$has_shadow_1 = get_field('has_shadow_1');
+
 
 
 
@@ -37,9 +39,9 @@ $featured_case_study_url = get_field('featured_case_study_url');
         <h1 class="">
           <?php echo $home_main_heading; ?>
         </h1>
-        <p class="">
+       <p class="">
           <?php echo $home_cta_first_paragraph; ?>
-        </p>
+		  </p>
         <a class="btn" href="/who-we-help">
           <?php echo $home_cta_first_btn_text; ?>
         </a>
@@ -51,8 +53,8 @@ $featured_case_study_url = get_field('featured_case_study_url');
 <section class="our-expertise">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <img class="img-fluid shadowed" src="<?php echo $our_expertise_section_image['url']; ?>" alt="Our Experice Image">
+      <div class="col-md-4 text-right">
+        <img class="img-fluid <?php if ( $has_shadow_1 ) { echo 'shadowed'; } ?>" src="<?php echo $our_expertise_section_image['url']; ?>" alt="Our Experice Image">
       </div>
       <div class="col-md-8">
         <h3><?php echo $our_expertice_section_heading; ?></h3>
@@ -70,7 +72,9 @@ $featured_case_study_url = get_field('featured_case_study_url');
     <div class="col-md-12 text-center">
       <h3 class="mb-2">Featured Case Study</h3>
       <hr>
-      <p class="full-width mx-auto pb-60"><?php echo $home_featured_case_study_subheading; ?></p>
+      <p class="mx-auto p{max-width:700px;width:700px;}"><?php echo $home_featured_case_study_subheading; ?></p>
+		<br>
+		<br>
     </div>
       <div class="col-6 col-md-4 mx-auto mb-3">
         <img class="img-fluid" src="<?php echo $home_featured_case_study_img['url']; ?>" alt="Testimonial Img">
@@ -91,9 +95,9 @@ $featured_case_study_url = get_field('featured_case_study_url');
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="latest-posts-links-box">
-          <h3 class="mb-2">Case Studies</h3>
-            <hr class="mx-auto">
+        <div class="latest-posts-links-box mx-auto">
+          <h3 class="mb-2"><?php _e( 'Case Studies', 'industrial-theme' ); ?></h3>
+            <hr align='left'>
             <ul class="list-unstyled">
               <?php
               $args = array( 'post_type'=>'case_study', 'numberposts' => '3' );
@@ -101,7 +105,7 @@ $featured_case_study_url = get_field('featured_case_study_url');
 
               foreach( $recent_posts as $recent ){
               echo 
-              '<li class="mx-auto"> ' . '
+              '<li class=""> ' . '
                 <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
               </li> ';
               }
@@ -110,9 +114,9 @@ $featured_case_study_url = get_field('featured_case_study_url');
         </div>
       </div>
       <div class="col-md-6">
-        <div class="latest-posts-links-box">
-          <h3 class="mb-2">Latest posts</h3>
-            <hr class="mx-auto">
+        <div class="latest-posts-links-box mx-auto">
+          <h3 class="mb-2"><?php _e( 'Latest posts', 'industrial-theme' ); ?></h3>
+            <hr align='left'>
             <ul class="list-unstyled">
               <?php
               $args = array( 'numberposts' => '3' );
@@ -120,7 +124,7 @@ $featured_case_study_url = get_field('featured_case_study_url');
 
               foreach( $recent_posts as $recent ){
               echo 
-              '<li class="mx-auto"> ' . '
+              '<li class=""> ' . '
                 <a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> 
               </li> ';
               }

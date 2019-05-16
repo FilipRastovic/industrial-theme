@@ -1,0 +1,20 @@
+.categories {
+  list-style: none;
+  font-size: 0.75rem;
+  margin-top: 60px;
+  font-weight: 300;
+  ul {
+    li {
+      font-size: 1.125rem;
+      a {
+        text-decoration: none;
+        &:hover {
+        text-decoration: underline;
+        }
+      }
+    }
+  }
+  @media (min-width: 990px) {
+    margin-top: 0px;
+  }
+}

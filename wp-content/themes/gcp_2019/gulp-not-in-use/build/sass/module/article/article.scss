@@ -1,0 +1,74 @@
+.case-studies article {
+  height: 100%;
+
+  p:nth-of-type( 2 ) {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.learning-center article {
+
+  ul li {
+    @include list-font;
+    color: $paragraph-text-color;
+  }
+  
+  @media (min-width: 768px) {
+    height: 350px;
+  }
+  
+  @media (min-width: 990px) {
+    height: 300px;
+    width: 700px;
+    margin-bottom: 30px;
+  }
+
+}
+
+article {
+  background: #fafafa;
+  margin-bottom: 50px;
+  @include transition-all;
+  box-shadow: $material-shadow-1;
+  padding: 10px 20px 30px;
+  position: relative;
+
+  ul li {
+    @include list-font;
+    color: $paragraph-text-color;
+  }
+
+  h2 {
+    a {
+      text-decoration: none;
+      color: $theme-primary !important;
+      &:hover,
+      &:visited,
+      &:active {
+        color: ligthen($theme-primary, 10%);
+      }
+    }
+  }
+
+  .moretag {
+    color: $light-blue;
+  }
+
+}
+
+.article-copy article { // For singkle blog post
+  box-shadow: none;
+  background: #fff;
+
+  @media (min-width: 990px) {
+    width: 700px;
+  }
+
+  p {
+    @media (min-width: 990px) {
+      max-width: 700px;
+      width: 700px;
+    }
+  }
+}

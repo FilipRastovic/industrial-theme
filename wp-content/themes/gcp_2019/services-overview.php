@@ -10,11 +10,12 @@ $services_main_heading = get_field('services_main_heading');
 $services_main_paragraph = get_field('services_main_paragraph');
 $services_main_image = get_field('services_main_image');
 $services_main_image_style = get_field('services_main_image_style');
-
+$services_header_image = get_field('services_header_image');
 $services_main_heading = get_field('services_main_heading');
 $services_main_paragraph = get_field('services_main_paragraph');
 $services_main_image_style = get_field('services_main_image_style');
 $services_main_image = get_field('services_main_image');
+
 $who_how_we_support_heading = get_field('who_how_we_support_heading');
 $who_how_we_support_paragraph = get_field('who_how_we_support_paragraph');
 $who_how_we_support_1 = get_field('who_how_we_support_1');
@@ -42,20 +43,20 @@ $services_flow_diagram_tab_3_content = get_field('services_flow_diagram_tab_3_co
 $services_request_consultation_heading = get_field('services_request_consultation_heading');
 $services_request_consultation_content = get_field('services_request_consultation_content');
 $services_request_consultation_btn_text = get_field('services_request_consultation_btn_text'); 
+
 ?>
 
-<header class="header">
-  <div class="polygon-shape"></div>
+<header class="header header--centered">
+  <div class="polygon-shape homepage-hero-img " style="background-image: url(<?php echo $services_header_image['url']; ?> );"></div>
   <div class="container">
     <div class="row">
-      <div class="col-md-7 order-2 order-md-1">
-        <h1 class="mb-5">
+      <div class="col-md-12 text-center">
+        <h2 class="mb-3">
           <?php echo $services_main_heading; ?>
-        </h1>
-        <?php echo $services_main_paragraph; ?>
-      </div>
-      <div class="<?php echo $services_main_image_style; ?>">
-        <img class="img-fluid" src="<?php echo $services_main_image['url']; ?>" alt="Service Img">
+        </h2>
+       <p class="mb-3">
+          <?php echo $services_main_paragraph; ?>
+		  </p>
       </div>
     </div>
   </div>
@@ -104,49 +105,49 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
         </ul>
         <div class="tab-content">
           <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
-            <h2>
+            <h3>
               <?php echo $who_how_we_support_1; ?>
-            </h2>
+            </h3>
             <p>
               <?php echo $who_how_we_support_description_1; ?>
             </p>
           </div>
           <div class="tab-pane fade" id="tab-2" role="tabpanel">
-            <h2>
+            <h3>
               <?php echo $who_how_we_support_2; ?>
-            </h2>
+            </h3>
             <p>
               <?php echo $who_how_we_support_description_2; ?>
             </p>
           </div>
           <div class="tab-pane fade" id="tab-3" role="tabpanel">
-            <h2>
+            <h3>
               <?php echo $who_how_we_support_3; ?>
-            </h2>
+            </h3>
             <p>
               <?php echo $who_how_we_support_description_3; ?>
             </p>
         </div>
         <div class="tab-pane" id="tab-4" role="tabpanel">
-          <h2>
+          <h3>
             <?php echo $who_how_we_support_4; ?>
-          </h2>
+          </h3>
           <p>
             <?php echo $who_how_we_support_description_4; ?>
           </p>
         </div>
         <div class="tab-pane fade" id="tab-5" role="tabpanel">
-          <h2>
+          <h3>
             <?php echo $who_how_we_support_5; ?>
-          </h2>
+          </h3>
           <p>
             <?php echo $who_how_we_support_description_5; ?>
           </p>
         </div>
         <div class="tab-pane fade" id="tab-6" role="tabpanel">
-          <h2>
+          <h3>
             <?php echo $who_how_we_support_6; ?>
-          </h2>
+          </h3>
           <p>
             <?php echo $who_how_we_support_description_6; ?>
           </p>
@@ -168,14 +169,14 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
       <p class="mx-auto">
         <?php echo $services_flow_diagram_tab_1_content ?>
       </p>
-    
+    <br>
     <h2 class="text-center">
       <?php echo $services_flow_diagram_tab_2_heading; ?>
     </h2>
     <p class="mx-auto">
       <?php echo $services_flow_diagram_tab_2_content ?>
     </p>
-
+<br>
    <h2 class="text-center">
   <?php echo $services_flow_diagram_tab_3_heading; ?>
   </h2>
@@ -199,7 +200,7 @@ $services_request_consultation_btn_text = get_field('services_request_consultati
         <p class="mx-auto">
           <?php echo $services_request_consultation_content; ?>
         </p>
-        <a id="#services-bot-form-cta" href="/landing-page" class="btn">
+        <a id="#services-bot-form-cta" href="/request-consultation" class="btn">
           <?php echo $services_request_consultation_btn_text; ?></a>
       </div>
     </div>
